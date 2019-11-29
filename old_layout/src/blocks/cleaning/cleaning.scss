@@ -1,0 +1,38 @@
+.cleaning {
+
+  background-color: $CLEANING-COLOR;
+  width: 100%;
+  margin-bottom: 3vh;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #cln_top {
+    background: linear-gradient(135deg, rgba(172,80,251,1) 0%, rgba(255,255,255,1) 100%);
+  }
+
+  #cln_button {
+    background-color: $CLEANING-COLOR;
+  }
+  &__innerBox1 ul {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 20px solid $CLEANING-COLOR;
+ 
+    img {
+      width: 15%;
+      margin-right: 3%;
+    }
+  }
+  li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: GothamPro sans-serif;
+    font-size: 23px;
+  }
+}

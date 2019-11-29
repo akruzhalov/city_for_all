@@ -1,0 +1,48 @@
+.human {
+
+  background-color: $HUMANITARIANAID-COLOR;
+  width: 100%;
+  margin-bottom: 3vh;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #hmn_top {
+    background: linear-gradient(135deg, rgba(248,150,176,1) 0%, rgba(255,255,255,1) 100%);
+  }
+
+  #hmn_infoText {
+  
+  h1{
+    font-size: 64px;
+  }
+
+  h2{
+    font-size: 28px;
+  }
+  }
+  #hmn_button {
+    background-color: $HUMANITARIANAID-COLOR;
+  }
+  &__innerBox1 ul {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 20px solid $HUMANITARIANAID-COLOR;
+ 
+    img {
+      width: 15%;
+      margin-right: 3%;
+    }
+  }
+  li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: GothamPro sans-serif;
+    font-size: 23px;
+  }
+}

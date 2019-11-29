@@ -1,0 +1,24 @@
+mixin header(modifier)
+ .header&attributes(attributes)(id = "headId")
+   .header__top
+     .header__logo
+       img(src="img/logo.png")
+     .header__nav(id="menu")
+       ul
+         li
+           a.bv(href="#vol") Волонтёры
+         li
+           a.bs(href="#shop") Магазины
+         li
+           a.bd(href="#drg") Аптеки
+         li
+           a.bt(href="#tx") Такси
+         li
+           a.bh(href="#hmn") Гуманитар
+         li
+           a.bc(href="#cln") Уборка
+         li
+           a.bp(href="#psc") Обслуживание
+   .header__mainText
+     h1 Относитесь к малоподвижной категории граждан или попали в трудную жизненную ситуацию?
+     p Мы можем вам помочь

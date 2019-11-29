@@ -1,0 +1,9 @@
+doctype html 
+html(lang='ru') 
+  include ../templates/head.pug 
+  block head 
+  include ../templates/blocks.pug 
+  include ../templates/mixin/all-mixin.pug 
+  body
+    block content 
+    script(src="js/scripts.js?version=1")
