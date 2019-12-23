@@ -173,6 +173,10 @@ h1, h2, h3, h4, h5, h6
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 }
+.hp {
+	padding-top: 30px;
+	text-align: center;
+}
 img
 {
 	max-width: 100%;
@@ -848,10 +852,6 @@ section
 6. Intro
 *********************************/
 
-.intro
-{
-
-}
 .intro_boxes_wrap
 {
 	width: 100%;
