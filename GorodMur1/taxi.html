@@ -153,7 +153,7 @@
 				
 				<!-- Slide -->
 				<div class="slide">
-					<div class="background_image" style="background-image:url(images/inv.jpg)"></div>
+					<div class="background_image" style="background-image:url(images/tax.jpg)"></div>
 					<div class="home_slider_overlay"></div>
 					<div class="slide_wrap d-flex flex-column align-items-start justify-content-center">
 						<div class="home_container">
@@ -161,11 +161,9 @@
 								<div class="row">
 									<div class="col">
 										<div class="home_content active">
-											<div class="home_subtitle">Волонтёрская помощь!</div>
 											<div class="home_title">
-												<h1><span>Относитесь к малоподвижной</span></h1>
-												<h1>категории граждан?</h1>
-												<div class="home_subtitle">Мы поможем вам!</div>
+												<h1><span>Заказ такси</span></h1>
+												<h1>Для инвалидов или пенсионеров</h1>
 											</div>
 											
 										</div>
@@ -175,57 +173,6 @@
 						</div>
 					</div>
 				</div>
-
-				<!-- Slide -->
-				<div class="slide">
-					<div class="background_image" style="background-image:url(images/inv2.jpg)"></div>
-					<div class="home_slider_overlay"></div>
-					<div class="slide_wrap d-flex flex-column align-items-start justify-content-center">
-						<div class="home_container">
-							<div class="container">
-								<div class="row">
-									<div class="col">
-										<div class="home_content">
-											<div class="home_subtitle">Волонтёрская помощь!</div>
-											<div class="home_title">
-												<h1><span>Попали в трудную</span></h1>
-												<h1>жизненную ситуацию?</h1>
-												<div class="home_subtitle">Мы поможем вам!</div>
-											</div>
-											
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Slide -->
-				<div class="slide">
-					<div class="background_image" style="background-image:url(images/inv3.jpg)"></div>
-					<div class="home_slider_overlay"></div>
-					<div class="slide_wrap d-flex flex-column align-items-start justify-content-center">
-						<div class="home_container">
-							<div class="container">
-								<div class="row">
-									<div class="col">
-										<div class="home_content">
-											<div class="home_subtitle">Волонтерская помощь!</div>
-											<div class="home_title">
-												<h1><span>Трудности во взаимодействии</span></h1>
-												<h1>с окружающим миром?</h1>
-												<div class="home_subtitle">Мы поможем вам!</div>
-											</div>
-											
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
 			</div>
 		</div>
 
@@ -243,7 +190,6 @@
 						<div class="section_title_container">
 							
 							<div class="section_title"><h1>Инвалид</h1></div>
-							<div class="section_subtitle2">Lorem ipsum</div>
 						</div>
 						<div class="about_text">
 							<p>
@@ -277,7 +223,6 @@
 						<div class="section_title_container">
 							
 							<div class="section_title"><h1>Пенсионер</h1></div>
-							<div class="section_subtitle2">Lorem ipsum</div>
 						</div>
 						<div class="about_text">
 							<p>
@@ -316,8 +261,20 @@
                 <div class="modal-body">
                     <form action="send.php" method="post">
                         <div class="form-group">
-                            <label for="name">Ваше имя:</label>
+                            <label for="name">Ф.И.О:</label>
                             <input name='fio' class="form-control" name="name" required type="text" placeholder="Иванов Иван Иванович">
+						</div>
+						<div class="form-group">
+                            <label for="name">Откуда забрать?</label>
+                            <input name='otcuda' class="form-control" name="name" required type="text" placeholder="Улица Ленина, дом...">
+						</div>
+						<div class="form-group">
+                            <label for="name">Куда отвезти?</label>
+                            <input name='cuda' class="form-control" name="name" required type="text" placeholder="Улица Ленина, дом...">
+						</div>
+						<div class="form-group">
+                            <label for="name">Укажите время:</label>
+                            <input name='time' class="form-control" name="name" required type="text" placeholder="11:11">
 						</div>
 						<div class="form-group">
                             <label for="name">Серия и номер паспорта:</label>
@@ -356,8 +313,10 @@
                             <textarea name='text' class="form-control" required name="message" rows="4"></textarea>
                         </div>
                         <div class="form-group">
-                            <input type="file" name="image">
-                        </div>
+							<label for="message">Прикрепите документ ИПРА и МСЭ:</label>
+							<input type="file" class="form-control" name="image">
+                            <input type="file" class="form-control" name="image">
+						</div>
                         <div class="form-group form-check">
                             <input id="check" class="form-check-input" checked type="checkbox">
                             <label class="form-check-label" for="check">Я добровольно отправляю свои данные</label>
@@ -385,8 +344,20 @@
                 <div class="modal-body">
                     <form action="send.php" method="post">
                         <div class="form-group">
-                            <label for="name">Ваше имя:</label>
+                            <label for="name">Ф.И.О:</label>
                             <input name='fio' class="form-control" name="name" required type="text" placeholder="Иванов Иван Иванович">
+						</div>
+						<div class="form-group">
+                            <label for="name">Откуда забрать?</label>
+                            <input name='otcuda' class="form-control" name="name" required type="text" placeholder="Улица Ленина, дом...">
+						</div>
+						<div class="form-group">
+                            <label for="name">Куда отвезти?</label>
+                            <input name='cuda' class="form-control" name="name" required type="text" placeholder="Улица Ленина, дом...">
+						</div>
+						<div class="form-group">
+                            <label for="name">Укажите время:</label>
+                            <input name='time' class="form-control" name="name" required type="text" placeholder="Улица Ленина, дом...">
 						</div>
 						<div class="form-group">
                             <label for="name">Серия и номер паспорта:</label>
