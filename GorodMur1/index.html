@@ -532,7 +532,7 @@
 				</div>
 				<div class="cta_buttons">
 					<div class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-						<div class="button cta_button" data-toggle="modal" data-target="#nania"><a href="#apt">Отправить заявку</a></div>
+						<div class="button cta_button" data-toggle="modal" data-target="#nania"><a href="nania.html">Отправить заявку</a></div>
 						
 					</div>
 				</div>
@@ -747,137 +747,6 @@
 	</footer>
 </div>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Обратная связь</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				<form action="send.php" method="post">
-					<div class="form-group">
-						<label for="name">Ваше имя:</label>
-						<input name='fio' class="form-control" name="name" required type="text" placeholder="Иванов Иван Иванович">
-					</div>
-					<div class="form-group">
-						<label for="email">Ваш E-mail:</label>
-						<input name='email' class="form-control" name="email" required type="text" placeholder="ivanov@email.com">
-					</div>
-					<div class="form-group">
-						<label for="phone">Ваш телефон:</label>
-						<input name='phone' class="form-control" name="phone" required type="text" placeholder="+7 (800) 000-00-00">
-					</div>
-					<div class="form-group">
-						<label for="message">Текст сообщения:</label>
-						<textarea name='text' class="form-control" required name="message" rows="4"></textarea>
-					</div>
-					<div class="form-group form-check">
-						<input id="check" class="form-check-input" checked type="checkbox">
-						<label class="form-check-label" for="check">Я добровольно отправляю свои данные</label>
-					</div>
-					<button id="button" class="btn btn-dark btn-lg contact submit2" type="submit">Отправить</button>
-					<div class="result">
-						<span id="answer"></span>
-						<span id="loader" style="display:none"><img src="img/loader.gif" alt=""></span>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="modal fade" id="nania" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Заказ няни на дом</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				<form action="send.php" method="post">
-					<div class="form-group">
-						<label for="name">ФИО родителя:</label>
-						<input name='fio' class="form-control" name="name" required type="text" placeholder="Иванов Иван Иванович">
-					</div>
-					<div class="form-group">
-						<label for="name">Серия и номер паспорта:</label>
-						<input name='serias' class="form-control" name="name" required type="text" placeholder="1111 111111">
-					</div>
-					<div class="form-group">
-						<label for="name">Дата выдачи:</label>
-						<input name='date' class="form-control" name="name" required type="text" placeholder="12.12.2019">
-					</div>
-					<div class="form-group">
-						<label for="name">Кем выдан:</label>
-						<input name='kem' class="form-control" name="name" required type="text" placeholder="ТП ОУФМС ....">
-					</div>
-					<div class="form-group">
-						<label for="name">Код подразделения:</label>
-						<input name='code' class="form-control" name="name" required type="text" placeholder="111-111">
-					</div>
-					<div class="form-group">
-						<label for="phone">Ваш телефон:</label>
-						<input name='phone' class="form-control" name="phone" required type="text" placeholder="+7 (800) 000-00-00">
-					</div>
-					<div class="form-group">
-						<label for="message">Адрес фактического проживания:</label>
-						<textarea name='text' class="form-control" required name="message" rows="4"></textarea>
-						<div class="form-group">
-						<form>
-							<p>Выберите дату и временной интервал:</p>
-								<br>
-							 <input type="date" name="calendar">
-							 <br>
-							 <p>Время предоставления услуг няни:</p>
-							 <p>С:</p>
-							 <p><input type="time" name="selected_time" list="time-list"></p>
-                             <datalist id="time-list">
-							 <option value="08:00" >
-								<option value="09:00">
-								<option value="10:00">
-									<option value="11:00">
-										<option value="12:00">
-											<option value="13:00">
-												<option value="14:00">
-													<option value="15:00">
-														<option value="16:00">
-															<option value="17:00">
-																
-															</datalist>				
-							 <p>До:</p>
-							 <p><input type="time" name="selected_time" list="time-list1"></p>
-                             <datalist id="time-list1">
-							 <option value="09:00">
-								<option value="10:00">
-									<option value="11:00">
-										<option value="12:00">
-											<option value="13:00">
-												<option value="14:00">
-													<option value="15:00">
-														<option value="16:00">
-															<option value="17:00">
-																<option value="18:00">
-																</datalist>
-						   </form>
-						</div>
-					<div class="form-group form-check">
-						<input id="check" class="form-check-input" checked type="checkbox">
-						<label class="form-check-label" for="check">Я добровольно отправляю свои данные</label>
-					</div>
-					<button id="button" class="btn btn-dark btn-lg contact submit2" type="submit">Отправить</button>
-					<div class="result">
-						<span id="answer"></span>
-						<span id="loader" style="display:none"><img src="img/loader.gif" alt=""></span>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
 
 
 <script src="js/jquery-3.3.1.min.js"></script>
@@ -893,5 +762,6 @@
 <script src="plugins/progressbar/progressbar.min.js"></script>
 <script src="plugins/parallax-js-master/parallax.min.js"></script>
 <script src="js/custom.js"></script>
+
 </body>
 </html>
