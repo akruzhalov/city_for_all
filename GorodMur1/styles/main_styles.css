@@ -187,7 +187,7 @@ button:active
 }
 .form-control
 {
-	color: #db5246;
+	color: black;
 }
 section
 {
@@ -754,6 +754,7 @@ section
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 }
+
 .home_title h1:not(:last-of-type)
 {
 	margin-bottom: -6px;
