@@ -71,7 +71,10 @@ p
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
-
+.hp {
+	padding-top: 30px;
+	text-align: center;
+}
 .pat
 {
 	font-family: 'Open Sans', sans-serif;
