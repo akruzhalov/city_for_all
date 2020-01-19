@@ -451,6 +451,16 @@ section
 	line-height: 1.2;
 	padding-top: 15px;
 }
+.section_subtitle4
+{
+	font-size: 18px;
+	font-weight: 700;
+	color: #A4A4A4;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	line-height: 1.2;
+	padding-top: 30px;
+}
 .section_title
 {
 	margin-top: 8px;
