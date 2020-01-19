@@ -178,7 +178,9 @@
 
     </div>
 
-    <h1 class="hp">К какой категории граждан <br />вы относитесь?</h1>
+	<h1 class="hp">Форма заказа</h1>
+	<div class="section_subtitle4">Заявка принимается не позднее 1 дня по телефону:  </div>
+							<div class="section_subtitle2"> <a href="tel:+7 (34938) 29 2 05">+7 (34938) 29-2-05</a></div>
 
     <div class="about" id="gh">
 		<div class="container">
@@ -189,25 +191,40 @@
 					<div class="about_content">
 						<div class="section_title_container">
 							
-							<div class="section_title"><h1>Инвалид</h1></div>
+							<form action="send.php" method="post">
+								<div class="form-group">
+									<label for="name">Ф.И.О:</label>
+									<input name='fio' class="form-control" name="name" required type="text" placeholder="Иванов Иван Иванович">
+								</div>
+								<div class="form-group">
+									<label for="email">Ваш E-mail:</label>
+									<input name='email' class="form-control" name="email" required type="text" placeholder="ivanov@email.com">
+								</div>
+								<div class="form-group">
+									<label for="phone">Ваш телефон:</label>
+									<input name='phone' class="form-control" name="phone" required type="text" placeholder="+7 (800) 000-00-00">
+								</div>
+								<div class="form-group">
+									<label for="message">Текст сообщения:</label>
+									<textarea name='text' class="form-control" required name="message" rows="4"></textarea>
+								</div>
+								<div class="form-group form-check">
+									<input id="check" class="form-check-input" checked type="checkbox">
+									<label class="form-check-label" for="check" title="Достоверность и полноту настоящих сведений подтверждаю. Даю согласие на обработку персональных данных о себе в соответствии со статьей 9 Федерального закона от 27 июля 2006г. № 152 - ФЗ «О персональных данных для включенияв регистр получателей социальных услуг».">Даю согласие на обработку персональных данных</label>
+								</div>
+								<button id="button" class="btn btn-dark btn-lg contact submit2" type="submit">Отправить</button>
+								<div class="result">
+									<span id="answer"></span>
+									<span id="loader" style="display:none"><img src="img/loader.gif" alt=""></span>
+								</div>
+							</form>
 						</div>
-						<div class="about_text">
-							<p>
-                                Заявка принимается не позднее 1 дня по телефону: 8(34938)29-2-05    
-                            </p>
-                        </div>
-                        <div class="cta_buttons">
-                            <div class="d-flex flex-row align-items-start justify-content-start flex-wrap">
-                                <div class="button cta_button" data-toggle="modal" data-target="#exampleModal"><a href="#soc">Заказать</a></div>
-                            </div>
-                        </div>
+						
+                        
 					</div>
 				</div>
 
-				<!-- About Image -->
-				<div class="col-lg-4">
-					<div class="about_image"><img src="images/about2.png" alt=""></div>
-				</div>
+			
 
 			</div>
 		</div>
@@ -223,12 +240,10 @@
 						<div class="section_title_container">
 							
 							<div class="section_title"><h1>Пенсионер</h1></div>
+							<div class="section_subtitle4">Заявка принимается не позднее 1 дня по телефону:  </div>
+							<div class="section_subtitle2"> <a href="tel:+7 (34938) 29 2 05">+7 (34938) 29-2-05</a></div>
 						</div>
-						<div class="about_text">
-							<p>
-								Заявка принимается не позднее 1 дня по телефону: 8(34938)29-2-05    
-							</p>
-						</div>
+						
 						<div class="cta_buttons">
                             <div class="d-flex flex-row align-items-start justify-content-start flex-wrap">
                                 <div class="button cta_button" data-toggle="modal" data-target="#exampleModal2"><a href="#soc">Заказать</a></div>
@@ -264,42 +279,6 @@
                             <label for="name">Ф.И.О:</label>
                             <input name='fio' class="form-control" name="name" required type="text" placeholder="Иванов Иван Иванович">
 						</div>
-						<div class="form-group">
-                            <label for="name">Откуда забрать?</label>
-                            <input name='otcuda' class="form-control" name="name" required type="text" placeholder="Улица Ленина, дом...">
-						</div>
-						<div class="form-group">
-                            <label for="name">Куда отвезти?</label>
-                            <input name='cuda' class="form-control" name="name" required type="text" placeholder="Улица Ленина, дом...">
-						</div>
-						<div class="form-group">
-                            <label for="name">Укажите время:</label>
-                            <input name='time' class="form-control" name="name" required type="text" placeholder="11:11">
-						</div>
-						<div class="form-group">
-                            <label for="name">Серия и номер паспорта:</label>
-                            <input name='serias' class="form-control" name="name" required type="text" placeholder="1111 111111">
-						</div>
-						<div class="form-group">
-                            <label for="name">Дата выдачи:</label>
-                            <input name='date' class="form-control" name="name" required type="text" placeholder="12.12.2019">
-						</div>
-						<div class="form-group">
-                            <label for="name">Кем выдан:</label>
-                            <input name='kem' class="form-control" name="name" required type="text" placeholder="ТП ОУФМС ....">
-						</div>
-						<div class="form-group">
-                            <label for="name">Код подразделения:</label>
-                            <input name='code' class="form-control" name="name" required type="text" placeholder="111-111">
-						</div>
-						<div class="form-group">
-                            <label for="name">Адрес регистрации:</label>
-                            <input name='adres' class="form-control" name="name" required type="text" placeholder="Улица Ленина, дом...">
-                        </div>
-                        <div class="form-group">
-                            <label for="snils">Ваш номер СНИЛС:</label>
-                            <input name='snils' class="form-control" name="snils" required type="text" placeholder="111-111-111-11">
-                        </div>
                         <div class="form-group">
                             <label for="email">Ваш E-mail:</label>
                             <input name='email' class="form-control" name="email" required type="text" placeholder="ivanov@email.com">
@@ -312,14 +291,6 @@
                             <label for="message">Текст сообщения:</label>
                             <textarea name='text' class="form-control" required name="message" rows="4"></textarea>
                         </div>
-                        <div class="form-group">
-							<label for="message">Прикрепите документ ИПРА:</label>
-							<input type="file" class="form-control" name="document">
-						</div>
-						<div class="form-group">
-							<label for="message">Прикрепите документ МСЭ:</label>
-							<input type="file" class="form-control" name="document">
-						</div>
                         <div class="form-group form-check">
                             <input id="check" class="form-check-input" checked type="checkbox">
                             <label class="form-check-label" for="check" title="Достоверность и полноту настоящих сведений подтверждаю. Даю согласие на обработку персональных данных о себе в соответствии со статьей 9 Федерального закона от 27 июля 2006г. № 152 - ФЗ «О персональных данных для включенияв регистр получателей социальных услуг».">Даю согласие на обработку персональных данных</label>
@@ -350,42 +321,6 @@
                             <label for="name">Ф.И.О:</label>
                             <input name='fio' class="form-control" name="name" required type="text" placeholder="Иванов Иван Иванович">
 						</div>
-						<div class="form-group">
-                            <label for="name">Откуда забрать?</label>
-                            <input name='otcuda' class="form-control" name="name" required type="text" placeholder="Улица Ленина, дом...">
-						</div>
-						<div class="form-group">
-                            <label for="name">Куда отвезти?</label>
-                            <input name='cuda' class="form-control" name="name" required type="text" placeholder="Улица Ленина, дом...">
-						</div>
-						<div class="form-group">
-                            <label for="name">Укажите время:</label>
-                            <input name='time' class="form-control" name="name" required type="text" placeholder="Улица Ленина, дом...">
-						</div>
-						<div class="form-group">
-                            <label for="name">Серия и номер паспорта:</label>
-                            <input name='serias' class="form-control" name="name" required type="text" placeholder="1111 111111">
-						</div>
-						<div class="form-group">
-                            <label for="name">Дата выдачи:</label>
-                            <input name='date' class="form-control" name="name" required type="text" placeholder="12.12.2019">
-						</div>
-						<div class="form-group">
-                            <label for="name">Кем выдан:</label>
-                            <input name='kem' class="form-control" name="name" required type="text" placeholder="ТП ОУФМС ....">
-						</div>
-						<div class="form-group">
-                            <label for="name">Код подразделения:</label>
-                            <input name='code' class="form-control" name="name" required type="text" placeholder="111-111">
-						</div>
-						<div class="form-group">
-                            <label for="name">Адрес регистрации:</label>
-                            <input name='adres' class="form-control" name="name" required type="text" placeholder="Улица Ленина, дом...">
-                        </div>
-                        <div class="form-group">
-                            <label for="snils">Ваш номер СНИЛС:</label>
-                            <input name='snils' class="form-control" name="snils" required type="text" placeholder="111-111-111-11">
-                        </div>
                         <div class="form-group">
                             <label for="email">Ваш E-mail:</label>
                             <input name='email' class="form-control" name="email" required type="text" placeholder="ivanov@email.com">
