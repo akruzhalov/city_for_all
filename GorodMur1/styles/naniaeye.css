@@ -1,3 +1,177 @@
+h11
+{
+    position: absolute;
+    width: 273px;
+    height: 14px;
+    left: 584px;
+    top: 205px;
+    
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 13px;
+    /* identical to box height, or 40% */
+    
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 1px;
+    
+    color: #000000;
+}
+h12
+{
+    position: absolute;
+    width: 254px;
+    height: 14px;
+    left: 370px;
+    top: 373px;
+    
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 13px;
+    /* identical to box height, or 52% */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    
+    color: #000000;
+}
+.form-group
+{
+    left: 500px;
+   top: 1000px;
+}
+.vremia
+{
+
+right: 450px;
+    
+}
+.form-fio{
+
+    
+position: absolute;
+width: 400px;
+height: 50px;
+left: 370px;
+top: 283px;
+
+background: #F9F9F9;
+border-radius: 5px;
+-moz-user-input: 4;
+}
+
+.form-dateR{
+
+
+    
+position: absolute;
+width: 225px;
+height: 50px;
+left: 845px;
+top: 283px;
+
+background: #F9F9F9;
+border-radius: 5px;
+}
+
+.form-seria
+{
+    position: absolute;
+width: 100px;
+height: 50px;
+left: 370px;
+top: 451px;
+
+background: #F9F9F9;
+border-radius: 5px;
+}
+.form-nomer
+{
+
+    position: absolute;
+    width: 260px;
+    height: 50px;
+    left: 520px;
+    top: 451px;
+    
+    background: #F9F9F9;
+    border-radius: 5px; 
+}
+.form-dateV
+{
+    position: absolute;
+    width: 225px;
+    height: 50px;
+    left: 845px;
+    top: 451px;
+    
+    background: #F9F9F9;
+    border-radius: 5px;
+
+}
+.form-kem
+{
+
+    position: absolute;
+width: 700px;
+height: 50px;
+left: 370px;
+top: 557px;
+
+background: #F9F9F9;
+border-radius: 5px;
+}
+.form-reg
+{
+    position: absolute;
+    width: 700px;
+    height: 50px;
+    left: 370px;
+    top: 663px;
+    
+    background: #F9F9F9;
+    border-radius: 5px;
+
+}
+.form-proj
+{
+    position: absolute;
+    width: 700px;
+    height: 50px;
+    left: 370px;
+    top: 769px;
+    
+    background: #F9F9F9;
+    border-radius: 5px;
+}
+.form-tel
+{
+
+    position: absolute;
+    width: 700px;
+    height: 50px;
+    left: 370px;
+    top: 875px;
+    
+    background: #F9F9F9;
+    border-radius: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
 @charset "utf-8";
 /* CSS Document */
 
@@ -46,7 +220,6 @@ body
 	font-weight: 400;
 	background: #FFFFFF;
 	color: #a5a5a5;
-	width: "100%";
 }
 div
 {
@@ -72,14 +245,17 @@ p
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
-
+.hp {
+	padding-top: 30px;
+	text-align: center;
+}
 .pat
 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 24px;
 	line-height: 2.145;
 	font-weight: 400;
-	color: #FAFAFA;
+	color: rgb(0, 0, 0);
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -104,7 +280,7 @@ p
 	font-size: 16px;
 	line-height: 2.145;
 	font-weight: 400;
-	color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -173,10 +349,6 @@ h1, h2, h3, h4, h5, h6
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
-}
-.hp {
-	padding-top: 30px;
-	text-align: center;
 }
 img
 {
@@ -424,7 +596,7 @@ section
 {
 	font-size: 18px;
 	font-weight: 700;
-	color: #FAFAFA;
+	color: rgb(0, 0, 0);
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	line-height: 1.2;
@@ -433,9 +605,9 @@ section
 
 .section_subtitle2
 {
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 700;
-	color: #A4A4A4;
+	color: rgb(0, 0, 0);
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	line-height: 1.2;
@@ -468,9 +640,9 @@ section
 	top: 61px;
 	width: calc(100% - 314px);
 	height: 96px;
-	background: #74bae6;
+	background: #000000;
 	z-index: 100;
-	border-bottom: solid 2px #2E2EFE;
+	border-bottom: solid 2px rgb(0, 0, 0);
 }
 .header_wrap
 {
@@ -495,15 +667,15 @@ section
 }
 .main_nav ul li a
 {
-	font-size: 14px;
-	font-weight: 700;
+	font-size: 18px;
+	font-weight: 800;
 	color: #ffffff;
 	text-transform: uppercase;
 }
 .main_nav ul li a:hover,
 .main_nav ul li.active a
 {
-	color: #2E2EFE;
+	color: rgb(255, 255, 255);
 }
 .header_social
 {
@@ -689,10 +861,10 @@ section
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #7800ff;
-	background-image: linear-gradient(to right, rgba(120,0,255,0.34), rgba(255,14,59,0.34));
-	background: #7800ff;
-	background: linear-gradient(to right, rgba(120,0,255,0.34), rgba(255,14,59,0.34));
+	background-color: #ffffff;
+	background-image: #ffffff;
+	background: #ffffff;
+	background: #ffffff;
 }
 .home_slider_container
 {
@@ -725,7 +897,7 @@ section
 {
 	font-size: 18px;
 	font-weight: 700;
-	color: #ffffff;
+	color: #000000;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	line-height: 1.2;
@@ -737,9 +909,9 @@ section
 }
 .home_title h1
 {
-	font-size: 45px;
+	font-size: 75px;
 	font-weight: 300;
-	color: #ffffff;
+	color: #000000;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 }
@@ -789,11 +961,11 @@ section
 }
 .home_slider .owl-dots .owl-dot:not(.active):hover span::after
 {
-	color: #2E2EFE;
+	color: rgb(0, 0, 0);
 }
 .home_slider .owl-dots .owl-dot.active
 {
-	background: #2E2EFE;
+	background: rgb(255, 255, 255);
 	width: 44px;
 	height: 44px;
 	margin-right: 6px;
@@ -806,7 +978,7 @@ section
 {
 	display: block;
 	position: relative;
-	color: #ffffff;
+	color: #000000;
 }
 .home_slider .owl-dots .owl-dot:first-child span::after
 {
@@ -852,6 +1024,7 @@ section
 /*********************************
 6. Intro
 *********************************/
+
 
 .intro_boxes_wrap
 {
@@ -971,7 +1144,7 @@ section
 
 .cta
 {
-	background: #74bae6;
+	background: #ffffff;
 }
 .cta_image
 {
@@ -987,7 +1160,7 @@ section
 }
 .cta .section_title h1
 {
-	color: #ffffff;
+	color: #000000;
 }
 .cta_list
 {
@@ -1001,9 +1174,9 @@ section
 .cta_list ul li span
 {
 	padding-left: 19px;
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: 400;
-	color: #ffffff;
+	color: #000000;
 }
 .cta_buttons
 {
@@ -1104,7 +1277,7 @@ section
 }
 .classes_slide_wrap:hover .classes_title h3
 {
-	color: #ffffff;
+	color: #000000;
 }
 .classes_text
 {
@@ -1128,7 +1301,7 @@ section
 }
 .pricing .section_title h1
 {
-	color: #ffffff;
+	color: #000000;
 }
 .pricing_slider_container
 {
@@ -1288,7 +1461,9 @@ section
 
 .footer
 {
-	background: #74bae6;
+    background: #ffffff;
+  
+    top:1100px;
 }
 .footer_content
 {
@@ -1336,7 +1511,7 @@ section
 	margin-top: 33px;
 	font-size: 16px;
 	font-weight: 700;
-	color: #ffffff;
+	color: #000000;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	line-height: 1.2;
@@ -1353,6 +1528,6 @@ section
 {
 	font-size: 14px;
 	font-weight: 700;
-	color:#ffffff;
+	color:#000000;
 	text-transform: uppercase;
 }
