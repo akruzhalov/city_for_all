@@ -32,11 +32,17 @@
 <body>
 <div class="header_wrap d-flex flex-row align-items-center justify-content-center">
     <div class="super_container">
+
         <!-- Header -->
+
         <header class="header">
+
+
             <div class="header_wrap d-flex flex-row align-items-center justify-content-center">
+
                 <!-- Logo -->
                 <div class="logo"><a href="index.html"><img src="images/logo2.png" alt=""></a></div>
+
                 <!-- Main Nav -->
                 <nav class="main_nav">
                     <ul class="d-flex flex-row align-items-center justify-content-center">
@@ -50,6 +56,7 @@
                         <li><a href="index.html#soc">Обслуживание</a></li>
                     </ul>
                 </nav>
+
                 <!-- Social -->
                 <div class="social header_social">
                     <ul class="d-flex flex-row align-items-center justify-content-start">
@@ -57,15 +64,21 @@
                                                                                     aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
+
                 <!-- Hamburger -->
                 <div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
             </div>
         </header>
+
         <!-- Fixed Header -->
+
         <header class="fixed_header">
             <div class="header_wrap d-flex flex-row align-items-center justify-content-center">
+
                 <!-- Logo -->
                 <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+
                 <!-- Main Nav -->
                 <nav class="main_nav">
                     <ul class="d-flex flex-row align-items-center justify-content-center">
@@ -79,6 +92,7 @@
                         <li><a href="index.html#soc">Обслуживание</a></li>
                     </ul>
                 </nav>
+
                 <!-- Social -->
                 <div class="social header_social">
                     <ul class="d-flex flex-row align-items-center justify-content-start">
@@ -86,12 +100,15 @@
                                                                                     aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
+
                 <!-- Hamburger -->
                 <div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
             </div>
         </header>
 
         <!-- Menu -->
+
         <div class="menu">
             <div class="menu_door door_left"></div>
             <div class="menu_door door_right"></div>
@@ -119,14 +136,16 @@
                 </div>
             </div>
         </div>
+
         <div class="home">
+
             <!-- Slider -->
             <div class="home_slider_container">
                 <div class="owl-carousel owl-theme home_slider">
 
                     <!-- Slide -->
                     <div class="slide">
-                        <div class="background_image" style="background-image:url(images/tax.jpg)"></div>
+                        <div class="background_image" style="background-image:url(images/IMG_4238.JPG.jpg)"></div>
                         <div class="home_slider_overlay"></div>
                         <div class="slide_wrap d-flex flex-column align-items-start justify-content-center">
                             <div class="home_container">
@@ -135,8 +154,7 @@
                                         <div class="col">
                                             <div class="home_content active">
                                                 <div class="home_title">
-                                                    <h1><span>Заказ такси</span></h1>
-                                                    <h1>Для инвалидов или пенсионеров</h1>
+                                                    <h1><span>Заказ услуг няни</span></h1>
                                                 </div>
                                             </div>
                                         </div>
@@ -150,46 +168,46 @@
         </div>
         <h1 class="hp">Форма заказа</h1>
         <div class="section_subtitle4">Заявка принимается не позднее 1 дня по телефону:</div>
-        <div class="section_subtitle2"><a href="tel:+7 (34938) 29 2 05">+7 (34938) 29-205</a></div>
+        <div class="section_subtitle2"><a href="tel:+7 (34938) 29 2 05">+7 (34938) 29-2-05</a></div>
+
         <div class="about" id="gh">
             <div class="container">
                 <div class="row">
                     <!-- About Content -->
-                    <div class="col-lg-8" style="margin: 0 auto">
+                    <div class="col-lg-8">
                         <div class="about_content">
                             <div class="section_title_container">
-
                                 <form action="send.php" method="post">
-                                    <div class="form-group" style="width: 700px; float: left">
+                                    <div class="form-group">
+                                        <label for="select">К какой категории вы относитесь?</label>
+                                        <select class="form-control" id="select">
+                                            <option disabled>Выберите категорию</option>
+                                            <option>Инвалиды</option>
+                                            <option>Пенсионеры</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
                                         <label for="fio">Ф.И.О:</label>
-                                        <input name='fio' id="fio" class="form-control f-taxi" required type="text"
+                                        <input name='fio' id="fio" class="form-control" required type="text"
                                                placeholder="Иванов Иван Иванович">
                                     </div>
-                                    <div class="form-group" style="width: 700px; float: left">
-                                        <label for="from">Откуда забрать:</label>
-                                        <input name='from' id="from" class="form-control f-taxi" required type="text"
-                                               placeholder="Ул. Ленина, 22">
+                                    <div class="form-group">
+                                        <label for="email">Ваш E-mail:</label>
+                                        <input name='email' id="email" class="form-control" required type="text"
+                                               placeholder="ivanov@email.com">
                                     </div>
-                                    <div class="form-group" style="width: 700px; float: left">
-                                        <label for="to">Куда отвезти:</label>
-                                        <input name='to' id="to" class="form-control f-taxi" required type="text"
-                                               placeholder="Ул. Пушкина, 33">
+                                    <div class="form-group">
+                                        <label for="phone">Ваш телефон:</label>
+                                        <input name='phone' id="phone" class="form-control" required type="text"
+                                               placeholder="+7 (800) 000-00-00">
                                     </div>
-                                    <div class="form-group" style="width: 200px; float: left">
-                                        <label for="time" style="width: 100%; float: left">Время:</label>
-                                        <input name='time' id="time" class="form-control f-taxi" required type="time"
-                                               placeholder="+7 (800) 000-00-00" min="08:30" max="17:00"
-                                               style="width: 150px; padding: 12px;">
+                                    <div class="form-group">
+                                        <label for="message">Текст сообщения:</label>
+                                        <textarea name='text' id="message" class="form-control" required
+                                                  rows="4"></textarea>
                                     </div>
-                                    <div class="form-group" style="width: 500px; float: left">
-                                        <label for="phone" style="width: 100%; float: left">Ваш телефон:</label>
-                                        <input name='phone' id="phone" class="form-control f-taxi" required type="text"
-                                               placeholder="+7 (800) 000-00-00" style="width: 500px; padding: 12px;">
-                                    </div>
-                                    <div class="form-group form-check"
-                                         style="width:700px;float: left; padding-left: 0; margin-top: 10px">
-                                        <input id="checkbox" class="form-check-input  form-input-taxi" type="checkbox"
-                                               onclick="check()">
+                                    <div class="form-group form-check">
+                                        <input id="checkbox" class="form-check-input" type="checkbox" onclick="check()">
                                         <label class="form-check-label" for="checkbox"
                                                title="Достоверность и полноту настоящих сведений подтверждаю. Даю согласие на обработку персональных данных о себе в соответствии со статьей 9 Федерального закона от 27 июля 2006г. № 152 - ФЗ «О персональных данных для включенияв регистр получателей социальных услуг».">Заполняя
                                             форму, вы соглашаетесь с тем, что вся информация, предоставленная вами,
@@ -198,29 +216,26 @@
                                             г.</label>
                                     </div>
                                     <input type='submit' id="delButton" class="btn btn-dark btn-lg contact submit2"
-                                           disabled value='Отправить'
-                                           style="width: 300px; height: 60px; margin-top: 10px;margin-left: 27.5%">
+                                           disabled value='Отправить'>
                                     <div class="result">
                                         <span id="answer"></span>
                                         <span id="loader" style="display:none"><img src="images/loader.gif"
                                                                                     alt=""></span>
                                     </div>
                                 </form>
-
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <footer class="footer">
             <div class="footer_content">
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <div class="footer_logo text-center"><a href="index.html"><img src="images/logo2.png"
-                                                                                           alt=""></a>
+                            <div class="footer_logo text-center"><a href="index.html"><img src="images/logo2.png" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -267,26 +282,14 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
         </footer>
     </div>
 </div>
-<script>
-    function check() {
-        var cb = document.getElementsByTagName('input'),
-            L = cb.length - 1,
-            f = true;
-        for (; L >= 0; L--) {
-            if (cb[L]['type'] == 'checkbox' && cb[L]['checked'] == true) {
-                f = !f;
-                break;
-            }
-        }
-        document.getElementById('delButton').disabled = f;
-    }
-</script>
+
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="styles/bootstrap-4.1.2/popper.js"></script>
 <script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
