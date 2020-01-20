@@ -506,10 +506,11 @@ section {
     left: 60px;
 }
 
-.logo img{
+.logo img {
     width: 80%;
     height: auto;
 }
+
 .main_nav ul li:not(:last-of-type) {
     margin-right: 52px;
 }
@@ -1127,7 +1128,7 @@ section {
 }
 
 .pr2 {
-    padding-bottom: 100px;
+    padding-bottom: 10px;
 }
 
 .pricing {
@@ -1301,6 +1302,7 @@ section {
 .footer_content {
     padding-top: 99px;
     padding-bottom: 30px;
+    margin-top: 80px;
 }
 
 .footer_logo a {
