@@ -1,3 +1,220 @@
+h11
+{
+    position: absolute;
+    width: 273px;
+    height: 14px;
+    left: 584px;
+    top: 205px;
+    
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 13px;
+    /* identical to box height, or 40% */
+    
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 1px;
+    
+    color: #000000;
+}
+h12
+{
+    position: absolute;
+    width: 254px;
+    height: 14px;
+    left: 370px;
+    top: 373px;
+    
+    font-family: Gotham Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 13px;
+    /* identical to box height, or 52% */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+    
+    color: #000000;
+}
+.form-group
+{
+    left: 500px;
+   top: 1000px;
+}
+.vremia
+{
+
+right: 450px;
+    
+}
+.form-fio{
+
+    
+position: absolute;
+width: 400px;
+height: 50px;
+left: 370px;
+top: 283px;
+
+background: #F9F9F9;
+border-radius: 5px;
+-moz-user-input: 4;
+}
+
+.form-dateR{
+
+
+    
+position: absolute;
+width: 225px;
+height: 50px;
+left: 845px;
+top: 283px;
+
+background: #F9F9F9;
+border-radius: 5px;
+}
+
+.form-seria
+{
+    position: absolute;
+width: 100px;
+height: 50px;
+left: 370px;
+top: 451px;
+
+background: #F9F9F9;
+border-radius: 5px;
+}
+.form-nomer
+{
+
+    position: absolute;
+    width: 260px;
+    height: 50px;
+    left: 520px;
+    top: 451px;
+    
+    background: #F9F9F9;
+    border-radius: 5px; 
+}
+.form-dateV
+{
+    position: absolute;
+    width: 225px;
+    height: 50px;
+    left: 845px;
+    top: 451px;
+    
+    background: #F9F9F9;
+    border-radius: 5px;
+
+}
+.form-kem
+{
+
+    position: absolute;
+width: 700px;
+height: 50px;
+left: 370px;
+top: 557px;
+
+background: #F9F9F9;
+border-radius: 5px;
+}
+.form-reg
+{
+    position: absolute;
+    width: 700px;
+    height: 50px;
+    left: 370px;
+    top: 663px;
+    
+    background: #F9F9F9;
+    border-radius: 5px;
+
+}
+.form-proj
+{
+    position: absolute;
+    width: 700px;
+    height: 50px;
+    left: 370px;
+    top: 769px;
+    
+    background: #F9F9F9;
+    border-radius: 5px;
+}
+.form-tel
+{
+
+    position: absolute;
+    width: 700px;
+    height: 50px;
+    left: 370px;
+    top: 875px;
+    
+    background: #F9F9F9;
+    border-radius: 5px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @charset "utf-8";
 /* CSS Document */
 
@@ -46,7 +263,6 @@ body
 	font-weight: 400;
 	background: #FFFFFF;
 	color: #a5a5a5;
-	width: "100%";
 }
 div
 {
@@ -1288,7 +1504,9 @@ section
 
 .footer
 {
-	background: #74bae6;
+    background: #74bae6;
+    top:1100px;
+    
 }
 .footer_content
 {
