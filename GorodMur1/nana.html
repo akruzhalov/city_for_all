@@ -60,7 +60,7 @@
                 <!-- Social -->
                 <div class="social header_social">
                     <ul class="d-flex flex-row align-items-center justify-content-start">
-                        <li><a href="slabo.html" title="Версия для слабовидящих"><i class="fa fa-eye"
+                        <li><a href="naniaslabo.html" title="Версия для слабовидящих"><i class="fa fa-eye"
                                                                                     aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
@@ -96,7 +96,7 @@
                 <!-- Social -->
                 <div class="social header_social">
                     <ul class="d-flex flex-row align-items-center justify-content-start">
-                        <li><a href="slabo.html" title="Версия для слабовидящих"><i class="fa fa-eye"
+                        <li><a href="naniaslabo.html" title="Версия для слабовидящих"><i class="fa fa-eye"
                                                                                     aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
@@ -166,7 +166,7 @@
                 </div>
             </div>
         </div>
-        <h1 class="hp">Форма заказа</h1>
+        <h1 class="hp">Заказ няни</h1>
         <div class="section_subtitle4">Заявка принимается не позднее 1 дня по телефону:</div>
         <div class="section_subtitle2"><a href="tel:+7 (34938) 29 2 05">+7 (34938) 29-2-05</a></div>
 
@@ -174,40 +174,94 @@
             <div class="container">
                 <div class="row">
                     <!-- About Content -->
-                    <div class="col-lg-8">
+                    <div class="col-lg-8" style="margin: 0 auto">
                         <div class="about_content">
                             <div class="section_title_container">
-                                <form action="send.php" method="post">
-                                    <div class="form-group">
-                                        <label for="select">К какой категории вы относитесь?</label>
-                                        <select class="form-control" id="select">
-                                            <option disabled>Выберите категорию</option>
-                                            <option>Инвалиды</option>
-                                            <option>Пенсионеры</option>
-                                        </select>
+                                <form >
+                                    <div class="form-fio">
+                                        <label for="name">ФИО родителя:</label>
+                                        <input name='fio' class="form-control" name="name" required type="text" placeholder="Иванов Иван Иванович">
                                     </div>
-                                    <div class="form-group">
-                                        <label for="fio">Ф.И.О:</label>
-                                        <input name='fio' id="fio" class="form-control" required type="text"
-                                               placeholder="Иванов Иван Иванович">
+                                    <div class="form-dateR">
+                                        <label for="name">Дата рождения:</label>
+                                        <input name='serias' class="form-control" name="name" required type="text" placeholder="06.11.1994">
                                     </div>
-                                    <div class="form-group">
-                                        <label for="email">Ваш E-mail:</label>
-                                        <input name='email' id="email" class="form-control" required type="text"
-                                               placeholder="ivanov@email.com">
+                                    <h1>Данные паспорта</h1>
+                                    <div class="form-seria">
+                                        <label for="name">Серия:</label>
+                                        <input name='serias' class="form-control" name="name" required type="text" placeholder="1111">
                                     </div>
-                                    <div class="form-group">
-                                        <label for="phone">Ваш телефон:</label>
-                                        <input name='phone' id="phone" class="form-control" required type="text"
-                                               placeholder="+7 (800) 000-00-00">
+                                    <div class="form-nomer">
+                                        <label for="name">Номер:</label>
+                                        <input name='serias' class="form-control" name="name" required type="text" placeholder="111111">
                                     </div>
-                                    <div class="form-group">
-                                        <label for="message">Текст сообщения:</label>
-                                        <textarea name='text' id="message" class="form-control" required
-                                                  rows="4"></textarea>
+                                    <div class="form-dateV">
+                                        <label for="name">Дата выдачи:</label>
+                                        <input name='date' class="form-control" name="name" required type="text" placeholder="12.12.2019">
                                     </div>
-                                    <div class="form-group form-check">
-                                        <input id="checkbox" class="form-check-input" type="checkbox" onclick="check()">
+                                    <div class="form-kem">
+                                        <label for="name">Кем выдан:</label>
+                                        <input name='kem' class="form-control" name="name" required type="text" placeholder="УФМС России по г. Москва">
+                                    </div>
+                                    <div class="form-reg">
+                                        <label for="name">Адрес регистрации:</label>
+                                        <input name='code' class="form-control" name="name" required type="text" placeholder="УФМС России по г. Москва">
+                                    </div>
+                                    <div class="form-proj">
+                                        <label for="message">Адрес фактического проживания:</label>
+                                        <input name='code' class="form-control" name="name" required type="text" placeholder="УФМС России по г. Москва">
+                                    </div>
+                                    <div class="form-tel">
+                                        <label for="phone">Телефон:</label>
+                                        <input name='phone' class="form-control" name="phone" required type="text" placeholder="+7 (___) 000-00-00">
+                                    </div>
+                                    
+                                   
+                                        
+                                           <div class='col-md-5'>
+                                               <div class="form-group">
+                                                   <label for="message">Выберите дату:</label>
+                                                   <div class='input-group date' id='datetimepicker1'>
+                                                       <input type='text' class="form-control" />
+                                                       <span class="input-group-addon">
+                                                           <span class="glyphicon glyphicon-calendar"></span>
+                                                       </span>
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           
+                                           
+                                   
+                                   
+                                     
+                                            <div class='col-md-5'>
+                                                <div class="form-group">
+                                                    <label for="message">Время ( С ):</label>
+                                                    <div class='input-group date' id='datetimepicker3'>
+                                                        <input type='text' class="form-control" />
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class='col-md-5'>
+                                                <div class="form-group">
+                                                    <label for="message">Время ( ПО ):</label>
+                                                    <div class='input-group date' id='datetimepicker4'>
+                                                        <input type='text' class="form-control" />
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                    <div class="form-group form-check"
+                                         style="width:700px;float: left; padding-left: 0; margin-top: 10px">
+                                        <input id="checkbox" class="form-check-input  form-input-taxi" type="checkbox"
+                                               onclick="check()">
                                         <label class="form-check-label" for="checkbox"
                                                title="Достоверность и полноту настоящих сведений подтверждаю. Даю согласие на обработку персональных данных о себе в соответствии со статьей 9 Федерального закона от 27 июля 2006г. № 152 - ФЗ «О персональных данных для включенияв регистр получателей социальных услуг».">Заполняя
                                             форму, вы соглашаетесь с тем, что вся информация, предоставленная вами,
@@ -216,13 +270,10 @@
                                             г.</label>
                                     </div>
                                     <input type='submit' id="delButton" class="btn btn-dark btn-lg contact submit2"
-                                           disabled value='Отправить'>
-                                    <div class="result">
-                                        <span id="answer"></span>
-                                        <span id="loader" style="display:none"><img src="images/loader.gif"
-                                                                                    alt=""></span>
-                                    </div>
-                                </form>
+                                           disabled value='Отправить'
+                                           style="width: 300px; height: 60px; margin-top: 10px;margin-left: 27.5%">
+                               
+                </form>
                             </div>
                         </div>
                     </div>
@@ -289,7 +340,20 @@
         </footer>
     </div>
 </div>
-
+<script>
+    function check() {
+        var cb = document.getElementsByTagName('input'),
+            L = cb.length - 1,
+            f = true;
+        for (; L >= 0; L--) {
+            if (cb[L]['type'] == 'checkbox' && cb[L]['checked'] == true) {
+                f = !f;
+                break;
+            }
+        }
+        document.getElementById('delButton').disabled = f;
+    }
+</script>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="styles/bootstrap-4.1.2/popper.js"></script>
 <script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
