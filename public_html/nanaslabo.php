@@ -255,7 +255,7 @@
 
 													<?php
 														$time = $i < 10 ? "0{$i}:00:00" : "{$i}:00:00";
-														$date = date('Y-m-d', strtotime($value));
+														$date = date('d-m-Y', strtotime($value));
                                                         $date = $date.' '.$time;
                                                         $simple_date = date('d-m-Y', strtotime($value));
 														?>

@@ -12,7 +12,9 @@ $number = $_POST['number'];
 $datapas = $_POST['datapas'];
 $issuedby = $_POST['issuedby'];
 $actualadress = $_POST['actualadress'];
-$date = $_POST['date'];
+$date = explode(',',$_POST['date']);
+$min_date = min($date);
+$max_date = max($date);
 $regadress = $_POST['regadress'];
 
 
@@ -37,7 +39,7 @@ $mail->addAddress('osapolina9@gmail.com');     // Кому будет уходи
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заказ няни';
-$mail-> Body = 'ФИО: '.$fio. '<br/> Телефон: '  .$phone. '<br/>Паспорт серия номер: ' .$serial .$number. '<br/> Дата выдачи: ' .$datapas. '<br/> Кем выдан: ' .$issuedby.'<br/> Адрес регистрации: ' .$regadress. '<br/> Адрес фактического проживания: ' .$actualadress. '<br/> Дата и время: '.$date;
+$mail-> Body = 'ФИО: '.$fio. '<br/> Телефон: '  .$phone. '<br/>Паспорт серия номер: ' .$serial .$number. '<br/> Дата выдачи: ' .$datapas. '<br/> Кем выдан: ' .$issuedby.'<br/> Адрес регистрации: ' .$regadress. '<br/> Адрес фактического проживания: ' .$actualadress. '<br/> Дата и время: '.$min_date.' - '.$max_date;                                   
 $mail->AltBody = '';
 if(!$mail->send()) {
     echo 'Error';
