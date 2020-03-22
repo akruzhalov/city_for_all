@@ -98,7 +98,7 @@
                 <!-- Social -->
                 <div class="social header_social">
                     <ul class="d-flex flex-row align-items-center justify-content-start">
-                        <li><a href="naniaslabo.html" title="Версия для слабовидящих"><i class="fa fa-eye"
+                        <li><a href="nanaslabo.php" title="Версия для слабовидящих"><i class="fa fa-eye"
                                                                                          aria-hidden="true"></i></a>
                         </li>
                     </ul>
@@ -259,10 +259,11 @@
 													<?php
 														$time = $i < 10 ? "0{$i}:00:00" : "{$i}:00:00";
 														$date = date('Y-m-d', strtotime($value));
-														$date = $date.' '.$time;
+                                                        $date = $date.' '.$time;
+                                                        $simple_date = date('d-m-Y', strtotime($value));
 														?>
 
-														<td class="cell" data-date="<?php echo $date;?>"></td>
+														<td class="cell" data-date="<?php echo $date;?>" title="<?php echo $simple_date;?>"></td>
 
 	                                                <?php endfor;?>
 
@@ -365,16 +366,30 @@
 </footer>>
     </div>
 </div>
+<!-- Календарь -->
 <script>
 	"use strict";
-
+    var selected_dates=[];
 	const clickCell = (event) => {
-		let target = event.target;
+        let target = event.target;
 		let activeCell = document.querySelector('td.active');
 		let input = document.getElementById('record-date');
-		if(activeCell) activeCell.classList.remove('active');
-		target.classList.add('active');
-		input.value = target.getAttribute('data-date');
+        if(target.className=='cell active'){
+        target.classList.remove('active');
+        selected_dates.forEach(function(element){
+            if(element==','+target.getAttribute('data-date')){
+                selected_dates.splice(selected_dates.indexOf(element), 1)
+            }
+        });
+        }else{
+            target.classList.add('active');
+            selected_dates.push(','+target.getAttribute('data-date'));
+        }
+        console.log(selected_dates);
+        input.value=null;
+		selected_dates.forEach(function(element){
+            input.value+=element; 
+        })
 	};
 
 	let cells = document.getElementsByClassName('cell');
@@ -391,6 +406,7 @@
 		});
 	});*/
 </script>
+<!-- Согласие на обработку персональных данных -->
 <script>
     function check() {
         var cb = document.getElementsByTagName('input'),
@@ -419,3 +435,14 @@
 <script src="js/custom.js"></script>
 </body>
 </html>
+
+
+<!-- let menu = document.getElementsByClassName('nav navbar-nav menuu')[0];
+
+					function toggleMenu() {
+					if (menu.className === "nav navbar-nav menuu") {
+					menu.className += "-open";
+					} else {
+					menu.className = "nav navbar-nav menuu";
+					}
+					} -->
