@@ -35,9 +35,7 @@
     <div class="super_container">
 
         <!-- Header -->
-
         <header class="header">
-
 
             <div class="header_wrap d-flex flex-row align-items-center justify-content-center">
 
@@ -181,7 +179,7 @@
                     <div class="col-lg-8" style="margin: 0 auto">
                         <div class="about_content">
                             <div class="section_title_container">
-                                <form action="mail2.php" method="post">
+                                <form action="mail2.php" method="post" class="formm">
                                     <div class="form-group" style="width: 475px; float: left">
                                         <label for="fio">ФИО родителя(законного представителя):</label>
                                         <input name="fio" id="fio" class="form-control" required type="text"
@@ -196,40 +194,41 @@
                                     <div class="form-group" style="width: 150px; float: left">
                                         <label for="serial">Серия:</label>
                                         <input name="serial" id="serial" class="form-control" required type="text"
-                                               placeholder="1111" style="width: 100px; height: 50px;">
+                                               placeholder="1234" style="width: 100px; height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 325px; float: left">
                                         <label for="number">Номер:</label>
                                         <input name="number" id="number" class="form-control" required type="text"
-                                               placeholder="111111" style="width: 260px; height: 50px;">
+                                               placeholder="567890" style="width: 260px; height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 225px; float: left">
                                         <label for="issuedate">Дата выдачи:</label>
                                         <input name="datapas" id="issuedate" class="form-control" required type="text"
-                                               placeholder="12.12.2019" style="width: 225px; height: 50px;">
+                                               placeholder="12.12.2012" style="width: 225px; height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 700px; float: left">
                                         <label for="issuedby">Кем выдан:</label>
                                         <input name="issuedby" id="issuedby" class="form-control" required type="text"
-                                               placeholder="УФМС России по г. Москва" style="height: 50px;">
+                                               placeholder="отделом УФМС России по Ямало-ненецкому а.о в городе Муравленко" style="height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 700px; float: left">
                                         <label for="regadress">Адрес регистрации:</label>
                                         <input name="regadress" id="regadress" class="form-control" required type="text"
-                                               placeholder="УФМС России по г. Москва" style="height: 50px;">
+                                               placeholder="г. Муравленко ул. Дружбы народов, д. 58, кв. 12" style="height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 700px; float: left">
                                         <label for="actualadress">Адрес фактического проживания:</label>
                                         <input name="actualadress" id="actualadress" class="form-control" required
-                                               type="text" placeholder="УФМС России по г. Москва" style="height: 50px;">
+                                               type="text" placeholder="г. Муравленко ул. Дружбы народов, д. 58, кв. 12" style="height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 400px; float: left">
                                         <label for="phone">Телефон:</label>
                                         <input name="phone" id="phone" class="form-control" required type="text"
-                                               placeholder="+7 (___) 000-00-00" style="width: 300px; height: 50px;">
+                                               placeholder="+7 (999) 777-66-55" style="width: 300px; height: 50px;">
                                     </div>
                                     <input type="hidden" id="record-date" name="date">
                                     <div class="form-group" style="width: 900px; float: left">
+
 										<?php
 										$dates = [
 											'Понедельник' => 'Mon this week',
@@ -237,7 +236,8 @@
 											'Среда' => 'Wed this week',
 											'Четверг' => 'Thu this week',
 											'Пятница' => 'Fri this week',
-										];
+                                        ];
+                                        
 										?>
                                         <table class="table">
                                             <thead>
@@ -249,26 +249,27 @@
 												</tr>
                                             </thead>
                                             <tbody>
-											<?php foreach ($dates as $day => $value):?>
+                                            
+											<?php $j=0; foreach ($dates as $day => $value):?>
 
-                                                <tr>
-                                                    <td class="day"><?php echo $day;?></td>
+                                                <tr class="<?php if($day == 'Пятница') echo 'last_tr'; ?>">
+                                                    <td class="day" data-toggle="tooltip" data-placement="top" title="<?php echo date ("d.m", time() - ( $j + date("N")-1) * 24*60*60);?>" ><?php echo $day;?></td>
 
 	                                                <?php for($i = 8; $i <= 18; $i++):?>
 
 													<?php
 														$time = $i < 10 ? "0{$i}:00:00" : "{$i}:00:00";
 														$date = date('Y-m-d', strtotime($value));
-														$date = $date.' '.$time;
+                                                        $date = $date.' '.$time;
+                                                        
 														?>
 
-														<td class="cell" data-date="<?php echo $date;?>"></td>
+														<td class="cell <?php if ($i == 18)echo 'last_td'?>" data-date="<?php echo $date;?>"></td>
 
 	                                                <?php endfor;?>
-
+                                                    
                                                 </tr>
-
-											<?php endforeach;?>
+											<?php $j--;  endforeach;?>
                                             </tbody>
                                         </table>
 
@@ -293,78 +294,77 @@
         </div>
 
         <footer class="footer">
-    <div class="footer_content">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="footer_logo text-center"><a href="index.html"><img src="images/logo2.png" alt=""></a>
+            <div class="footer_content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="footer_logo text-center"><a href="index.html"><img src="images/logo2.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row footer_row">
+                        <div class="col-lg-3 footer_col">
+                            <div class="footer_item text-center">
+                                <div class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
+                                    <div><img src="images/phone.png" alt=""></div>
+                                </div>
+                                <div class="footer_title">Номера телефонов</div>
+                                <div class="footer_list">
+                                    <ul>
+                                        <li>+7 (34938) 29-205</li>
+                                        <li>+7 (34938) 29-205</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 footer_col">
+                            <div class="footer_item text-center">
+                                <div class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
+                                    <div><img src="images/mail.png" alt=""></div>
+                                </div>
+                                <div class="footer_title">e-mail</div>
+                                <div class="footer_list">
+                                    <ul>
+                                        <li>cso.muravlenko@dszn.yanao.ru</li>
+                                        <li>cso.muravlenko@dszn.yanao.ru</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 footer_col">
+                            <div class="footer_item text-center">
+                                <div class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
+                                    <div><img src="images/contact.png" alt=""></div>
+                                </div>
+                                <div class="footer_title">Наш офис</div>
+                                <div class="footer_list">
+                                    <ul>
+                                        <li>Город Муравленко, Дом 6, строение 3</li>
+                                        <li>Вход со двора</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 footer_col">
+                            <div class="footer_item text-center">
+                                <div class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
+                                    <div><img src="images/time.png" alt=""></div>
+                                </div>
+                                <div class="footer_title">Режим работы</div>
+                                <div class="footer_list">
+                                    <ul>
+                                        <li>Социального такси: 08:30-17:00</li>
+                                        <li>Волонтеров: 08:00-19:00</li>
+                                        <li>Няни: 08:00-18:00</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row footer_row">
-                <div class="col-lg-3 footer_col">
-                    <div class="footer_item text-center">
-                        <div class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
-                            <div><img src="images/phone.png" alt=""></div>
-                        </div>
-                        <div class="footer_title">Номера телефонов</div>
-                        <div class="footer_list">
-                            <ul>
-                                <li>+7 (34938) 29-205</li>
-                                <li>+7 (34938) 29-205</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 footer_col">
-                    <div class="footer_item text-center">
-                        <div class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
-                            <div><img src="images/mail.png" alt=""></div>
-                        </div>
-                        <div class="footer_title">e-mail</div>
-                        <div class="footer_list">
-                            <ul>
-                                <li>cso.muravlenko@dszn.yanao.ru</li>
-                                <li>cso.muravlenko@dszn.yanao.ru</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 footer_col">
-                    <div class="footer_item text-center">
-                        <div class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
-                            <div><img src="images/contact.png" alt=""></div>
-                        </div>
-                        <div class="footer_title">Наш офис</div>
-                        <div class="footer_list">
-                            <ul>
-                                <li>Город Муравленко, Дом 6, строение 3</li>
-                                <li>Вход со двора</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 footer_col">
-                    <div class="footer_item text-center">
-                        <div class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
-                            <div><img src="images/time.png" alt=""></div>
-                        </div>
-                        <div class="footer_title">Режим работы</div>
-                        <div class="footer_list">
-                            <ul>
-                                <li>Социального такси: 08:30-17:00</li>
-                                <li>Волонтеров: 08:00-19:00</li>
-                                <li>Няни: 08:00-18:00</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </footer>
     </div>
-</footer>>
-    </div>
-</div>
 <script>
 	"use strict";
 
