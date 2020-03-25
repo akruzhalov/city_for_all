@@ -55,6 +55,15 @@
     border: 3px solid green;
 }
 
+.cta_list .link{
+    transition: .4s;
+    text-decoration: underline;
+}
+
+.link:hover{
+    color: #05304d;
+}
+
 /* Click */
 .table td.active:after {
 	content: '';
@@ -1430,7 +1439,7 @@ section {
 .footer_content {
     padding-top: 99px;
     padding-bottom: 30px;
-    margin-top: 80px;
+    margin-top: 0px;
 }
 
 .footer_logo a {
