@@ -368,7 +368,7 @@ section
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 107%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -614,7 +614,7 @@ section
 .social ul li a i
 {
 	color: #ffffff;
-	font-size: 14px;
+	font-size: 50px;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
