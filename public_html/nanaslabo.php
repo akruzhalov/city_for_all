@@ -405,16 +405,16 @@
     }
 </script>
 <script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/TweenMax.min.js"></script>
-<script src="js/TimelineMax.min.js"></script>
-<script src="js/animation.gsap.min.js"></script>
-<script src="js/ScrollToPlugin.min.js"></script>
-<script src="js/owl.carousel.js"></script>
-<script src="js/easing.js"></script>
-<script src="js/progressbar.min.js"></script>
-<script src="js/parallax.min.js"></script>
+<script src="js/bootstrap-4.1.2/popper.js"></script>
+<script src="js/bootstrap-4.1.2/bootstrap.min.js"></script>
+<script src="js/greensock/TweenMax.min.js"></script>
+<script src="js/greensock/TimelineMax.min.js"></script>
+<script src="js/greensock/animation.gsap.min.js"></script>
+<script src="js/greensock/ScrollToPlugin.min.js"></script>
+<script src="js/OwlCarousel2-2.3.4/owl.carousel.js"></script>
+<script src="js/easing/easing.js"></script>
+<script src="js/progressbar/progressbar.min.js"></script>
+<script src="js/parallax-js-master/parallax.min.js"></script>
 <script src="js/custom.js"></script>
 </body>
 </html>
