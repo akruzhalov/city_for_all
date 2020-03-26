@@ -1502,3 +1502,12 @@ section {
     color: #ffffff;
     text-transform: uppercase;
 }
+.home_slider .owl-dots .owl-dot:first-child span::after {
+    content: '1';
+}
+.home_slider .owl-dots .owl-dot:nth-child(2) span::after {
+    content: '2';
+}
+.home_slider .owl-dots .owl-dot:nth-child(3) span::after {
+    content: '3';
+}
