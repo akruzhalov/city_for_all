@@ -13,6 +13,7 @@ $datapas = $_POST['datapas'];
 $issuedby = $_POST['issuedby'];
 $actualadress = $_POST['actualadress'];
 $date = explode(',',$_POST['date']);
+$date = array_diff($date, array('', NULL));
 $min_date = min($date);
 $max_date = max($date);
 $regadress = $_POST['regadress'];
