@@ -663,8 +663,7 @@ section {
     text-transform: uppercase;
 }
 
-.main_nav ul li a:hover,
-.main_nav ul li.active a {
+.main_nav ul li a:hover {
     color: #202020;
 }
 
