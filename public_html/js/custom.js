@@ -248,10 +248,4 @@ $(document).ready(function()
 			});
 		}
 	}
-	
-	function tooltip()
-	{
-		$('[data-toggle="tooltip"]').tooltip()
-	}
-
 });

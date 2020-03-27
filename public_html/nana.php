@@ -179,7 +179,7 @@
                     <div class="col-lg-8" style="margin: 0 auto">
                         <div class="about_content">
                             <div class="section_title_container">
-                                <form action="mail2.php" method="post" class="formm">
+                                <form action="mail2.php" method="post">
                                     <div class="form-group" style="width: 475px; float: left">
                                         <label for="fio">ФИО родителя(законного представителя):</label>
                                         <input name="fio" id="fio" class="form-control" required type="text"
@@ -209,17 +209,17 @@
                                     <div class="form-group" style="width: 700px; float: left">
                                         <label for="issuedby">Кем выдан:</label>
                                         <input name="issuedby" id="issuedby" class="form-control" required type="text"
-                                               placeholder="отделом УФМС России по Ямало-ненецкому а.о в городе Муравленко" style="height: 50px;">
+                                               placeholder="Отделом УФМС России по ЯНАО в г. Муравленко" style="height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 700px; float: left">
                                         <label for="regadress">Адрес регистрации:</label>
                                         <input name="regadress" id="regadress" class="form-control" required type="text"
-                                               placeholder="г. Муравленко ул. Дружбы народов, д. 58, кв. 12" style="height: 50px;">
+                                               placeholder="г. Муравленко, ул. Дружбы народов, д. 528, кв. 122" style="height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 700px; float: left">
                                         <label for="actualadress">Адрес фактического проживания:</label>
                                         <input name="actualadress" id="actualadress" class="form-control" required
-                                               type="text" placeholder="г. Муравленко ул. Дружбы народов, д. 58, кв. 12" style="height: 50px;">
+                                               type="text" placeholder="г. Муравленко, ул. Дружбы народов, д. 528, кв. 122" style="height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 400px; float: left">
                                         <label for="phone">Телефон:</label>
@@ -239,7 +239,7 @@
                                         ];
                                         
 										?>
-                                        <table class="table">
+                                        <table class="table_date">
                                             <thead>
 												<tr>
 													<th> </th>
@@ -252,19 +252,19 @@
                                             
 											<?php $j=0; foreach ($dates as $day => $value):?>
 
-                                                <tr class="<?php if($day == 'Пятница') echo 'last_tr'; ?>">
+                                                <tr>
                                                     <td class="day" data-toggle="tooltip" data-placement="top" title="<?php echo date ("d.m", time() - ( $j + date("N")-1) * 24*60*60);?>" ><?php echo $day;?></td>
 
 	                                                <?php for($i = 8; $i <= 18; $i++):?>
 
 													<?php
-														$time = $i < 10 ? "0{$i}:00:00" : "{$i}:00:00";
+														$time = $i < 10 ? "0{$i}:00" : "{$i}:00";
 														$date = date('Y-m-d', strtotime($value));
                                                         $date = $date.' '.$time;
                                                         
 														?>
 
-														<td class="cell <?php if ($i == 18)echo 'last_td'?>" data-date="<?php echo $date;?>"></td>
+														<td class="cell" data-toggle="tooltip" data-placement="top" title="<?php echo date ("d.m", time() - ( $j + date("N")-1) * 24*60*60).' '.$time;?>"  data-date="<?php echo $date;?>"></td>
 
 	                                                <?php endfor;?>
                                                     
