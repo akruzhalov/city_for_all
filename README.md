@@ -12,8 +12,10 @@
     - предоставлении социального такси;
     - услуги сиделки, няни.
 
-# Текущая версия сайта доступна по ссылке: https://cityforall.000webhostapp.com/
-# Landing page : http://pd-2020-1.std-821.ist.mospolytech.ru/
+# Текущая версия сайта доступна по ссылке: 
+https://cityforall.000webhostapp.com/
+# Landing page : 
+http://pd-2020-1.std-821.ist.mospolytech.ru/
 
 
 
