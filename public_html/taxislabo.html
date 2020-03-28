@@ -27,7 +27,7 @@
     <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/animate.css">
     <link rel="stylesheet" type="text/css" href="styles/main_styleseye.css">
-    <link rel="stylesheet" type="text/css" href="styles/responsive.css">\
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css">
 
 
     
@@ -165,24 +165,33 @@
                             <div class="section_title_container">
 
                                 <form action="mail.php" method="POST">
-                                    <div class="form-group" style="width: 700px; float: left">
-                                        <label for="fio" style=" font-size: 250%">ФИО:</label>
+                                    <div class="form-group" style="width: 700px; float: left; ">
+                                        <div class="form-group1" >
+                                        <label for="fio">ФИО:</label>
+                                    </div>
                                         <input name="fio" id="fio" class="form-control f-taxi" required type="text"
-                                               placeholder="Иванов Иван Иванович" style="font-size: 150%; height: 100px;">
+                                               placeholder="Иванов Иван Иванович" style="font-size: 150%; height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 700px; float: left">
-                                        <label for="from" style=" font-size: 250%">Дата рождения:</label>
+                                        <div class="form-group1" >
+                                        <label for="from">Дата рождения:</label>
+                                    </div>
                                         <input name="from" id="from" class="form-control f-taxi" required type="text"
-                                               placeholder="01.01.1950" style="font-size: 150%; height: 100px;">
+                                               placeholder="01.01.1950" style="font-size: 150%; height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 400px; float: left">
-                                        <label for="phone" style=" font-size: 250%; width: 100%; float: left">Ваш телефон:</label>
-                                        <input name="phone" id="phone" class="form-control f-taxi" required type="text"
-                                               placeholder="+7 (800) 000-00-00" style="font-size: 150%; width: 350px;height: 100px; padding: 12px;">
+                                        <div class="form-group1" >
+                                        <label for="phone">Ваш телефон:</label>
                                     </div>
+                                        <input name="phone" id="phone" class="form-control f-taxi" required type="text"
+                                               placeholder="+7 (800) 000-00-00" style="font-size: 150%; width: 350px;height: 50px; padding: 12px;">
+                                    </div>
+                                    
                                     <div class="form-group" style="width: 300px; float: left">
-                                        <label for="time" style=" font-size: 250%; width: 100%; float: left">Категория:</label>
-                                        <select id="time" name="select" class="form-control" style="font-size: 150%;width: 300px;height: 100px; padding: 12px;">
+                                        <div class="form-group1" >
+                                        <label for="time">Категория:</label>
+                                    </div>
+                                        <select id="time" name="select" class="form-control" style="font-size: 150%;width: 300px;height: 50px; padding: 12px;">
                                             <option value="Инвалид">Инвалид</option>
                                             <option value="Гражданин пожилого возраста">Гражданин пожилого возраста</option>
                                         </select>
@@ -190,7 +199,7 @@
                                     
                                     <div class="form-group form-check"
                                          style="width:700px;float: left; padding-left: 0; margin-top: 10px">
-                                        <input id="checkbox" class="big-checkbox" type="checkbox"
+                                        <input id="checkbox" class="checkbox" type="checkbox"
                                                onclick="check()">
                                         <label style="font-size: 25px; font-weight: normal; line-height: 20px" class="form-check-label" for="checkbox"
                                                title="Достоверность и полноту настоящих сведений подтверждаю. Даю согласие на обработку персональных данных о себе в соответствии со статьей 9 Федерального закона от 27 июля 2006г. № 152 - ФЗ «О персональных данных для включенияв регистр получателей социальных услуг».">Даю согласие на обработку персональных данных</label>

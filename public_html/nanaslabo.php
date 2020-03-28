@@ -58,7 +58,7 @@
                 <!-- Social -->
                 <div class="social header_social">
                     <ul class="d-flex flex-row align-items-center justify-content-start">
-                        <li><a href="nana.php" title="Обычная версия"><i class="fa fa-eye"
+                        <li><a href="nana.html" title="Обычная версия"><i class="fa fa-eye"
                                                                                          aria-hidden="true"></i></a>
                         </li>
                     </ul>
@@ -95,7 +95,7 @@
                 <!-- Social -->
                 <div class="social header_social">
                     <ul class="d-flex flex-row align-items-center justify-content-start">
-                        <li><a href="nana.html" title="Обычная версия"><i class="fa fa-eye"
+                        <li><a href="nana.php" title="Обычная версия"><i class="fa fa-eye"
                                                                                          aria-hidden="true"></i></a>
                         </li>
                     </ul>
@@ -130,7 +130,7 @@
                 </div>
                 <div class="social menu_social">
                     <ul class="d-flex flex-row align-items-center justify-content-start">
-                        <li><a href="index.html" title="Обычная версия"><i class="fa fa-eye"
+                        <li><a href="nana.php" title="Обычная версия"><i class="fa fa-eye"
                                                                                     aria-hidden="true"></i></a></li>
                     </ul>
                 </div>
@@ -179,49 +179,67 @@
                         <div class="about_content">
                             <div class="section_title_container">
                                 <form action="mail2.php" method="post">
-                                    <div class="form-group" style="width: 475px; float: left">
+                                    <div class="form-group" style="width: 475px; float: left;">
+                                        <div class="form-group2" >
                                         <label for="fio">ФИО родителя(законного представителя):</label>
+                                    </div>
                                         <input name="fio" id="fio" class="form-control" required type="text"
                                                placeholder="Иванов Иван Иванович" style="width: 400px; height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 225px; float: left">
+                                        <div class="form-group1" >
                                         <label for="birthdate">Дата рождения:</label>
+                                    </div>
                                         <input name="birthdate" id="birthdate" class="form-control" required type="text"
                                                placeholder="06.11.1994" style="width: 225px; height: 50px;">
                                     </div>
                                     <label style="font-size: 26px; margin: 35px 0 35px; width: 700px">Данные паспорта</label>
                                     <div class="form-group" style="width: 150px; float: left">
+                                        <div class="form-group1" >
                                         <label for="serial">Серия:</label>
+                                    </div>
                                         <input name="serial" id="serial" class="form-control" required type="text"
                                                placeholder="1111" style="width: 100px; height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 325px; float: left">
+                                        <div class="form-group1" >
                                         <label for="number">Номер:</label>
+                                    </div>
                                         <input name="number" id="number" class="form-control" required type="text"
                                                placeholder="111111" style="width: 260px; height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 225px; float: left">
+                                        <div class="form-group1" >
                                         <label for="issuedate">Дата выдачи:</label>
+                                    </div>
                                         <input name="datapas" id="issuedate" class="form-control" required type="text"
                                                placeholder="12.12.2019" style="width: 225px; height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 700px; float: left">
+                                        <div class="form-group1" >
                                         <label for="issuedby">Кем выдан:</label>
+                                    </div>
                                         <input name="issuedby" id="issuedby" class="form-control" required type="text"
                                                placeholder="УФМС России по г. Москва" style="height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 700px; float: left">
+                                        <div class="form-group1" >
                                         <label for="regadress">Адрес регистрации:</label>
+                                    </div>
                                         <input name="regadress" id="regadress" class="form-control" required type="text"
                                                placeholder="УФМС России по г. Москва" style="height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 700px; float: left">
+                                        <div class="form-group1" >
                                         <label for="actualadress">Адрес фактического проживания:</label>
+                                    </div>
                                         <input name="actualadress" id="actualadress" class="form-control" required
                                                type="text" placeholder="УФМС России по г. Москва" style="height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 400px; float: left">
+                                        <div class="form-group1" >
                                         <label for="phone">Телефон:</label>
+                                    </div>
                                         <input name="phone" id="phone" class="form-control" required type="text"
                                                placeholder="+7 (___) 000-00-00" style="width: 300px; height: 50px;">
                                     </div>
