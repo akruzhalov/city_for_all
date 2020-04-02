@@ -258,9 +258,9 @@
 
 													<?php
 														$time = $i < 10 ? "0{$i}:00:00" : "{$i}:00:00";
-														$date = date('d-m-Y', strtotime($value));
+														$date = date('d.m.Y', strtotime($value));
                                                         $date = $date.' '.$time;
-                                                        $simple_date = date('d-m-Y', strtotime($value));
+                                                        $simple_date = date('d.m.Y', strtotime($value));
 														?>
 
 														<td class="cell" data-date="<?php echo $date;?>" title="<?php echo $simple_date;?>"></td>
