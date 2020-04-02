@@ -21,11 +21,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Gorod dlya vseh">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
-    <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/owl.theme.default.css">
-    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.3.4/animate.css">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+    <link href="styles/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="styles/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="styles/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="styles/animate.css">
     <link rel="stylesheet" type="text/css" href="styles/main_styleseye.css">
     <link rel="stylesheet" type="text/css" href="styles/responsive.css">
 </head>
@@ -95,7 +95,7 @@
                 <!-- Social -->
                 <div class="social header_social">
                     <ul class="d-flex flex-row align-items-center justify-content-start">
-                        <li><a href="nana.html" title="Обычная версия"><i class="fa fa-eye"
+                        <li><a href="nana.php" title="Обычная версия"><i class="fa fa-eye"
                                                                                          aria-hidden="true"></i></a>
                         </li>
                     </ul>
@@ -255,11 +255,12 @@
 
 													<?php
 														$time = $i < 10 ? "0{$i}:00:00" : "{$i}:00:00";
-														$date = date('Y-m-d', strtotime($value));
-														$date = $date.' '.$time;
+														$date = date('d.m.Y', strtotime($value));
+                                                        $date = $date.' '.$time;
+                                                        $simple_date = date('d.m.Y', strtotime($value));
 														?>
 
-														<td class="cell" data-date="<?php echo $date;?>"></td>
+                                                        <td class="cell" data-date="<?php echo $date;?>" title="<?php echo $simple_date;?>"></td>
 
 	                                                <?php endfor;?>
 
@@ -364,57 +365,18 @@
         </footer>
     </div>
 </div>
-<script>
-	"use strict";
-
-	const clickCell = (event) => {
-		let target = event.target;
-		let activeCell = document.querySelector('td.active');
-		let input = document.getElementById('record-date');
-		if(activeCell) activeCell.classList.remove('active');
-		target.classList.add('active');
-		input.value = target.getAttribute('data-date');
-	};
-
-	let cells = document.getElementsByClassName('cell');
-
-	for(let i = 0; i < cells.length; i++){
-		cells[i].addEventListener('click', clickCell);
-	}
-
-	/*$(document).ready(function(){
-		$('.table th, .table td').click(function(){
-			if($(this).hasClass('selected')) return false;
-			$('.table td').removeClass('active');
-			$(this).addClass('active');
-		});
-	});*/
-</script>
-<script>
-    function check() {
-        var cb = document.getElementsByTagName('input'),
-            L = cb.length - 1,
-            f = true;
-        for (; L >= 0; L--) {
-            if (cb[L]['type'] == 'checkbox' && cb[L]['checked'] == true) {
-                f = !f;
-                break;
-            }
-        }
-        document.getElementById('delButton').disabled = f;
-    }
-</script>
+<script src="js/nana.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
-<script src="styles/bootstrap-4.1.2/popper.js"></script>
-<script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
-<script src="plugins/greensock/TweenMax.min.js"></script>
-<script src="plugins/greensock/TimelineMax.min.js"></script>
-<script src="plugins/greensock/animation.gsap.min.js"></script>
-<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
-<script src="plugins/OwlCarousel2-2.3.4/owl.carousel.js"></script>
-<script src="plugins/easing/easing.js"></script>
-<script src="plugins/progressbar/progressbar.min.js"></script>
-<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/TimelineMax.min.js"></script>
+<script src="js/animation.gsap.min.js"></script>
+<script src="js/ScrollToPlugin.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/easing.js"></script>
+<script src="js/progressbar.min.js"></script>
+<script src="js/parallax.min.js"></script>
 <script src="js/custom.js"></script>
 </body>
 </html>
