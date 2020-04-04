@@ -152,7 +152,8 @@
 	}
 	.home_title h1
 	{
-		font-size: 56px;
+		font-size: 48px;
+		letter-spacing: 0.05em;
 	}
 	.header_wrap
 	{
@@ -286,7 +287,8 @@
 	}
 	.home_title h1
 	{
-		font-size: 48px;
+		font-size: 36px;
+		letter-spacing: normal;
 	}
 	.button,
 	.button_2
@@ -359,5 +361,20 @@
 
 @media only screen and (max-width: 400px)
 {
-	
+	.home_title h1
+	{
+		font-size: 30px;
+	}
+}
+
+/************
+14. 320px
+************/
+
+@media only screen and (max-width: 325px)
+{
+	.home_title h1
+	{
+		font-size: 28px;
+	}
 }
