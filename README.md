@@ -17,6 +17,8 @@
 [landing page](http://pd-2020-1.std-821.ist.mospolytech.ru/).
 
 
+[Критерии выставления оценок от куратора](https://docs.google.com/spreadsheets/d/1N0M0Mqp96JURBt9jojspKhzYx0ZfLEyf7GmsQJ5eB3k/edit#gid=1796042566)
+
 
 ## Участники 
 
