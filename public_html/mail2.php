@@ -37,7 +37,7 @@ $mail->addAddress('osapolina9@gmail.com');     // Кому будет уходи
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заказ няни';
-$mail-> Body = '<table border="1"><tr><td> ФИО:</td><td>' .$fio. '</td></tr><tr><td>Телефон:</td><td>'  .$phone. '</td></tr><tr><td>Паспорт серия номер:</td><td>' .$serial .$number. '</td><tr/><tr><td>Дата выдачи:</td><td>' .$datapas. '</td></tr><tr><td>Кем выдан:</td><td>' .$issuedby.'</td></tr><tr><td>Адрес регистрации:</td><td>' .$regadress. '</td></tr><tr><td>Адрес фактического проживания:</td><td>' .$actualadress. '</td></tr><tr><td>Дата и время:</td><td>' .$date. '</td</tr></table>';
+$mail-> Body = '<table style="border-collapse: collapse;" border="1"><tr><td> ФИО:</td><td>' .$fio. '</td></tr><tr><td>Телефон:</td><td>'  .$phone. '</td></tr><tr><td>Паспорт серия номер:</td><td>' .$serial .$number. '</td><tr/><tr><td>Дата выдачи:</td><td>' .$datapas. '</td></tr><tr><td>Кем выдан:</td><td>' .$issuedby.'</td></tr><tr><td>Адрес регистрации:</td><td>' .$regadress. '</td></tr><tr><td>Адрес фактического проживания:</td><td>' .$actualadress. '</td></tr><tr><td>Дата и время:</td><td>' .$date. '</td</tr></table>';
 $mail->AltBody = '';
 if(!$mail->send()) {
     echo 'Error';
