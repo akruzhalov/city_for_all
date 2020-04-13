@@ -31,6 +31,7 @@
     <link rel="stylesheet" type="text/css" href="styles/jquery.datetimepicker.css"/>
     <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/jquery.datetimepicker.js"></script>
+    
 
 </head>
 <body>
