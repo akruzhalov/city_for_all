@@ -28,7 +28,10 @@
     <link rel="stylesheet" type="text/css" href="styles/animate.css">
     <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
     <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <link rel="stylesheet" type="text/css" href="styles/jquery.datetimepicker.css"/>
     <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/jquery.datetimepicker.js"></script>
+
 </head>
 <body>
 <div class="header_wrap d-flex flex-row align-items-center justify-content-center">
@@ -228,49 +231,19 @@
                                         <input name="phone" id="phone" class="form-control" required type="text"
                                                placeholder="+7 (___) 000-00-00" style="width: 300px; height: 50px;">
                                     </div>
-                                    <input type="hidden" id="record-date" name="date">
-                                    <div class="form-group" style="width: 900px; float: left">
-										<?php
-										$dates = [
-											'Понедельник' => 'Mon this week',
-											'Вторник' => 'Tue this week',
-											'Среда' => 'Wed this week',
-											'Четверг' => 'Thu this week',
-											'Пятница' => 'Fri this week',
-										];
-										?>
-                                        <table class="table">
-                                            <thead>
-												<tr>
-													<th> </th>
-													<?php for($i = 8; $i <= 18; $i++):?>
-														<th><?php echo $i < 10 ? "0{$i}:00" : "{$i}:00";?></th>
-													<?php endfor;?>
-												</tr>
-                                            </thead>
-                                            <tbody>
-											<?php foreach ($dates as $day => $value):?>
 
-                                                <tr>
-                                                    <td class="day"><?php echo $day;?></td>
+                                    <div class="form-group" style="width: 900px; float:left">
 
-	                                                <?php for($i = 8; $i <= 18; $i++):?>
-
-													<?php
-														$time = $i < 10 ? "0{$i}:00:00" : "{$i}:00:00";
-														$date = date('Y-m-d', strtotime($value));
-														$date = $date.' '.$time;
-														?>
-
-														<td class="cell" data-date="<?php echo $date;?>"></td>
-
-	                                                <?php endfor;?>
-
-                                                </tr>
-
-											<?php endforeach;?>
-                                            </tbody>
-                                        </table>
+                                    <label for="datetimepicker1">Выберите время и дату:</label>
+                                    <br>
+                                    <input type="text" id="record-date" name="date"/>
+                                    <script>
+                                        jQuery('#record-date').datetimepicker({
+                                            formatDate:'d.m.Y',
+                                            format:'d.m.Y H:i',
+                                            inline:true
+                                        });
+                                    </script>
 
                                     </div>
                                     <div class="form-group form-check"
