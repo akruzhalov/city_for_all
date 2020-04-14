@@ -1,9 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta name="keywords" content="Город, для, всех, волонтеры, ограниченные, люди, возможности, такси, социальный, магазин, аптека, гуманитраная, помощь,
 				уборка, обслуживание, инвалид, бесплатно, оказание, покупка, продуктов,  ">
-
     <meta name="description" content="Данный сайт предназначен для маломобильных граждан – жителей города:
 				-пожилого возраста;
 				- инвалидов;
@@ -310,8 +310,7 @@
                         <div class="footer_title">Номер телефона</div>
                         <div class="footer_list">
                             <ul>
-                                <li><a href="">+7 (34938) 29-205</a></li>
-                                <li><a href="">+7 (34938) 29-205</a></li>
+                                <li><a href="tel:+7 (34938) 29 205">+7 (34938) 29-205</a></li>
                             </ul>
                         </div>
                     </div>
@@ -324,8 +323,7 @@
                         <div class="footer_title">e-mail</div>
                         <div class="footer_list">
                             <ul>
-                                <li><a href="">cso.muravlenko@dszn.yanao.ru</a></li>
-                                <li><a href="">cso.muravlenko@dszn.yanao.ru</a></li>
+                                <li><a href="mailto:cso.muravlenko@dszn.yanao.ru">cso.muravlenko@dszn.yanao.ru</a></li>
                             </ul>
                         </div>
                     </div>
