@@ -95,7 +95,7 @@
                 <!-- Social -->
                 <div class="social header_social">
                     <ul class="d-flex flex-row align-items-center justify-content-start">
-                        <li><a href="nana.html" title="Обычная версия"><i class="fa fa-eye"
+                        <li><a href="nana.php" title="Обычная версия"><i class="fa fa-eye"
                                                                                          aria-hidden="true"></i></a>
                         </li>
                     </ul>
@@ -255,11 +255,12 @@
 
 													<?php
 														$time = $i < 10 ? "0{$i}:00:00" : "{$i}:00:00";
-														$date = date('Y-m-d', strtotime($value));
-														$date = $date.' '.$time;
+														$date = date('d.m.Y', strtotime($value));
+                                                        $date = $date.' '.$time;
+                                                        $simple_date = date('d.m.Y', strtotime($value));
 														?>
 
-														<td class="cell" data-date="<?php echo $date;?>"></td>
+                                                        <td class="cell" data-date="<?php echo $date;?>" title="<?php echo $simple_date;?>"></td>
 
 	                                                <?php endfor;?>
 
@@ -364,46 +365,7 @@
         </footer>
     </div>
 </div>
-<script>
-	"use strict";
-
-	const clickCell = (event) => {
-		let target = event.target;
-		let activeCell = document.querySelector('td.active');
-		let input = document.getElementById('record-date');
-		if(activeCell) activeCell.classList.remove('active');
-		target.classList.add('active');
-		input.value = target.getAttribute('data-date');
-	};
-
-	let cells = document.getElementsByClassName('cell');
-
-	for(let i = 0; i < cells.length; i++){
-		cells[i].addEventListener('click', clickCell);
-	}
-
-	/*$(document).ready(function(){
-		$('.table th, .table td').click(function(){
-			if($(this).hasClass('selected')) return false;
-			$('.table td').removeClass('active');
-			$(this).addClass('active');
-		});
-	});*/
-</script>
-<script>
-    function check() {
-        var cb = document.getElementsByTagName('input'),
-            L = cb.length - 1,
-            f = true;
-        for (; L >= 0; L--) {
-            if (cb[L]['type'] == 'checkbox' && cb[L]['checked'] == true) {
-                f = !f;
-                break;
-            }
-        }
-        document.getElementById('delButton').disabled = f;
-    }
-</script>
+<script src="js/nana.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap-4.1.2/popper.js"></script>
 <script src="js/bootstrap-4.1.2/bootstrap.min.js"></script>
