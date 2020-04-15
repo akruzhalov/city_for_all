@@ -216,7 +216,7 @@
                                     <div class="form-group" style="width: 700px; float: left">
                                         <label for="regadress">Адрес регистрации:</label>
                                         <input name="regadress" id="regadress" class="form-control" required type="text"
-                                               placeholder="г. Муравленко, ул. Дружбы народов, д. 528, кв. 122" style="height: 50px;">
+                                               placeholder="г. Муравленко, ул. Дружбы народов, д. 52, кв. 62" style="height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 700px; float: left">
                                         <label for="actualadress">Адрес фактического проживания:</label>
