@@ -1,6 +1,10 @@
 <?php 
 
 require_once('phpmailer/PHPMailerAutoload.php');
+
+$file = yaml_parse_file('mail.yml');
+
+
 $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 

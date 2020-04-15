@@ -1,0 +1,15 @@
+{
+  "name": "vendor_name/styles",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Ekaterina",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    
+  }
+}
