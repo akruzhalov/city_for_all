@@ -2,7 +2,18 @@
 
 require_once('phpmailer/PHPMailerAutoload.php');
 
-$file = yaml_parse_file('mail.yml');
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+Use Symfony\Component\Yaml\Parser;
+Use Symfony\Component\Yaml\Exception\ParseExsception;
+/*try{
+    $yaml=new Parser;
+    $mail= $yaml->parse(file_get_contents(__DIR__ . 'mail.php'));
+
+    //$file = yaml_parse_file('mail.yml');
+}*/
+
 
 
 $mail = new PHPMailer;

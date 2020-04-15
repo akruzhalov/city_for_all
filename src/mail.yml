@@ -10,6 +10,3 @@ mail:
    mail:
     smtp:
       auth: true
-      starttls:
-      enable: true
-      protocol: smtp
