@@ -292,7 +292,7 @@
             </div>
         </div>
 
-        <footer class="footer">
+<footer class="footer">
     <div class="footer_content">
         <div class="container">
             <div class="row">
@@ -362,9 +362,7 @@
             </div>
         </div>
     </div>
-</footer>>
-    </div>
-</div>
+</footer>
 <script>
 	"use strict";
 
