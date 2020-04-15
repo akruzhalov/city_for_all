@@ -27,12 +27,12 @@
 /*********************************
 2. Body and some general stuff
 *********************************/
-.table {
+.table-date {
 	border-collapse: collapse;
 	border-spacing: 0;
 	width: 100%;
 }
-.table th, .table td {
+.table-date th, .table-date td {
 	border: 1px solid #fff;
 	padding: 10px;
 	text-align: center;
@@ -40,12 +40,26 @@
 	position: relative;
 	cursor: pointer;
 }
-.table th {
+.table-date th {
     background-color: #74bae6;
     color: #FAFAFA;
 }
+.table-date tr {
+    border-bottom: 4px solid #dee2e6;
+}
+.table-date td {
+    border-right: 4px solid #dee2e6;
+    
+}
+.table-date tr:last-child {
+    border: none!important;
+}
+.table-date td:last-child {
+    border: none!important;
+}
+
 /* Hover */
-.table td:hover:after {
+.table-date td:hover:after {
 	content: '';
 	position: absolute;
 	top: 0px;
@@ -65,7 +79,7 @@
 }
 
 /* Click */
-.table td.active:after {
+.table-date td.active:after {
 	content: '';
 	position: absolute;
 	top: 0px;
@@ -212,7 +226,6 @@ h3 {
 
 h4 {
     font-size: 18px;
-}
 
 h5 {
     font-size: 14px;
