@@ -249,7 +249,6 @@
 												</tr>
                                             </thead>
                                             <tbody>
-                                            
 											<?php $j=0; foreach ($dates as $day => $value):?>
 
                                                 <tr>
