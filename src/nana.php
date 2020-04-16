@@ -39,7 +39,7 @@
         <header class="header">
 
 
-            <div class="header_wrap d-flex flex-row align-items-center justify-content-center">
+            <div class="header_wrap d-flex flex-row align-items-center justify-content-around">
 
                 <!-- Logo -->
                 <div class="logo"><a href="index.html"><img src="images/logo2.png" alt=""></a></div>

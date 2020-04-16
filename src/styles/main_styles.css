@@ -760,8 +760,8 @@ section {
 
 .menu_close {
     position: absolute;
-    top: 60px;
-    right: 60px;
+    top: 30px;
+    right: 30px;
     font-size: 12px;
     font-weight: 700;
     color: #ffffff;
@@ -795,16 +795,6 @@ section {
     color: #2E2EFE;
 }
 
-.menu_social {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
 
 /*********************************
 5. Home
