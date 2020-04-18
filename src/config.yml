@@ -1,0 +1,6 @@
+smtp:
+  host: 'smtp.mail.ru'
+  username: 'osapolina9@mail.ru'
+  password: 'abumed00'
+  SMTPSecure: 'ssl'
+  Port: 465
