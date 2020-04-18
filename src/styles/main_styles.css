@@ -636,46 +636,25 @@ section {
     height: 100%;
 }
 
-.logo {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    left: 60px;
-}
 
 .logo img {
     width: 80%;
     height: auto;
 }
 
-.main_nav ul li:not(:last-of-type) {
-    margin-right: 52px;
+.main_nav ul li {
+    margin: 0px 10px;
 }
-
 .main_nav ul li a {
     font-size: 16px;
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
+
 }
 
 .main_nav ul li a:hover {
     color: #202020;
-}
-
-.header_social {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-    right: 100px;
 }
 
 .social ul li {
@@ -781,8 +760,8 @@ section {
 
 .menu_close {
     position: absolute;
-    top: 60px;
-    right: 60px;
+    top: 30px;
+    right: 30px;
     font-size: 12px;
     font-weight: 700;
     color: #ffffff;
@@ -816,16 +795,6 @@ section {
     color: #2E2EFE;
 }
 
-.menu_social {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
 
 /*********************************
 5. Home
