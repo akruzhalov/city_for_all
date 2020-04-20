@@ -154,6 +154,9 @@
 	{
 		font-size: 56px;
 	}
+	@media screen and (max-width: 980px) {
+		.home_title {font-size: 35px;}
+	}
 	.header_wrap
 	{
 		padding-right: 25px;

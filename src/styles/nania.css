@@ -58,12 +58,6 @@ h12
     left: 500px;
    top: 1000px;
 }
-@media screen and (max-width: 980px) {
-
-	.form-group{
-		width: 350px;
-	}
-}
 .vremia
 {
 

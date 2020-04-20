@@ -185,7 +185,9 @@
                                     <div class="form-group" style="width: 475px; float: left">
                                         <label for="fio">ФИО родителя(законного представителя):</label>
                                         <input name="fio" id="fio" class="form-control" required type="text"
-                                               placeholder="Иванов Иван Иванович" style="width: 400px; height: 50px;">
+                                               placeholder="Иванов Иван Иванович" style="width: 60vw;
+                                                     min-width: 280px;
+                                                     max-width: 400px; height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 225px; float: left">
                                         <label for="birthdate">Дата рождения:</label>
@@ -211,17 +213,23 @@
                                     <div class="form-group" style="width: 700px; float: left">
                                         <label for="issuedby">Кем выдан:</label>
                                         <input name="issuedby" id="issuedby" class="form-control" required type="text"
-                                               placeholder="УФМС России по г. Москва" style="height: 50px;">
+                                               placeholder="УФМС России по г. Москва" style=" width: 60vw;
+                                             min-width: 280px;
+                                              max-width: 700px;height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 700px; float: left">
                                         <label for="regadress">Адрес регистрации:</label>
                                         <input name="regadress" id="regadress" class="form-control" required type="text"
-                                               placeholder="УФМС России по г. Москва" style="height: 50px;">
+                                               placeholder="УФМС России по г. Москва" style=" width: 60vw;
+                                                   min-width: 280px;
+                                                     max-width: 700px;height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 700px; float: left">
                                         <label for="actualadress">Адрес фактического проживания:</label>
                                         <input name="actualadress" id="actualadress" class="form-control" required
-                                               type="text" placeholder="УФМС России по г. Москва" style="height: 50px;">
+                                               type="text" placeholder="УФМС России по г. Москва" style=" width: 60vw;
+                                             min-width: 280px;
+                                             max-width: 700px;height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 400px; float: left">
                                         <label for="phone">Телефон:</label>
