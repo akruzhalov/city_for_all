@@ -35,8 +35,11 @@
 		}
 	}
 }
+.single-product-holder{
+	padding: 30px 15px 0 15px !important;
+}
 .single-product {
-	margin-top: 30px;
+	height: 100%;
 	background: $white;
 	border-bottom: 2px solid $primary-color;
 	padding: 70px 20px;
