@@ -31,7 +31,6 @@
     <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
-<div class="header_wrap d-flex flex-row align-items-center justify-content-center" style="padding-right: 0px">
     <div class="super_container">
 
         <!-- Header -->
@@ -364,7 +363,6 @@
     </div>
 </footer>>
     </div>
-</div>
 <script>
 	"use strict";
 
