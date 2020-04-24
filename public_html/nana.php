@@ -61,7 +61,7 @@
                 <!-- Social -->
                 <div class="social header_social">
                     <ul class="d-flex flex-row align-items-center justify-content-start">
-                        <li><a href="nanaslabo.html" title="Версия для слабовидящих"><i class="fa fa-eye"
+                        <li><a href="nanaslabo.php" title="Версия для слабовидящих"><i class="fa fa-eye"
                                                                                          aria-hidden="true"></i></a>
                         </li>
                     </ul>

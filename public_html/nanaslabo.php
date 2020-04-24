@@ -58,7 +58,7 @@
                 <!-- Social -->
                 <div class="social header_social">
                     <ul class="d-flex flex-row align-items-center justify-content-start">
-                        <li><a href="nana.html" title="Обычная версия"><i class="fa fa-eye"
+                        <li><a href="nana.php" title="Обычная версия"><i class="fa fa-eye"
                                                                                          aria-hidden="true"></i></a>
                         </li>
                     </ul>
