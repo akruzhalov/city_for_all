@@ -152,11 +152,9 @@
 	}
 	.home_title h1
 	{
-		font-size: 56px;
+		font-size: 40px;
 	}
-	@media screen and (max-width: 980px) {
-		.home_title {font-size: 35px;}
-	}
+	
 	.header_wrap
 	{
 		padding-right: 25px;
@@ -263,6 +261,7 @@
 	h1
 	{
 		font-size: 36px;
+		letter-spacing: 1px;
 	}
 	.header
 	{
