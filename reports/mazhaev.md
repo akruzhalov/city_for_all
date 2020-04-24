@@ -1,0 +1,7 @@
+# Индивидуальный план работы Мажаев В.С.
+
+| № | Номер задачи (CARD NUMBER) | Название задачи | Оценка трудоёмкости (в часах) | Дата начала работы | Дата сдачи | Ссылка на Pull Request | Комментарий |
+|---|---|---|---|---|---|---|---|
+| 1 | 1 | [Подготовить репозиторий проекта](https://trello.com/c/xAqOn3qd/1-%D0%BF%D0%BE%D0%B4%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%B8%D1%82%D1%8C-%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0) | 1 | 24.03.2020 | 24.03.2020 |   |   |
+| 2 | 40 | [Исправить верстку главной страницы](https://trello.com/c/3pML9xfC/40-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-%D0%B2%D1%91%D1%80%D1%81%D1%82%D0%BA%D1%83-%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B) |  2 | 25.03.2020 | 27.03.2020 | [[CFA 40] Changed duplicate info, numbering on slider, font size, added hover styles, removed buttons](https://github.com/akruzhalov/city_for_all/pull/12) |   |
+| 3 | 40 | [Подготовить репозиторий проекта](https://trello.com/c/3pML9xfC/40-%D0%B8%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%B8%D1%82%D1%8C-%D0%B2%D1%91%D1%80%D1%81%D1%82%D0%BA%D1%83-%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B) |  1 | 27.03.2020 | 27.03.2020 | [[CFA 40] Changed duplicate info, numbering on slider, font size, added hover styles, removed buttons](https://github.com/akruzhalov/city_for_all/pull/12) | Разбор ошибок и коммуникация |
