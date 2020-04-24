@@ -802,9 +802,6 @@ td, th {
   transition: all 0.3s ease 0s;
 }
 
-/************************/
-/* structure de la page */
-/************************/
 .list {
   list-style: none;
   margin: 10px auto;
@@ -1103,6 +1100,10 @@ td, th {
 
 .signle-service figcaption p {
   margin-bottom: 30px;
+}
+
+.about-img {
+  width: 100%;
 }
 
 .title-bg {
