@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="styles/animate.css">
     <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
     <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <link rel="stylesheet" type="text/css" href="styles\FormNaniAndTaxi.css">
     <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
@@ -182,7 +183,7 @@
                         <div class="about_content">
                             <div class="section_title_container">
                                 <form action="mail2.php" method="post">
-                                    <div class="form-group" style="width: 60vw;
+                                    <div class="form-group  nania2" style="width: 60vw;
                                                      min-width: 280px;
                                                      max-width: 400px; float: left">
                                         <label for="fio">ФИО родителя(законного представителя):</label>
@@ -210,21 +211,21 @@
                                         <input name="datapas" id="issuedate" class="form-control" required type="text"
                                                placeholder="12.12.2019" style="width: 225px; height: 50px;">
                                     </div>
-                                    <div class="form-group" style=" width: 60vw;
+                                    <div class="form-group nania2" style=" width: 60vw;
                                              min-width: 280px;
                                               max-width: 700px; float: left">
                                         <label for="issuedby">Кем выдан:</label>
                                         <input name="issuedby" id="issuedby" class="form-control" required type="text"
                                                placeholder="УФМС России по г. Москва" style=" height: 50px;">
                                     </div>
-                                    <div class="form-group" style=" width: 60vw;
+                                    <div class="form-group nania2" style=" width: 60vw;
                                              min-width: 280px;
                                               max-width: 700px; float: left">
                                         <label for="regadress">Адрес регистрации:</label>
                                         <input name="regadress" id="regadress" class="form-control" required type="text"
                                                placeholder="УФМС России по г. Москва" style="height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: width: 60vw;
+                                    <div class="form-group nania2" style=" width: 60vw;
                                              min-width: 280px;
                                              max-width: 700px; float: left">
                                         <label for="actualadress">Адрес фактического проживания:</label>
