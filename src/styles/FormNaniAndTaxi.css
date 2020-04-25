@@ -3,10 +3,37 @@
     width: 60vw;
      min-width: 280px;
       max-width: 700px;
-       float: left
+       float: left;
 }
 
 .nanidate{
     width: 225px;
-     float: left
+     float: left;
 }
+
+.nanipassword{
+font-size: 26px;
+ margin: 35px 0 35px; 
+ width: 700px;
+}
+
+.naniseria{
+    width: 150px;
+     float: left;
+}
+
+.naninumb{
+    width: 325px;
+     float: left;
+}
+
+.nanidate{
+width: 225px;
+float: left;
+}
+
+.nanitel{
+    width: 400px;
+     float: left;
+}
+
