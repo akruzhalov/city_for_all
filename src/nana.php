@@ -188,23 +188,23 @@
                                         <input name="fio" id="fio" class="form-control" required type="text"
                                                placeholder="Иванов Иван Иванович" style="height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 225px; float: left">
+                                    <div class="form-group  nanidate" >
                                         <label for="birthdate">Дата рождения:</label>
                                         <input name="birthdate" id="birthdate" class="form-control" required type="text"
                                                placeholder="06.11.1994" style="width: 225px; height: 50px;">
                                     </div>
-                                    <label style="font-size: 26px; margin: 35px 0 35px; width: 700px">Данные паспорта</label>
-                                    <div class="form-group" style="width: 150px; float: left">
+                                    <label class="nanipassword" style="font-size: 26px; margin: 35px 0 35px; width: 700px">Данные паспорта</label>
+                                    <div class="form-group naniseria" style="width: 150px; float: left">
                                         <label for="serial">Серия:</label>
                                         <input name="serial" id="serial" class="form-control" required type="text"
                                                placeholder="1111" style="width: 100px; height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 325px; float: left">
+                                    <div class="form-group naninumb" style="width: 325px; float: left">
                                         <label for="number">Номер:</label>
                                         <input name="number" id="number" class="form-control" required type="text"
                                                placeholder="111111" style="width: 260px; height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 225px; float: left">
+                                    <div class="form-group nanidate" style="width: 225px; float: left">
                                         <label for="issuedate">Дата выдачи:</label>
                                         <input name="datapas" id="issuedate" class="form-control" required type="text"
                                                placeholder="12.12.2019" style="width: 225px; height: 50px;">
@@ -224,7 +224,7 @@
                                         <input name="actualadress" id="actualadress" class="form-control" required
                                                type="text" placeholder="УФМС России по г. Москва" style=" height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 400px; float: left">
+                                    <div class="form-group nanitel " style="width: 400px; float: left">
                                         <label for="phone">Телефон:</label>
                                         <input name="phone" id="phone" class="form-control" required type="text"
                                                placeholder="+7 (___) 000-00-00" style="width: 300px; height: 50px;">
