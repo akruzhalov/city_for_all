@@ -183,9 +183,7 @@
                         <div class="about_content">
                             <div class="section_title_container">
                                 <form action="mail2.php" method="post">
-                                    <div class="form-group  nania2" style="width: 60vw;
-                                                     min-width: 280px;
-                                                     max-width: 400px; float: left">
+                                    <div class="form-group  nania2" >
                                         <label for="fio">ФИО родителя(законного представителя):</label>
                                         <input name="fio" id="fio" class="form-control" required type="text"
                                                placeholder="Иванов Иван Иванович" style="height: 50px;">
@@ -211,23 +209,17 @@
                                         <input name="datapas" id="issuedate" class="form-control" required type="text"
                                                placeholder="12.12.2019" style="width: 225px; height: 50px;">
                                     </div>
-                                    <div class="form-group nania2" style=" width: 60vw;
-                                             min-width: 280px;
-                                              max-width: 700px; float: left">
+                                    <div class="form-group nania2">
                                         <label for="issuedby">Кем выдан:</label>
                                         <input name="issuedby" id="issuedby" class="form-control" required type="text"
                                                placeholder="УФМС России по г. Москва" style=" height: 50px;">
                                     </div>
-                                    <div class="form-group nania2" style=" width: 60vw;
-                                             min-width: 280px;
-                                              max-width: 700px; float: left">
+                                    <div class="form-group nania2" >
                                         <label for="regadress">Адрес регистрации:</label>
                                         <input name="regadress" id="regadress" class="form-control" required type="text"
                                                placeholder="УФМС России по г. Москва" style="height: 50px;">
                                     </div>
-                                    <div class="form-group nania2" style=" width: 60vw;
-                                             min-width: 280px;
-                                             max-width: 700px; float: left">
+                                    <div class="form-group nania2">
                                         <label for="actualadress">Адрес фактического проживания:</label>
                                         <input name="actualadress" id="actualadress" class="form-control" required
                                                type="text" placeholder="УФМС России по г. Москва" style=" height: 50px;">
