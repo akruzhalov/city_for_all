@@ -1,3 +1,4 @@
+/* Классы для формы заказа няни */
 .nania2{
 
     width: 60vw;
@@ -37,3 +38,18 @@ float: left;
      float: left;
 }
 
+/* Классы для формы заказа такси */
+.taksi2{
+    width: 60vw;
+    max-width: 700px;
+     float: left;
+}
+
+.takstel{
+    width: 400px; 
+    float: left;
+}
+.takskategor{
+    width: 300px;
+     float: left;
+}
