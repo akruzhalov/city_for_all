@@ -650,6 +650,15 @@ section {
 }
 
 
+.fixed_header .main_nav{
+    margin: 10px auto;
+}
+.fixed_header .logo{
+    margin-left: 7vw;
+}
+.fixed_header .social {
+    margin-right: 7vw;
+}
 .logo img {
     width: 80%;
     height: auto;
