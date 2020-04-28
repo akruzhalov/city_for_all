@@ -362,7 +362,7 @@
             </div>
         </div>
     </div>
-    </footer>
+</footer>
 <script>
 	"use strict";
 
