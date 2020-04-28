@@ -1,0 +1,357 @@
+@import "./core/mixins";
+@import "./core/variables";
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: 'Montserrat', sans-serif;
+  .Layout {
+    min-height: 100vh;
+    background: url("../img/back.png") center (center/cover) no-repeat;
+    .navbar {
+      min-height: 7vh;
+      background: transparent !important;
+      margin: 0 50px;
+      border-bottom: 1px solid #bdbdbd;
+      a {
+        color: $firstVar !important;
+        transition-duration: .3s;
+        &:hover {
+          color: $thirdVar !important;
+        }
+      }
+    }
+    .content {
+      width: 100%;
+      //min-height: 93vh;
+      color: #f7f9fb;
+
+
+      // ---Login block ---
+
+
+      .Login {
+        min-height: 93vh;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__form {
+          width: 60%;
+          padding: 30px;
+          border-radius: 20px;
+          background-color: #dbdbdb;
+          color: $fifthVar;
+          h1 {
+            padding-bottom: 20px;
+          }
+          .btn {
+            margin-right: 20px;
+            background-color: $thirdVar;
+            border: 2px solid $thirdVar;
+            color: $firstVar;
+            &:hover, {
+              background-color: $fourthVar;
+              border: 2px solid $fourthVar;
+            }
+            &:active, &:focus {
+              box-shadow: none;
+            }
+          }
+
+        }
+      }
+
+
+      // --- Registration block ---
+
+
+      // --- Main block ---
+
+
+      .Main {
+        .row {
+          min-height: 93vh;
+          width: 80%;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          h1 {
+            font-size: 60px;
+          }
+          h1, h5 {
+            padding: 20px 0;
+            margin: 0;
+          }
+          .line {
+            height: 1px;
+            width: 300px;
+            background-color: #bdbdbd;
+          }
+        }
+      }
+
+
+      // --- All block styles ---
+
+
+      .Volunteers, .Shops, .Pharmacies, .Taxi, .Humane, .Cleaning, .Services {
+        .row {
+          height: 93vh;
+          width: 80%;
+          margin: 0 auto;
+          .col-lg-12 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+          }
+        }
+        &__head {
+          margin-top: 20px;
+          h1 {
+            font-size: 60px;
+            margin-bottom: 0;
+          }
+          h3 {
+            font-size: 30px;
+            padding-left: 4px;
+            margin-bottom: 20px;
+          }
+          .btn {
+            margin-right: 20px;
+            background-color: $thirdVar;
+            border: 2px solid $thirdVar;
+            color: $firstVar;
+            &:hover, {
+              background-color: $fourthVar;
+              border: 2px solid $firstVar;
+            }
+            &:active, &:focus {
+              box-shadow: none;
+            }
+          }
+        }
+        &__points {
+          min-height: 20vh;
+          border-radius: 20px;
+          background-color: $firstVar;
+          .row {
+            height: auto;
+            width: 100%;
+            flex-direction: row;
+            text-align: center;
+            .col-lg-3, .col-lg-4, .col-lg-6 {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin: 70px 0;
+            }
+          }
+          i {
+            font-size: 30px;
+            color: $fifthVar;
+          }
+          p {
+            color: $fifthVar;
+            margin-top: 1vh;
+            font-size: 18px;
+          }
+        }
+        &__info {
+          text-align: left;
+          color: $firstVar;
+          b {
+            color: $secondVar;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+
+  // --- Contacts block ---
+
+
+  .Contacts {
+    h1 {
+      font-size: 60px;
+    }
+    .row {
+      min-height: 93vh;
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      div {
+        padding: 20px 0;
+        p {
+          margin: 0 !important;
+        }
+        span {
+          color: $thirdVar;
+          font-weight: bold;
+        }
+      }
+      .line {
+        padding: 0 !important;
+        height: 1px;
+        width: 300px;
+        background-color: #bdbdbd;
+      }
+    }
+  }
+}
+
+
+// --- NannyQuery styles ---
+
+
+.NannyQuery {
+  padding: 50px 0;
+  .content {
+    width: 60% !important;
+    margin: 0 auto;
+    padding: 0 0 50px 0;
+    h1 {
+      color: $firstVar;
+      font-size: 60px;
+    }
+    h3 {
+      font-size: 35px;
+      color: $firstVar;
+    }
+    a {
+      font-weight: bold;
+      font-size: 20px;
+      color: $firstVar
+    }
+  }
+  form {
+    h3 {
+      padding: 20px 0;
+    }
+    margin: 0 auto;
+    width: 60%;
+    background-color: $fourthVar;
+    border-radius: 20px;
+    padding: 30px;
+    border: 2px solid $firstVar;
+    .btn {
+      margin-right: 20px;
+      background-color: $thirdVar;
+      border: 2px solid $thirdVar;
+      color: $firstVar;
+      &:hover, {
+        background-color: $fourthVar;
+        border: 2px solid $firstVar;
+      }
+      &:active, &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+
+// --- Media Queries ---
+
+
+@media (max-width: 990px) {
+  .navbar-toggler {
+    border: 1px solid #bdbdbd !important;
+  }
+  .navbar-brand {
+    padding: 30px 0 !important;
+  }
+  .navbar-collapse {
+    padding: 10px 0;
+    border-top: 1px solid #bdbdbd;
+    .nav-link {
+      padding: 20px 10px;
+      font-size: 18px;
+    }
+  }
+  .Volunteers, .Shops, .Pharmacies, .Taxi, .Humane, .Cleaning, .Services {
+    .row {
+      height: auto !important;
+      min-height: 100vh;
+    }
+    &__head {
+      margin: 40px 0 50px 0;
+      button {
+        margin: 10px 0;
+      }
+        h1 {
+          font-size: 45px !important;
+          margin-bottom: 10px !important;
+        }
+        h3 {
+          font-size: 20px !important;
+        }
+    }
+    &__points {
+      .row {
+        flex-direction: column !important;
+        justify-content: space-around !important;
+        min-height: auto !important;
+      }
+      margin-bottom: 50px;
+      .col-lg-3, .col-lg-4, .col-lg-6 {
+        border-right: none !important;
+        margin: 0 !important;
+        padding: 30px 10px;
+      }
+    }
+  }
+  .Main {
+    h1 {
+      font-size: 40px !important;
+    }
+    h5 {
+      font-size: 18px !important;
+    }
+  }
+  .Contacts {
+    h1 {
+      font-size: 40px !important;
+    }
+    h3 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  .NannyQuery {
+    .content {
+      width: 80% !important;
+      margin: 0 auto;
+      padding: 0 10px 50px 10px;
+    }
+    form {
+      width: 80%;
+      .form-row {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        font-size: 13px;
+      }
+    }
+    h1 {
+      font-size:35px !important;
+    }
+    h3 {
+      font-size: 20px !important;
+    }
+    a {
+      font-size: 15px !important;
+    }
+  }
+}

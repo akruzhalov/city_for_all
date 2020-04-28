@@ -1,9 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta name="keywords" content="Город, для, всех, волонтеры, ограниченные, люди, возможности, такси, социальный, магазин, аптека, гуманитраная, помощь,
 				уборка, обслуживание, инвалид, бесплатно, оказание, покупка, продуктов,  ">
-
     <meta name="description" content="Данный сайт предназначен для маломобильных граждан – жителей города:
 				-пожилого возраста;
 				- инвалидов;
@@ -39,7 +39,7 @@
         <header class="header">
 
 
-            <div class="header_wrap d-flex flex-row align-items-center justify-content-center">
+            <div class="header_wrap d-flex flex-row align-items-center justify-content-around">
 
                 <!-- Logo -->
                 <div class="logo"><a href="index.html"><img src="images/logo2.png" alt=""></a></div>
@@ -196,37 +196,37 @@
                                     <div class="form-group" style="width: 150px; float: left">
                                         <label for="serial">Серия:</label>
                                         <input name="serial" id="serial" class="form-control" required type="text"
-                                               placeholder="1111" style="width: 100px; height: 50px;">
+                                               placeholder="1234" style="width: 100px; height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 325px; float: left">
                                         <label for="number">Номер:</label>
                                         <input name="number" id="number" class="form-control" required type="text"
-                                               placeholder="111111" style="width: 260px; height: 50px;">
+                                               placeholder="567890" style="width: 260px; height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 225px; float: left">
                                         <label for="issuedate">Дата выдачи:</label>
                                         <input name="datapas" id="issuedate" class="form-control" required type="text"
-                                               placeholder="12.12.2019" style="width: 225px; height: 50px;">
+                                               placeholder="12.12.2012" style="width: 225px; height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 700px; float: left">
                                         <label for="issuedby">Кем выдан:</label>
                                         <input name="issuedby" id="issuedby" class="form-control" required type="text"
-                                               placeholder="УФМС России по г. Москва" style="height: 50px;">
+                                               placeholder="Отделом УФМС России по ЯНАО в г. Муравленко" style="height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 700px; float: left">
                                         <label for="regadress">Адрес регистрации:</label>
                                         <input name="regadress" id="regadress" class="form-control" required type="text"
-                                               placeholder="УФМС России по г. Москва" style="height: 50px;">
+                                               placeholder="г. Муравленко, ул. Дружбы народов, д. 52, кв. 62" style="height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 700px; float: left">
                                         <label for="actualadress">Адрес фактического проживания:</label>
                                         <input name="actualadress" id="actualadress" class="form-control" required
-                                               type="text" placeholder="УФМС России по г. Москва" style="height: 50px;">
+                                               type="text" placeholder="г. Муравленко, ул. Дружбы народов, д. 52, кв. 62" style="height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 400px; float: left">
                                         <label for="phone">Телефон:</label>
                                         <input name="phone" id="phone" class="form-control" required type="text"
-                                               placeholder="+7 (___) 000-00-00" style="width: 300px; height: 50px;">
+                                               placeholder="+7 (999) 777-66-55" style="width: 300px; height: 50px;">
                                     </div>
                                     <input type="hidden" id="record-date" name="date">
                                     <div class="form-group" style="width: 900px; float: left">
@@ -239,7 +239,7 @@
 											'Пятница' => 'Fri this week',
 										];
 										?>
-                                        <table class="table">
+                                        <table class="table-date">
                                             <thead>
 												<tr>
 													<th> </th>
@@ -249,26 +249,25 @@
 												</tr>
                                             </thead>
                                             <tbody>
-											<?php foreach ($dates as $day => $value):?>
+											<?php $j=0; foreach ($dates as $day => $value):?>
 
                                                 <tr>
-                                                    <td class="day"><?php echo $day;?></td>
+                                                    <td class="day" data-toggle="tooltip" data-placement="top" title="<?php echo date ("d.m", time() - ( $j + date("N")-1) * 24*60*60);?>" ><?php echo $day;?></td>
 
 	                                                <?php for($i = 8; $i <= 18; $i++):?>
 
 													<?php
-														$time = $i < 10 ? "0{$i}:00:00" : "{$i}:00:00";
+														$time = $i < 10 ? "0{$i}:00" : "{$i}:00";
 														$date = date('Y-m-d', strtotime($value));
-														$date = $date.' '.$time;
+                                                        $date = $date.' '.$time;
 														?>
 
-														<td class="cell" data-date="<?php echo $date;?>"></td>
+														<td class="cell" data-toggle="tooltip" data-placement="top" title="<?php echo date ("d.m", time() - ( $j + date("N")-1) * 24*60*60).' '.$time;?>"  data-date="<?php echo $date;?>"></td>
 
 	                                                <?php endfor;?>
-
+                                                    
                                                 </tr>
-
-											<?php endforeach;?>
+											<?php $j--;  endforeach;?>
                                             </tbody>
                                         </table>
 
@@ -292,7 +291,7 @@
             </div>
         </div>
 
-        <footer class="footer">
+<footer class="footer">
     <div class="footer_content">
         <div class="container">
             <div class="row">
@@ -307,11 +306,10 @@
                         <div class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
                             <div><img src="images/phone.png" alt=""></div>
                         </div>
-                        <div class="footer_title">Номера телефонов</div>
+                        <div class="footer_title">Номер телефона</div>
                         <div class="footer_list">
                             <ul>
-                                <li>+7 (34938) 29-205</li>
-                                <li>+7 (34938) 29-205</li>
+                                <li><a href="tel:+7 (34938) 29 205">+7 (34938) 29-205</a></li>
                             </ul>
                         </div>
                     </div>
@@ -324,8 +322,7 @@
                         <div class="footer_title">e-mail</div>
                         <div class="footer_list">
                             <ul>
-                                <li>cso.muravlenko@dszn.yanao.ru</li>
-                                <li>cso.muravlenko@dszn.yanao.ru</li>
+                                <li><a href="mailto:cso.muravlenko@dszn.yanao.ru">cso.muravlenko@dszn.yanao.ru</a></li>
                             </ul>
                         </div>
                     </div>
@@ -362,9 +359,7 @@
             </div>
         </div>
     </div>
-</footer>>
-    </div>
-</div>
+</footer>
 <script>
 	"use strict";
 
