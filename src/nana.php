@@ -362,10 +362,47 @@
             </div>
         </div>
     </div>
-</footer>>
-    </div>
-</div>
-<script src="js/nana.js"></script>
+    </footer>
+<script>
+	"use strict";
+
+	const clickCell = (event) => {
+		let target = event.target;
+		let activeCell = document.querySelector('td.active');
+		let input = document.getElementById('record-date');
+		if(activeCell) activeCell.classList.remove('active');
+		target.classList.add('active');
+		input.value = target.getAttribute('data-date');
+	};
+
+	let cells = document.getElementsByClassName('cell');
+
+	for(let i = 0; i < cells.length; i++){
+		cells[i].addEventListener('click', clickCell);
+	}
+
+	/*$(document).ready(function(){
+		$('.table th, .table td').click(function(){
+			if($(this).hasClass('selected')) return false;
+			$('.table td').removeClass('active');
+			$(this).addClass('active');
+		});
+	});*/
+</script>
+<script>
+    function check() {
+        var cb = document.getElementsByTagName('input'),
+            L = cb.length - 1,
+            f = true;
+        for (; L >= 0; L--) {
+            if (cb[L]['type'] == 'checkbox' && cb[L]['checked'] == true) {
+                f = !f;
+                break;
+            }
+        }
+        document.getElementById('delButton').disabled = f;
+    }
+</script>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/bootstrap-4.1.2/popper.js"></script>
 <script src="js/bootstrap-4.1.2/bootstrap.min.js"></script>
