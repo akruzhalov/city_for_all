@@ -53,3 +53,12 @@ float: left;
     width: 300px;
      float: left;
 }
+
+.f-taxi{
+    width: 60vw;
+   max-width: 350px;
+    height: 50px; 
+    padding: 12px;
+
+
+}
