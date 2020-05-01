@@ -227,7 +227,7 @@
                                     <div class="form-group nanitel ">
                                         <label for="phone">Телефон:</label>
                                         <input name="phone" id="phone" class="form-control" required type="text"
-                                               placeholder="+7 (___) 000-00-00" style="width: 300px; height: 50px;">
+                                               placeholder="+7 (___) 000-00-00" style=" height: 50px;">
                                     </div>
                                     <input type="hidden" id="record-date" name="date">
                                     <div class="form-group" style="width: 900px; float: left">
