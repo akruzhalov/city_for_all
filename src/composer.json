@@ -1,5 +1,15 @@
 {
-    "require": {
-        "symfony/yaml": "^3.4"
+  "name": "vendor_name/src",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Ekaterina",
+      "email": "email@example.com"
     }
+  ],
+  "require": {
+    "symfony/yaml": "^5.0"
+  }
 }
