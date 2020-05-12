@@ -238,12 +238,43 @@
                                     <label for="datetimepicker1">Выберите время и дату:</label>
                                     <br>
                                     <input type="text" id="record-date" name="date"/>
+                                    <input type="text" id="record-timeend" name="timeend"/>
                                     <script>
+                                    //Пример логики, согласно которой можно изменить время, запретить его выбор
+                                    var logic = function( currentDateTime ){
+                                      if( currentDateTime.getDay()==6 || currentDateTime.getDay()==0){ //Для работы с выходными днями
+                                        this.setOptions({
+                                        minTime:'11:00'
+                                        });
+                                    }else
+                                        this.setOptions({ //Для работы с рабочими днями
+                                        minTime:'8:00'
+                                        });
+                                    };
+
                                         jQuery('#record-date').datetimepicker({
+                                            onChangeDateTime:logic,
+                                            onShow:logic,
                                             formatDate:'d.m.Y',
                                             format:'d.m.Y H:i',
-                                            inline:true
+                                            inline:true,
+                                            dayOfWeekStart: 1,
+                                            // disabledDates: ['05.05.2020'], //Для запрета выбора определённых дней
+                                            // disabledWeekDays: [0,3,4] //Для запрета выбора определённых дней недели
                                         });
+
+                                        jQuery('#record-timeend').datetimepicker({
+                                            onChangeDateTime:logic,
+                                            onShow:logic,
+                                            formatDate:'d.m.Y',
+                                            format:'d.m.Y H:i',
+                                            inline:true,
+                                            dayOfWeekStart: 1,
+                                            datepicker: false,
+                                            // disabledDates: ['05.05.2020'], //Для запрета выбора определённых дней
+                                            // disabledWeekDays: [0,3,4] //Для запрета выбора определённых дней недели
+                                        });
+                                        
                                     </script>
 
                                     </div>
