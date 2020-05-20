@@ -32,7 +32,7 @@ $mail->addAddress('cityforall@mail.ru');     // Кому будет уходит
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заказ такси';
-$mail-> Body = 'ФИО: '.$fio. '<br/> Телефон: '  .$phone. '<br/>Дата рождения: ' .$from. '<br/>Относится к категории: ' .$select;
+$mail-> Body = '<table style="border-collapse: collapse;" border="1"><tr><td> ФИО:</td><td>' .$fio. '</td></tr><tr><td>Телефон:</td><td>'  .$phone. '</td></tr><tr><td>Дата рождения:</td><td>' .$from. '</td></tr><tr><td>Относится к категории:</td><td>' .$select. '</td></tr></table>';
 $mail->AltBody = '';
 if(!$mail->send()) {
     echo 'Error';

@@ -1,4 +1,4 @@
-<?php 
+  <?php 
 
 require_once('phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
@@ -37,7 +37,7 @@ $mail->addAddress('cityforall@mail.ru');     // Кому будет уходит
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заказ няни';
-$mail-> Body = 'ФИО: '.$fio. '<br/> Телефон: '  .$phone. '<br/>Паспорт серия номер: ' .$serial .$number. '<br/> Дата выдачи: ' .$datapas. '<br/> Кем выдан: ' .$issuedby.'<br/> Адрес регистрации: ' .$regadress. '<br/> Адрес фактического проживания: ' .$actualadress. '<br/> Дата и время: '.$date;
+$mail-> Body = '<table style="border-collapse: collapse;" border="1"><tr><td> ФИО:</td><td>' .$fio. '</td></tr><tr><td>Телефон:</td><td>'  .$phone. '</td></tr><tr><td>Паспорт серия номер:</td><td>' .$serial .$number. '</td><tr/><tr><td>Дата выдачи:</td><td>' .$datapas. '</td></tr><tr><td>Кем выдан:</td><td>' .$issuedby.'</td></tr><tr><td>Адрес регистрации:</td><td>' .$regadress. '</td></tr><tr><td>Адрес фактического проживания:</td><td>' .$actualadress. '</td></tr><tr><td>Дата и время:</td><td>' .$date. '</td</tr></table>';
 $mail->AltBody = '';
 if(!$mail->send()) {
     echo 'Error';
