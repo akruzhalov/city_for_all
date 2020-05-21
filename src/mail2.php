@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
-require_once('phpmailer/PHPMailerAutoload.php');
+use PHPMailer\PHPMailer\PHPMailer;
 use Symfony\Component\Yaml\Parser;
 
 
@@ -41,7 +41,7 @@ $mail->Subject = 'Заказ няни';
 $mail-> Body = 'ФИО: '.$fio. '<br/> Телефон: '  .$phone. '<br/>Паспорт серия номер: ' .$serial .$number. '<br/> Дата выдачи: ' .$datapas. '<br/> Кем выдан: ' .$issuedby.'<br/> Адрес регистрации: ' .$regadress. '<br/> Адрес фактического проживания: ' .$actualadress. '<br/> Дата и время: '.$date;
 $mail->AltBody = '';
 if(!$mail->send()) {
-    echo 'Error';
+    echo 'Error: ' . $mail->ErrorInfo;
 } else {
     header('location: thank-you.html');
 }

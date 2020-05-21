@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
-require_once('phpmailer/PHPMailerAutoload.php');
+use PHPMailer\PHPMailer\PHPMailer;
 use Symfony\Component\Yaml\Parser;
 
 
@@ -34,7 +34,7 @@ $mail->Subject = 'Заказ такси';
 $mail-> Body = 'ФИО: '.$fio. '<br/> Телефон: '  .$phone. '<br/>Дата рождения: ' .$from. '<br/>Относится к категории: ' .$select;
 $mail->AltBody = '';
 if(!$mail->send()) {
-    echo 'Error';
+    echo 'Error: ' . $mail->ErrorInfo;
 } else {
     header('location: thank-you.html');
 }
