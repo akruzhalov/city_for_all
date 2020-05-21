@@ -5,7 +5,7 @@ smtp:
   host: 'smtp.mail.ru'
   SMTPAuth: true
   authentication: :login
-  username: 'osapolina9@mail.ru'
+  username: 'cityforall@mail.ru'
   password: 'abumed00'
   SMTPSecure: 'ssl'
   Port: 465

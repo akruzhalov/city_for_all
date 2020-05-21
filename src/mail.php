@@ -1,12 +1,15 @@
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
+require_once('phpmailer/PHPMailerAutoload.php');
 use Symfony\Component\Yaml\Parser;
+
 
 $yaml = new Parser();
 
-$mail = $yaml->parse( file_get_contents('config.yml') );
 
-var_dump($mail);
+$mail = $yaml->parse( file_get_contents('config.yml') );
+$mail = new PHPMailer;
+//var_dump($mail);
 
 $fio = $_POST['fio'];
 $phone = $_POST['phone'];
