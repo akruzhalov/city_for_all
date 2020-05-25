@@ -31,11 +31,6 @@
     <link rel="stylesheet" type="text/css" href="styles/jquery.datetimepicker.css"/>
     <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/jquery.datetimepicker.js"></script>
-<<<<<<< Updated upstream
-    
-
-=======
->>>>>>> Stashed changes
 </head>
 <body>
 <div class="header_wrap d-flex flex-row align-items-center justify-content-center">
@@ -235,53 +230,6 @@
                                         <input name="phone" id="phone" class="form-control" required type="text"
                                                placeholder="+7 (___) 000-00-00" style="width: 300px; height: 50px;">
                                     </div>
-<<<<<<< Updated upstream
-
-                                    <div class="form-group" style="width: 900px; float:left">
-
-                                    <label for="datetimepicker1">Выберите время и дату:</label>
-                                    <br>
-                                    <input type="text" id="record-date" name="date"/>
-                                    <input type="text" id="record-timeend" name="timeend"/>
-                                    <script>
-                                    //Пример логики, согласно которой можно изменить время, запретить его выбор
-                                    var logic = function( currentDateTime ){
-                                      if( currentDateTime.getDay()==6 || currentDateTime.getDay()==0){ //Для работы с выходными днями
-                                        this.setOptions({
-                                        minTime:'11:00'
-                                        });
-                                    }else
-                                        this.setOptions({ //Для работы с рабочими днями
-                                        minTime:'8:00'
-                                        });
-                                    };
-
-                                        jQuery('#record-date').datetimepicker({
-                                            onChangeDateTime:logic,
-                                            onShow:logic,
-                                            formatDate:'d.m.Y',
-                                            format:'d.m.Y H:i',
-                                            inline:true,
-                                            dayOfWeekStart: 1,
-                                            // disabledDates: ['05.05.2020'], //Для запрета выбора определённых дней
-                                            // disabledWeekDays: [0,3,4] //Для запрета выбора определённых дней недели
-                                        });
-
-                                        jQuery('#record-timeend').datetimepicker({
-                                            onChangeDateTime:logic,
-                                            onShow:logic,
-                                            formatDate:'d.m.Y',
-                                            format:'d.m.Y H:i',
-                                            inline:true,
-                                            dayOfWeekStart: 1,
-                                            datepicker: false,
-                                            // disabledDates: ['05.05.2020'], //Для запрета выбора определённых дней
-                                            // disabledWeekDays: [0,3,4] //Для запрета выбора определённых дней недели
-                                        });
-                                        
-                                    </script>
-
-=======
                                     
                                    
                                     
@@ -295,7 +243,6 @@
                                         <br>
                                         <input type="text" id="record-time" name="date">
                                         <input type="text" id="record-time2" name="date">
->>>>>>> Stashed changes
                                     </div>
 
                                     <div class="form-group form-check"
