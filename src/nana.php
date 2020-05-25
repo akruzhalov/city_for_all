@@ -230,9 +230,10 @@
                                         <input name="phone" id="phone" class="form-control" required type="text"
                                                placeholder="+7 (999) 777-66-55" style="width: 300px; height: 50px;">
                                     </div>
-                                                                                                          
+                                    
+                                   
+                                    
                                     <div class="form-group" style="width: 900px; float: left">
-
                                         <label for="record-date">Выберите дату:</label>
                                         <br>
                                         <input type="text" id="record-date" name="date">
