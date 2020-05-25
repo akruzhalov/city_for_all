@@ -28,7 +28,11 @@
     <link rel="stylesheet" type="text/css" href="styles/animate.css">
     <link rel="stylesheet" type="text/css" href="styles/main_styleseye.css">
     <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<<<<<<< Updated upstream
     <link rel="stylesheet" type="text/css" href="styles/jquery.datetimepicker.css"/>
+=======
+    <link rel="stylesheet" type="text/css" href="styles/jquery.datetimepicker.eyes.css"/>
+>>>>>>> Stashed changes
     <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/jquery.datetimepicker.js"></script>
 </head>
@@ -228,6 +232,7 @@
                                         <input name="phone" id="phone" class="form-control" required type="text"
                                                placeholder="+7 (___) 000-00-00" style="width: 300px; height: 50px;">
                                     </div>
+<<<<<<< Updated upstream
                                   
                                     <div class="form-group" style="width: 900px; float:left">
 
@@ -241,9 +246,26 @@
                                             inline:true
                                         });
                                     </script>
+=======
+                                    
+>>>>>>> Stashed changes
 
+                                    <div class="form-group" style="width: 900px; float: left">
+                                        <label for="record-date">Выберите дату:</label>
+                                        <br>
+                                        <input type="text" id="record-date" name="date">
+                                   </div>
+                                   <div class="form-group" style="width: 900px; float: left">
+                                        <label for="record-time">Выберите промежуток времени:</label>
+                                        <br>
+                                        <input type="text" id="record-time" name="date">
+                                        <input type="text" id="record-time2" name="date">
                                     </div>
+<<<<<<< Updated upstream
                                    
+=======
+
+>>>>>>> Stashed changes
                                     <div class="form-group form-check"
                                          style="width:700px;float: left; padding-left: 0; margin-top: 10px">
                                         <input id="checkbox" class="form-check-input  form-input-taxi" type="checkbox"
@@ -338,6 +360,31 @@
         </footer>
     </div>
 </div>
+<script>
+                                       jQuery('#record-date').datetimepicker({
+                                           minDate:'0',
+                                           formatDate:'d.m.Y',
+                                           format:'d.m.Y',
+                                           inline:true,
+                                           timepicker:false,
+                                           dayOfWeekStart: 1,
+                                       });
+                                       jQuery('#record-time').datetimepicker({
+                                           format:'H:m',
+                                           inline:true,
+                                        //    step: 30,
+                                           datepicker:false,
+                                           minTime:'08:00',
+                                           maxTime:'18:00'
+                                       });
+                                       jQuery('#record-time2').datetimepicker({
+                                           format:'H:m',
+                                           inline:true,
+                                           datepicker:false,
+                                           minTime:'09:00',
+                                           maxTime:'19:00'
+                                       });
+</script>
 <script>
 	"use strict";
 

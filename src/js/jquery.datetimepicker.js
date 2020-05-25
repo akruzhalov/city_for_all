@@ -95,12 +95,21 @@ var datetimepickerFactory = function ($) {
 			},
 			en: { // English
 				months: [
+<<<<<<< Updated upstream
 					'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'
 				],
 				dayOfWeekShort: [
 					"Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"
 				],
 				dayOfWeek: ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"]
+=======
+					"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+				],
+				dayOfWeekShort: [
+					"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"
+				],
+				dayOfWeek: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+>>>>>>> Stashed changes
 			},
 			el: { // Ελληνικά
 				months: [
@@ -315,12 +324,21 @@ var datetimepickerFactory = function ($) {
 			},
 			'en-GB': { //English (British)
 				months: [
+<<<<<<< Updated upstream
 					'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'
 				],
 				dayOfWeekShort: [
 					"Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"
 				],
 				dayOfWeek: ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"]
+=======
+					"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+				],
+				dayOfWeekShort: [
+					"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"
+				],
+				dayOfWeek: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+>>>>>>> Stashed changes
 			},
 			et: { //"Eesti"
 				months: [
@@ -642,8 +660,13 @@ var datetimepickerFactory = function ($) {
 
 	var dateHelper = null,
 		defaultDateHelper = null,
+<<<<<<< Updated upstream
 		globalLocaleDefault = 'en',
 		globalLocale = 'en';
+=======
+		globalLocaleDefault = 'ru',
+		globalLocale = 'ru';
+>>>>>>> Stashed changes
 
 	var dateFormatterOptionsDefault = {
 		meridiem: ['AM', 'PM']
