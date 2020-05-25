@@ -41,10 +41,6 @@
 		left: 60px;
 		width: calc(100% - 120px);
 	}
-	.main_nav ul li:not(:last-of-type)
-	{
-		margin-right: 48px;
-	}
 	.intro_box
 	{
 		padding-left: 40px;
@@ -72,7 +68,12 @@
 
 @media only screen and (max-width: 1280px)
 {
-	
+	.main_nav ul li {
+		margin: 0px 5px;
+	}
+	.main_nav ul li a {
+		font-size: 14px;
+	}
 }
 
 /************
@@ -81,22 +82,7 @@
 
 @media only screen and (max-width: 1199px)
 {
-	.logo
-	{
-		left: 30px;
-	}
-	.header_social
-	{
-		right: 30px;
-	}
-	.main_nav ul li:not(:last-of-type)
-	{
-		margin-right: 32px;
-	}
-	.header_social ul li:not(:last-of-type)
-	{
-		margin-right: 18px;
-	}
+
 	.home_slider .owl-dots
 	{
 		left: calc((100% - 915px) / 2);
@@ -112,6 +98,11 @@
 		padding-left: 200px;
 		padding-right: 220px;
 	}
+	.header {
+		box-sizing: border-box;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
 
 /************
@@ -120,7 +111,7 @@
 
 @media only screen and (max-width: 1100px)
 {
-	
+
 }
 
 /************
@@ -129,7 +120,7 @@
 
 @media only screen and (max-width: 1024px)
 {
-	
+
 }
 
 /************
@@ -158,6 +149,7 @@
 	.header_wrap
 	{
 		padding-right: 25px;
+		padding-left: 25px;
 	}
 	.hamburger
 	{
@@ -361,5 +353,20 @@
 
 @media only screen and (max-width: 400px)
 {
-	
+	.home_title h1
+	{
+		font-size: 30px;
+	}
+}
+
+/************
+14. 325px
+************/
+
+@media only screen and (max-width: 325px)
+{
+	.home_title h1
+	{
+		font-size: 28px;
+	}
 }
