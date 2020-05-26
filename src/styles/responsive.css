@@ -143,10 +143,10 @@
 	}
 	.home_title h1
 	{
-		font-size: 48px;
-		letter-spacing: 0.05em;
+		font-size: 30px;
 	}
-	.fixed_header .header_wrap
+	
+	.header_wrap
 	{
 		padding-right: 25px;
 		padding-left: 25px;
@@ -253,6 +253,7 @@
 	h1
 	{
 		font-size: 36px;
+		letter-spacing: 0.8px;
 	}
 	.header
 	{
@@ -279,8 +280,7 @@
 	}
 	.home_title h1
 	{
-		font-size: 36px;
-		letter-spacing: normal;
+		font-size: 28px;
 	}
 	.button,
 	.button_2
