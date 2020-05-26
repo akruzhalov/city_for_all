@@ -1,11 +1,11 @@
 smtp:
   CharSet: 'utf-8'
   delivery_method: :smtp
-  enable_starttls_auto: true
-  host: 'smtp.mail.ru'
+#  enable_starttls_auto: true
+  Host: 'smtp.mail.ru'
   SMTPAuth: true
-  authentication: :login
-  username: 'cityforall@mail.ru'
-  password: 'abumed00'
+  #Authentication: :login
+  Username: 'cityforall@mail.ru'
+  Password: 'abumed00'
   SMTPSecure: 'ssl'
   Port: 465
