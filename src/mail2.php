@@ -24,24 +24,28 @@ $date = $_POST['date'];
 $regadress = $_POST['regadress'];
 
 
-//$mail->SMTPDebug = 3;                               // Enable verbose debug output
+//$mail->SMTPDebug = 3;                              // Enable verbose debug output
+
+$mail->CharSet = $config['CharSet'];                 // Кодировка обмена сообщениями с SMTP сервером
+
+$mail->isSMTP();                                     // Set mailer to use SMTP
+$mail->Host = $config['Host'];  					 // Host SMTP сервера: ip или доменное имя
+$mail->SMTPAuth = $config['SMTPAuth'];               // Наличие авторизации на SMTP сервере
+$mail->Username = $config['Username'];               // Имя пользователя на SMTP сервере
+$mail->Password = $config['Password'];               // Пароль от учетной записи на SMTP сервере
+$mail->SMTPSecure = $config['SMTPSecure'];           // Тип шифрования
+$mail->Port = $config['Port'];                       // TCP port to connect to / этот порт может отличаться у других провайдеров
 
 
-$mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = $config['Host'];  																							// Specify main and backup SMTP servers
-$mail->SMTPAuth = $config['SMTPAuth'];                                // Enable SMTP authentication
-$mail->Username = $config['Username'];  // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = $config['Password']; // Ваш пароль от почты с которой будут отправляться письма
-$mail->SMTPSecure = $config['SMTPSecure'];                           // Enable TLS encryption, `ssl` also accepted
-$mail->Port = $config['Port'];// TCP port to connect to / этот порт может отличаться у других провайдеров
+$mail->setFrom($config['Username']);                 // от кого будет уходить письмо? (Адресант почтового сообщения )
+$mail->addAddress($config['Username_to']);           // Получатель письма (Адресат почтового сообщения)
+//$mail->AddReplyTo($config['addreply']);            // Альтернативный адрес для ответа
+$mail->isHTML(true);                           // Set email format to HTML
 
-$mail->setFrom($config['Username']); // от кого будет уходить письмо?
-$mail->addAddress($config['Username']); // Optional name
-$mail->isHTML(true);                                   // Set email format to HTML
-
-$mail->Subject = 'Заказ няни';
+$mail->Subject = 'Заказ няни';                       // Тема письма
 $mail-> Body = 'ФИО: '.$fio. '<br/> Телефон: '  .$phone. '<br/>Паспорт серия номер: ' .$serial .$number. '<br/> Дата выдачи: ' .$datapas. '<br/> Кем выдан: ' .$issuedby.'<br/> Адрес регистрации: ' .$regadress. '<br/> Адрес фактического проживания: ' .$actualadress. '<br/> Дата и время: '.$date;
 $mail->AltBody = '';
+
 if(!$mail->send()) {
     echo 'Error: ' . $mail->ErrorInfo;
 } else {
