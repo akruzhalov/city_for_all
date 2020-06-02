@@ -231,18 +231,17 @@
                                                placeholder="+7 (999) 777-66-55" style="width: 300px; height: 50px;">
                                     </div>
                                     
-                                   <!-- С понедельника по пятницу -->
-                                    
-                                    <div class="form-group" style="width: 400px; float: left">
-                                        <label for="record-date">Выберите начальную дату и время:</label>
-                                        <br>
-                                        <input type="text" id="record-date-from" class="form-control" name="date_from" style="width: 300px; height: 50px;">
+                                   
+                                    <div class="form-group row" style="float: left">
+                                     <div class="col-md-6">
+                                     <label for="record-date">Выберите дату и время:</label>
+                                        <input type="text" id="record-date-from" class="form-control mb-3" placeholder="С" name="date_from" style="width: 300px; height: 50px;">
+                                     </div>
+                                     <div class="col-md-6 d-flex">
+                                      <input type="text" id="record-date-until" class="form-control mt-auto mb-3" placeholder="До" name="date_until" style="width: 300px; height: 50px;">
+                                     </div>
                                    </div>
-                                   <div class="form-group" style="width: 400px; float: left">
-                                        <label for="record-time">Выберите конечную дату и время:</label>
-                                        <br>
-                                        <input type="text" id="record-date-until" class="form-control" name="date_until" style="width: 300px; height: 50px;">
-                                    </div>
+
 
                                     <div class="form-group form-check"
                                          style="width:700px;float: left; padding-left: 0; margin-top: 10px">
