@@ -42,7 +42,7 @@
 }
 .table-date th {
     background-color: #74bae6;
-    color: #FAFAFA;
+    color: black;
 }
 .table-date tr {
     border-bottom: 4px solid #dee2e6;
@@ -74,7 +74,7 @@
 }
 
 .link:hover{
-    color: #05304d;
+    color: black;
 }
 
 /* Click */
@@ -639,9 +639,8 @@ section {
     top: 30px;
     width: calc(100% - 314px);
     height: 96px;
-    background: rgba(116, 186, 230, 0.6);
+    background: #336699;
     z-index: 100;
-    border-bottom: solid 2px rgba(116, 186, 230, 1);
 }
 
 .header_wrap {
@@ -709,8 +708,7 @@ section {
     left: 0;
     width: 100%;
     height: 70px;
-    background: #74bae6;
-    border-bottom: solid 2px rgba(46, 46, 254, 0.3);
+    background: #336699;
     z-index: 100;
     -webkit-transition: all 400ms ease;
     -moz-transition: all 400ms ease;
@@ -1108,7 +1106,9 @@ section {
 *********************************/
 
 .cta {
-    background: #74bae6;
+    background: #333366;
+    border-bottom: 3px solid white;
+    border-radius: 10%;
 }
 
 .cta_image {
@@ -1256,7 +1256,6 @@ section {
 }
 
 .pr2 {
-    padding-bottom: 10px;
 }
 
 .pricing {
@@ -1423,7 +1422,7 @@ section {
 *********************************/
 
 .footer {
-    background: #74bae6;
+    background: #666699;
 }
 
 .footer_content {
