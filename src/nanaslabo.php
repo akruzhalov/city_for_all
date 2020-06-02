@@ -28,11 +28,7 @@
     <link rel="stylesheet" type="text/css" href="styles/animate.css">
     <link rel="stylesheet" type="text/css" href="styles/main_styleseye.css">
     <link rel="stylesheet" type="text/css" href="styles/responsive.css">
-<<<<<<< Updated upstream
-    <link rel="stylesheet" type="text/css" href="styles/jquery.datetimepicker.css"/>
-=======
     <link rel="stylesheet" type="text/css" href="styles/jquery.datetimepicker.eyes.css"/>
->>>>>>> Stashed changes
     <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/jquery.datetimepicker.js"></script>
 </head>
@@ -232,40 +228,19 @@
                                         <input name="phone" id="phone" class="form-control" required type="text"
                                                placeholder="+7 (___) 000-00-00" style="width: 300px; height: 50px;">
                                     </div>
-<<<<<<< Updated upstream
-                                  
-                                    <div class="form-group" style="width: 900px; float:left">
-
-                                    <label for="datetimepicker1">Выберите время и дату:</label>
-                                    <br>
-                                    <input type="text" id="record-date" name="date"/>
-                                    <script>
-                                        jQuery('#record-date').datetimepicker({
-                                            formatDate:'d.m.Y',
-                                            format:'d.m.Y H:i',
-                                            inline:true
-                                        });
-                                    </script>
-=======
                                     
->>>>>>> Stashed changes
 
-                                    <div class="form-group" style="width: 900px; float: left">
-                                        <label for="record-date">Выберите дату:</label>
+                                    <div class="form-group" style="width: 400px; float: left">
+                                        <label for="record-date">Выберите начальную дату и время:</label>
                                         <br>
-                                        <input type="text" id="record-date" name="date">
+                                        <input type="text" id="record-date-from" class="form-control" name="date_from" style="width: 300px; height: 50px;">
                                    </div>
-                                   <div class="form-group" style="width: 900px; float: left">
-                                        <label for="record-time">Выберите промежуток времени:</label>
+                                   <div class="form-group" style="width: 400px; float: left">
+                                        <label for="record-time">Выберите конечную дату и время:</label>
                                         <br>
-                                        <input type="text" id="record-time" name="date">
-                                        <input type="text" id="record-time2" name="date">
+                                        <input type="text" id="record-date-until" class="form-control" name="date_until" style="width: 300px; height: 50px;">
                                     </div>
-<<<<<<< Updated upstream
-                                   
-=======
 
->>>>>>> Stashed changes
                                     <div class="form-group form-check"
                                          style="width:700px;float: left; padding-left: 0; margin-top: 10px">
                                         <input id="checkbox" class="form-check-input  form-input-taxi" type="checkbox"
@@ -301,11 +276,10 @@
                                 <div class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
                                     <div><img src="images/phone.png" alt=""></div>
                                 </div>
-                                <div class="footer_title">Номера телефонов</div>
+                                <div class="footer_title">Номер телефона</div>
                                 <div class="footer_list">
                                     <ul>
-                                        <li>+7 (34938) 29-205</li>
-                                        <li>+7 (34938) 29-205</li>
+                                        <li><a href="tel:+7 (34938) 29 205">+7 (34938) 29-205</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -318,8 +292,7 @@
                                 <div class="footer_title">e-mail</div>
                                 <div class="footer_list">
                                     <ul>
-                                        <li>cso.muravlenko@dszn.yanao.ru</li>
-                                        <li>cso.muravlenko@dszn.yanao.ru</li>
+                                        <li><a href="mailto:cso.muravlenko@dszn.yanao.ru">cso.muravlenko@dszn.yanao.ru</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -361,29 +334,23 @@
     </div>
 </div>
 <script>
-                                       jQuery('#record-date').datetimepicker({
+                                       jQuery('#record-date-from').datetimepicker({
                                            minDate:'0',
                                            formatDate:'d.m.Y',
-                                           format:'d.m.Y',
-                                           inline:true,
-                                           timepicker:false,
+                                           format:'d.m.Y H:00',
+                                        //    inline:true,
                                            dayOfWeekStart: 1,
+                                           disabledWeekDays: [6,0]
                                        });
-                                       jQuery('#record-time').datetimepicker({
-                                           format:'H:m',
-                                           inline:true,
-                                        //    step: 30,
-                                           datepicker:false,
-                                           minTime:'08:00',
-                                           maxTime:'18:00'
+                                       jQuery('#record-date-until').datetimepicker({
+                                        minDate:'0',
+                                           formatDate:'d.m.Y',
+                                           format:'d.m.Y H:00',
+                                        //    inline:true,
+                                           dayOfWeekStart: 1,
+                                           disabledWeekDays: [6,0]
                                        });
-                                       jQuery('#record-time2').datetimepicker({
-                                           format:'H:m',
-                                           inline:true,
-                                           datepicker:false,
-                                           minTime:'09:00',
-                                           maxTime:'19:00'
-                                       });
+
 </script>
 <script>
 	"use strict";
