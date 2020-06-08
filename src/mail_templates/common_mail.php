@@ -1,3 +1,7 @@
+<?php
+// Replace the % with the actual information
+$message = str_replace($info_html, $info, $message);
+
 $mail->isSMTP();                                     // Set mailer to use SMTP
 $mail->Host = $config['Host'];  					 // Host SMTP сервера: ip или доменное имя
 $mail->SMTPAuth = $config['SMTPAuth'];               // Наличие авторизации на SMTP сервере

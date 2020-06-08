@@ -21,10 +21,7 @@ $mail->CharSet = $config['CharSet'];                 // Кодировка об�
 
 $message = file_get_contents('mail_templates/mail.html');
 
-// Replace the % with the actual information
-$message = str_replace($info_html, $info, $message);
-
-include (mail_templates/common_mail.php);
+include 'mail_templates/common_mail.php';
 
 $mail->Subject = 'Заказ такси';                      // Тема письма
 $mail->MsgHTML($message);

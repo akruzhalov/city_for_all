@@ -185,8 +185,8 @@
                                                placeholder="Иванов Иван Иванович" style="width: 400px; height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 225px; float: left">
-                                        <label for="birthdate">Дата рождения:</label>
-                                        <input name="birthdate" id="birthdate" class="form-control" required type="text"
+                                        <label for="birthday">Дата рождения:</label>
+                                        <input name="birthday" id="birthday" class="form-control" required type="text"
                                                placeholder="06.11.1994" style="width: 225px; height: 50px;">
                                     </div>
                                     <label style="font-size: 26px; margin: 35px 0 35px; width: 700px">Данные паспорта</label>

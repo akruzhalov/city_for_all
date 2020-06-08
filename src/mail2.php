@@ -24,12 +24,9 @@ $info_html=["%fio%","%phone%","%birthday%","%serial%","%number%","%datapas%","%i
 
 $mail->CharSet = $config['CharSet'];                 // Кодировка обмена сообщениями с SMTP сервером
 
-$message = file_get_contents('mail_templates/mail.html');
+$message = file_get_contents('mail_templates/mail2.html');
 
-// Replace the % with the actual information
-$message = str_replace($info_html, $info, $message);
-
-include (mail_templates/common_mail.php);
+include 'mail_templates/common_mail.php';
 
 $mail->Subject = 'Заказ няни';                       // Тема письма
 $mail->MsgHTML($message);
