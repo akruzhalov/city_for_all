@@ -45,7 +45,7 @@ $mail->addAddress($config['Username_to']);           // Получатель п�
 $mail->isHTML(true);                           // Set email format to HTML                                // Set email format to HTML
 
 $mail->Subject = 'Заказ такси';                      // Тема письма
-$mail-> Body = 'ФИО: '.$fio. '<br/> Телефон: '  .$phone. '<br/>Дата рождения: ' .$from. '<br/>Относится к категории: ' .$select;
+$mail->MsgHTML($message);
 $mail->AltBody = '';
 
 if(!$mail->send()) {
