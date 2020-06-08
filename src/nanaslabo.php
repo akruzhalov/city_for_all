@@ -185,8 +185,8 @@
                                                placeholder="Иванов Иван Иванович" style="width: 400px; height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 225px; float: left">
-                                        <label for="birthday">Дата рождения:</label>
-                                        <input name="birthday" id="birthday" class="form-control" required type="text"
+                                        <label for="birthdate">Дата рождения:</label>
+                                        <input name="birthdate" id="birthdate" class="form-control" required type="text"
                                                placeholder="06.11.1994" style="width: 225px; height: 50px;">
                                     </div>
                                     <label style="font-size: 26px; margin: 35px 0 35px; width: 700px">Данные паспорта</label>
@@ -305,10 +305,11 @@
                                 <div class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
                                     <div><img src="images/phone.png" alt=""></div>
                                 </div>
-                                <div class="footer_title">Номер телефона</div>
+                                <div class="footer_title">Номера телефонов</div>
                                 <div class="footer_list">
                                     <ul>
-                                        <li><a href="tel:+7 (34938) 29 205">+7 (34938) 29-205</a></li>
+                                        <li>+7 (34938) 29-205</li>
+                                        <li>+7 (34938) 29-205</li>
                                     </ul>
                                 </div>
                             </div>
@@ -321,7 +322,8 @@
                                 <div class="footer_title">e-mail</div>
                                 <div class="footer_list">
                                     <ul>
-                                        <li><a href="mailto:cso.muravlenko@dszn.yanao.ru">cso.muravlenko@dszn.yanao.ru</a></li>
+                                        <li>cso.muravlenko@dszn.yanao.ru</li>
+                                        <li>cso.muravlenko@dszn.yanao.ru</li>
                                     </ul>
                                 </div>
                             </div>

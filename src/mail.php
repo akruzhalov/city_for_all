@@ -13,11 +13,11 @@ $config = $yaml->parse( file_get_contents('config.yml') )['smtp'];
 
 $fio = $_POST['fio'];
 $phone = $_POST['phone'];
-$address = $_POST['address'];
 $birthday = $_POST['birthday'];
+$address = $_POST['address'];
 $select = $_POST['select'];
 
-//$mail->SMTPDebug = 3;                               // Enable verbose debug output
+$mail->CharSet = $config['CharSet'];                 // Кодировка обмена сообщениями с SMTP сервером
 
 $message = file_get_contents('mail_templates/mail.html');
 
@@ -28,10 +28,8 @@ $message = str_replace('%address%', $address, $message);
 $message = str_replace('%birthday%', $birthday, $message);
 $message = str_replace('%select%', $select, $message);
 
-$mail->CharSet = $config['CharSet'];                 // Кодировка обмена сообщениями с SMTP сервером
-
 $mail->isSMTP();                                     // Set mailer to use SMTP
-$mail->Host = $config['Host'];  					           // Host SMTP сервера: ip или доменное имя
+$mail->Host = $config['Host'];  					 // Host SMTP сервера: ip или доменное имя
 $mail->SMTPAuth = $config['SMTPAuth'];               // Наличие авторизации на SMTP сервере
 $mail->Username = $config['Username'];               // Имя пользователя на SMTP сервере
 $mail->Password = $config['Password'];               // Пароль от учетной записи на SMTP сервере
@@ -42,7 +40,7 @@ $mail->Port = $config['Port'];                       // TCP port to connect to /
 $mail->setFrom($config['Username']);                 // от кого будет уходить письмо? (Адресант почтового сообщения )
 $mail->addAddress($config['Username_to']);           // Получатель письма (Адресат почтового сообщения)
 //$mail->AddReplyTo($config['addreply']);            // Альтернативный адрес для ответа
-$mail->isHTML(true);                           // Set email format to HTML                                // Set email format to HTML
+$mail->isHTML(true);                           // Set email format to HTML
 
 $mail->Subject = 'Заказ такси';                      // Тема письма
 $mail->MsgHTML($message);
@@ -54,3 +52,4 @@ if(!$mail->send()) {
     header('location: thank-you.html');
 }
 ?>
+

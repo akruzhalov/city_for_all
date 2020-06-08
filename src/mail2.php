@@ -23,7 +23,9 @@ $actualadress = $_POST['actualadress'];
 $date = $_POST['date'];
 $regadress = $_POST['regadress'];
 
+//$mail->SMTPDebug = 3;                              // Enable verbose debug output
 
+$mail->CharSet = $config['CharSet'];                 // Кодировка обмена сообщениями с SMTP сервером
 
 $message = file_get_contents('mail_templates/mail2.html');
 
@@ -38,11 +40,6 @@ $message = str_replace('%issuedby%', $issuedby, $message);
 $message = str_replace('%actualadress%', $actualadress, $message);
 $message = str_replace('%date%', $date, $message);
 $message = str_replace('%regadress%', $regadress, $message);
-
-
-//$mail->SMTPDebug = 3;                              // Enable verbose debug output
-
-$mail->CharSet = $config['CharSet'];                 // Кодировка обмена сообщениями с SMTP сервером
 
 $mail->isSMTP();                                     // Set mailer to use SMTP
 $mail->Host = $config['Host'];  					 // Host SMTP сервера: ip или доменное имя
