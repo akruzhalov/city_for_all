@@ -1,11 +1,16 @@
-
 <?php
 require_once __DIR__ . '/vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
+use Symfony\Component\Yaml\Parser;
 
 $mail = new PHPMailer;
 
-$mail->CharSet = 'utf-8';
+$yaml = new Parser();
+
+
+$config = $yaml->parse( file_get_contents('config.yml') )['smtp'];
+//var_dump($config);
+
 
 $fio = $_POST['fio'];
 $phone = $_POST['phone'];
@@ -18,7 +23,7 @@ $actualadress = $_POST['actualadress'];
 $date = $_POST['date'];
 $regadress = $_POST['regadress'];
 
-//$mail->SMTPDebug = 3;                               // Enable verbose debug output
+
 
 $message = file_get_contents('mail_templates/mail2.html');
 
@@ -34,32 +39,32 @@ $message = str_replace('%actualadress%', $actualadress, $message);
 $message = str_replace('%date%', $date, $message);
 $message = str_replace('%regadress%', $regadress, $message);
 
-$mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.mail.ru';  																							// Specify main and backup SMTP servers
-$mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'cityforall@mail.ru'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'abumed00'; // Ваш пароль от почты с которой будут отправляться письма
-$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('cityforall@mail.ru'); // от кого будет уходить письмо?
-$mail->addAddress('cityforall@mail.ru');     // Кому будет уходить письмо
-//$mail->addAddress('ellen@example.com');               // Name is optional
-//$mail->addReplyTo('info@example.com', 'Information');
-//$mail->addCC('cc@example.com');
-//$mail->addBCC('bcc@example.com');
-//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
-$mail->isHTML(true);                                  // Set email format to HTML
+//$mail->SMTPDebug = 3;                              // Enable verbose debug output
+
+$mail->CharSet = $config['CharSet'];                 // Кодировка обмена сообщениями с SMTP сервером
+
+$mail->isSMTP();                                     // Set mailer to use SMTP
+$mail->Host = $config['Host'];  					 // Host SMTP сервера: ip или доменное имя
+$mail->SMTPAuth = $config['SMTPAuth'];               // Наличие авторизации на SMTP сервере
+$mail->Username = $config['Username'];               // Имя пользователя на SMTP сервере
+$mail->Password = $config['Password'];               // Пароль от учетной записи на SMTP сервере
+$mail->SMTPSecure = $config['SMTPSecure'];           // Тип шифрования
+$mail->Port = $config['Port'];                       // TCP port to connect to / этот порт может отличаться у других провайдеров
+
+
+$mail->setFrom($config['Username']);                 // от кого будет уходить письмо? (Адресант почтового сообщения )
+$mail->addAddress($config['Username_to']);           // Получатель письма (Адресат почтового сообщения)
+//$mail->AddReplyTo($config['addreply']);            // Альтернативный адрес для ответа
+$mail->isHTML(true);                           // Set email format to HTML
 
 $mail->Subject = 'Заказ няни';                       // Тема письма
 $mail->MsgHTML($message);
 $mail->AltBody = '';
 
 if(!$mail->send()) {
-    echo 'Error';
+    echo 'Error: ' . $mail->ErrorInfo;
 } else {
     header('location: thank-you.html');
 }
 ?>
-
