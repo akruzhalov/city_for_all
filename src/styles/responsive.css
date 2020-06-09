@@ -154,6 +154,7 @@
 	{
 		font-size: 56px;
 	}
+
 	.header_wrap
 	{
 		padding-right: 25px;
@@ -260,6 +261,7 @@
 	h1
 	{
 		font-size: 36px;
+		letter-spacing: 0.8px;
 	}
 	.header
 	{

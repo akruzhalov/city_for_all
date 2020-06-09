@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="styles/animate.css">
     <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
     <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <link rel="stylesheet" type="text/css" href="styles\FormNaniAndTaxi.css">
 </head>
 <body>
 <div class="header_wrap d-flex flex-row align-items-center justify-content-center">
@@ -160,10 +161,10 @@
                             <div class="section_title_container">
 
                                 <form action="mail.php" method="POST">
-                                    <div class="form-group" style="width: 700px; float: left">
+                                    <div class="form-group taksi2">
                                         <label for="fio">ФИО:</label>
                                         <input name="fio" id="fio" class="form-control f-taxi" required type="text"
-                                               placeholder="Иванов Иван Иванович" style="height: 50px;">
+                                               placeholder="Иванов Иван Иванович" style=" height: 50px;">
                                     </div>
                                     <div class="form-group" style="width: 700px; float: left">
                                         <label for="address">Адрес заказа:</label>
@@ -175,14 +176,14 @@
                                         <input name="birthday" id="birthday" class="form-control f-taxi" required type="text"
                                                placeholder="01.01.1950" style="height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 400px; float: left">
+                                    <div class="form-group takstel">
                                         <label for="phone" style="width: 100%; float: left">Ваш телефон:</label>
-                                        <input name="phone" id="phone" class="form-control f-taxi" required type="text"
-                                               placeholder="+7 (800) 000-00-00" style="width: 350px;height: 50px; padding: 12px;">
+                                        <input name="phone" id="phone" class="form-control f-taxi telef" required type="text"
+                                               placeholder="+7 (800) 000-00-00">
                                     </div>
-                                    <div class="form-group" style="width: 300px; float: left">
+                                    <div class="form-group takskategor" >
                                         <label for="time" style="width: 100%; float: left">Категория:</label>
-                                        <select id="time" name="select" class="form-control" style="width: 300px;height: 50px; padding: 12px;">
+                                        <select id="time" name="select" class="form-control inval">
                                             <option value="Инвалид">Инвалид</option>
                                             <option value="Гражданин пожилого возраста">Гражданин пожилого возраста</option>
                                         </select>

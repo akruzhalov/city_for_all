@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="styles/animate.css">
     <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
     <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <link rel="stylesheet" type="text/css" href="styles\FormNaniAndTaxi.css">
     <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
@@ -182,48 +183,49 @@
                         <div class="about_content">
                             <div class="section_title_container">
                                 <form action="mail2.php" method="post">
-                                    <div class="form-group" style="width: 475px; float: left">
+                                    <div class="form-group  nania2" >
                                         <label for="fio">ФИО родителя(законного представителя):</label>
                                         <input name="fio" id="fio" class="form-control" required type="text"
-                                               placeholder="Иванов Иван Иванович" style="width: 400px; height: 50px;">
+                                               placeholder="Иванов Иван Иванович" style="height: 50px;">
                                     </div>
+
                                     <div class="form-group" style="width: 225px; float: left">
                                         <label for="birthday">Дата рождения:</label>
                                         <input name="birthday" id="birthday" class="form-control" required type="text"
                                                placeholder="06.11.1994" style="width: 225px; height: 50px;">
                                     </div>
-                                    <label style="font-size: 26px; margin: 35px 0 35px; width: 700px">Данные паспорта</label>
-                                    <div class="form-group" style="width: 150px; float: left">
+                                    <label class="nanipassword" >Данные паспорта</label>
+                                    <div class="form-group naniseria" >
                                         <label for="serial">Серия:</label>
                                         <input name="serial" id="serial" class="form-control" required type="text"
                                                placeholder="1111" style="width: 100px; height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 325px; float: left">
+                                    <div class="form-group naninumb" >
                                         <label for="number">Номер:</label>
                                         <input name="number" id="number" class="form-control" required type="text"
                                                placeholder="111111" style="width: 260px; height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 225px; float: left">
+                                    <div class="form-group nanidate">
                                         <label for="issuedate">Дата выдачи:</label>
                                         <input name="datapas" id="issuedate" class="form-control" required type="text"
                                                placeholder="12.12.2019" style="width: 225px; height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 700px; float: left">
+                                    <div class="form-group nania2">
                                         <label for="issuedby">Кем выдан:</label>
                                         <input name="issuedby" id="issuedby" class="form-control" required type="text"
                                                placeholder="УФМС России по г. Москва" style="height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 700px; float: left">
+                                    <div class="form-group nania2" >
                                         <label for="regadress">Адрес регистрации:</label>
                                         <input name="regadress" id="regadress" class="form-control" required type="text"
                                                placeholder="УФМС России по г. Москва" style="height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 700px; float: left">
+                                    <div class="form-group nania2">
                                         <label for="actualadress">Адрес фактического проживания:</label>
                                         <input name="actualadress" id="actualadress" class="form-control" required
                                                type="text" placeholder="УФМС России по г. Москва" style="height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 400px; float: left">
+                                    <div class="form-group nanitel ">
                                         <label for="phone">Телефон:</label>
                                         <input name="phone" id="phone" class="form-control" required type="text"
                                                placeholder="+7 (___) 000-00-00" style="width: 300px; height: 50px;">

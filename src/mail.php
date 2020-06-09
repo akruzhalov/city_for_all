@@ -19,6 +19,7 @@ $info_html=["%fio%","%phone%","%address%","%birthday%","%select%"];
 
 $mail->CharSet = $config['CharSet'];                 // Кодировка обмена сообщениями с SMTP сервером
 
+
 $message = file_get_contents('mail_templates/mail.html');
 
 include 'mail_templates/common_mail.php';
