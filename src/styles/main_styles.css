@@ -626,8 +626,6 @@ section {
 .logo img {
     width: 80%;
     height: auto;
-    background-color: #99CCFF;
-    border-radius: 20px 20px;
     padding: 10px;
 }
 
@@ -683,6 +681,8 @@ section {
     -ms-transition: all 400ms ease;
     -o-transition: all 400ms ease;
     transition: all 400ms ease;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .fixed_header.scrolled {
