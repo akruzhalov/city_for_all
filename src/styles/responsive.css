@@ -51,6 +51,8 @@
 		padding-left: 100px;
 		padding-right: 120px;
 	}
+
+
 }
 
 /************
@@ -69,7 +71,7 @@
 @media only screen and (max-width: 1280px)
 {
 	.main_nav ul li {
-		margin: 0px 5px;
+		margin: 0 5px;
 	}
 	.main_nav ul li a {
 		font-size: 14px;
@@ -95,8 +97,8 @@
 	.cta_content
 	{
 		width: 100%;
-		padding-left: 200px;
-		padding-right: 220px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 	.header {
 		box-sizing: border-box;
@@ -181,12 +183,23 @@
 	}
 	.cta_content
 	{
-		padding-left: 100px;
-		padding-right: 120px;
+		padding-left: 50px;
+		padding-right: 50px;
 	}
 	.footer_col:not(:last-child)
 	{
 		margin-bottom: 60px;
+	}
+	.cta {
+		background: #333366;
+		border-bottom: 3px solid white;
+		border-radius: 5px;
+	}
+	.l {
+		margin-right: 3px;
+	}
+	.r {
+		margin-left: 3px;
 	}
 }
 
@@ -196,7 +209,7 @@
 
 @media only screen and (max-width: 959px)
 {
-	
+
 }
 
 /************
@@ -318,6 +331,7 @@
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+
 }
 
 /************
