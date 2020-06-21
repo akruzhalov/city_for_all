@@ -18,9 +18,11 @@ $issuedby = $_POST['issuedby'];
 $actualadress = $_POST['actualadress'];
 $date = $_POST['date'];
 $regadress = $_POST['regadress'];
+$date_from = $_POST['date_from'];
+$date_until = $_POST['date_until'];
 
-$info=[$fio,$phone,$birthday,$serial,$number,$datapas,$issuedby,$actualadress,$date,$regadress];
-$info_html=["%fio%","%phone%","%birthday%","%serial%","%number%","%datapas%","%issuedby%","%actualadress%","%date%","%regadress%"];
+$info=[$fio,$phone,$birthday,$serial,$number,$datapas,$issuedby,$actualadress,$date,$regadress,$date_from,$date_until];
+$info_html=["%fio%","%phone%","%birthday%","%serial%","%number%","%datapas%","%issuedby%","%actualadress%","%date%","%regadress%","%date_from%","%date_until%"];
 
 $mail->CharSet = $config['CharSet'];                 // Кодировка обмена сообщениями с SMTP сервером
 
