@@ -184,55 +184,56 @@
                         <div class="about_content">
                             <div class="section_title_container">
                                 <form action="mail2.php" method="post">
-                                    <div class="form-group" style="width: 475px; float: left">
+                                    <div class="form-group" style="width: 475px;">
                                         <label for="fio">ФИО родителя(законного представителя):</label>
                                         <input name="fio" id="fio" class="form-control" required type="text"
                                                placeholder="Иванов Иван Иванович" style="width: 400px; height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 225px; float: left">
+                                    <div class="form-group" style="width: 225px;">
                                         <label for="birthdate">Дата рождения:</label>
                                         <input name="birthdate" id="birthdate" class="form-control" required type="text"
                                                placeholder="06.11.1994" style="width: 225px; height: 50px;">
                                     </div>
                                     <label style="font-size: 26px; margin: 35px 0 35px; width: 700px">Данные паспорта</label>
-                                    <div class="form-group" style="width: 150px; float: left">
-                                        <label for="serial">Серия:</label>
-                                        <input name="serial" id="serial" class="form-control" required type="text"
-                                               placeholder="1234" style="width: 100px; height: 50px;">
-                                    </div>
-                                    <div class="form-group" style="width: 325px; float: left">
-                                        <label for="number">Номер:</label>
-                                        <input name="number" id="number" class="form-control" required type="text"
+                                    <div class="form-group row" style="display: inline-flex;">
+                                    <div class="col-md-5">
+                                        <label for="serial">Серия и номер:</label>
+                                        <input name="serial" id="serial" class="form-control mb-3" required type="text"
+                                               placeholder="1234" style="width: 130px; height: 50px;">
+                                        </div>
+                                     <div class="col-md-5 d-flex">
+                                        <input name="number" id="number" class="form-control mt-auto mb-3" required type="text"
                                                placeholder="567890" style="width: 260px; height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 225px; float: left">
+                                    </div>
+                                    <div class="form-group" style="width: 225px;">
                                         <label for="issuedate">Дата выдачи:</label>
                                         <input name="datapas" id="issuedate" class="form-control" required type="text"
                                                placeholder="12.12.2012" style="width: 225px; height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 700px; float: left">
+                                    <div class="form-group" style="width: 700px;">
                                         <label for="issuedby">Кем выдан:</label>
                                         <input name="issuedby" id="issuedby" class="form-control" required type="text"
                                                placeholder="Отделом УФМС России по ЯНАО в г. Муравленко" style="height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 700px; float: left">
+                                    <div class="form-group" style="width: 700px;">
                                         <label for="regadress">Адрес регистрации:</label>
                                         <input name="regadress" id="regadress" class="form-control" required type="text"
                                                placeholder="г. Муравленко, ул. Дружбы народов, д. 52, кв. 62" style="height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 700px; float: left">
+                                    <div class="form-group" style="width: 700px;">
                                         <label for="actualadress">Адрес фактического проживания:</label>
                                         <input name="actualadress" id="actualadress" class="form-control" required
                                                type="text" placeholder="г. Муравленко, ул. Дружбы народов, д. 52, кв. 62" style="height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 400px; float: left">
+                                    <div class="form-group" style="width: 400px;">
                                         <label for="phone">Телефон:</label>
                                         <input name="phone" id="phone" class="form-control" required type="text"
                                                placeholder="+7 (999) 777-66-55" style="width: 300px; height: 50px;">
                                     </div>
                                     
                                    
-                                    <div class="form-group row" style="float: left">
+                                    <div class="form-group row" style="display: inline-flex;">
                                      <div class="col-md-6">
                                      <label for="record-date">Выберите дату и время:</label>
                                         <input type="text" id="record-date-from" class="form-control mb-3" placeholder="С" name="date_from" style="width: 300px; height: 50px;">
@@ -244,7 +245,7 @@
 
 
                                     <div class="form-group form-check"
-                                         style="width:700px;float: left; padding-left: 0; margin-top: 10px">
+                                         style="width:700px; padding-left: 0; margin-top: 10px">
                                         <input id="checkbox" class="form-check-input  form-input-taxi" type="checkbox"
                                                onclick="check()">
                                         <label style="font-size: 14px; font-weight: normal; line-height: 20px" class="form-check-label" for="checkbox"
