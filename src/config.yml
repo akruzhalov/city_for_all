@@ -1,6 +1,5 @@
 smtp:
   CharSet: 'utf-8'
-  delivery_method: :smtp
   Host: 'smtp.mail.ru'
   SMTPAuth: true
   EmailFrom: 'cityforall@mail.ru'

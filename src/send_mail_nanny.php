@@ -21,20 +21,9 @@ $regadress = $_POST['regadress'];
 
 $info=[$fio,$phone,$birthday,$serial,$number,$datapas,$issuedby,$actualadress,$date,$regadress];
 $info_html=["%fio%","%phone%","%birthday%","%serial%","%number%","%datapas%","%issuedby%","%actualadress%","%date%","%regadress%"];
+$message = file_get_contents('mail_templates/nanny.html');
+$subject = 'Заказ няни';
 
-$mail->CharSet = $config['CharSet'];                 // Кодировка обмена сообщениями с SMTP сервером
+include 'common_mail.php';
 
-$message = file_get_contents('mail_templates/mail2.html');
-
-include 'mail_templates/common_mail.php';
-
-$mail->Subject = 'Заказ няни';                       // Тема письма
-$mail->MsgHTML($message);
-$mail->AltBody = '';
-
-if(!$mail->send()) {
-    echo 'Error: ' . $mail->ErrorInfo;
-} else {
-    header('location: thank-you.html');
-}
 ?>
