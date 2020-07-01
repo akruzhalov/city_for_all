@@ -51,12 +51,7 @@
 .xdsoft_datetimepicker.xdsoft_inline {
 	display: inline-block;
 	position: static;
-<<<<<<< Updated upstream
 	box-shadow: none;
-=======
-    box-shadow: none;
-    /* transform: scale(1.2); */
->>>>>>> Stashed changes
 }
 
 .xdsoft_datetimepicker * {
@@ -570,8 +565,4 @@
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f8fa', endColorstr='#FFF',GradientType=0 );
   /* IE6-9 */
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes
