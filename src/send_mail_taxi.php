@@ -14,8 +14,8 @@ $birthday = $_POST['birthday'];
 $address = $_POST['address'];
 $select = $_POST['select'];
 
-$info=[$fio,$phone,$address,$birthday,$select];
-$info_html=["%fio%","%phone%","%address%","%birthday%","%select%"];
+$info=[$fio,$phone,$birthday,$select];
+$info_html=["%fio%","%phone%","%birthday%","%select%"];
 $message = file_get_contents('mail_templates/taxi.html');
 $subject = 'Заказ такси';
 
