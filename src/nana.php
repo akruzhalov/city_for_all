@@ -182,7 +182,7 @@
                     <div class="col-lg-8" style="margin: 0 auto">
                         <div class="about_content">
                             <div class="section_title_container">
-                                <form action="mail2.php" method="post">
+                                <form action="send_mail_nanny.php" method="post">
                                     <div class="form-group  nania2" >
                                         <label for="fio">ФИО родителя(законного представителя):</label>
                                         <input name="fio" id="fio" class="form-control" required type="text"
