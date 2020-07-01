@@ -41,10 +41,6 @@
 		left: 60px;
 		width: calc(100% - 120px);
 	}
-	.main_nav ul li:not(:last-of-type)
-	{
-		margin-right: 48px;
-	}
 	.intro_box
 	{
 		padding-left: 40px;
@@ -129,22 +125,7 @@
 
 @media only screen and (max-width: 1199px)
 {
-	.logo
-	{
-		left: 30px;
-	}
-	.header_social
-	{
-		right: 30px;
-	}
-	.main_nav ul li:not(:last-of-type)
-	{
-		margin-right: 32px;
-	}
-	.header_social ul li:not(:last-of-type)
-	{
-		margin-right: 18px;
-	}
+
 	.home_slider .owl-dots
 	{
 		left: calc((100% - 915px) / 2);
@@ -160,6 +141,11 @@
 		padding-left: 0;
 		padding-right: 0;
 	}
+	.header {
+		box-sizing: border-box;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
 
 /************
@@ -168,7 +154,7 @@
 
 @media only screen and (max-width: 1100px)
 {
-	
+
 }
 
 /************
@@ -177,7 +163,7 @@
 
 @media only screen and (max-width: 1024px)
 {
-	
+
 }
 
 /************
@@ -200,12 +186,13 @@
 	}
 	.home_title h1
 	{
-		font-size: 56px;
+		font-size: 30px;
 	}
-
+	
 	.header_wrap
 	{
 		padding-right: 25px;
+		padding-left: 25px;
 	}
 	.hamburger
 	{
@@ -347,7 +334,7 @@
 	}
 	.home_title h1
 	{
-		font-size: 48px;
+		font-size: 28px;
 	}
 	.button,
 	.button_2
