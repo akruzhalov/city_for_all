@@ -28,6 +28,9 @@
     <link rel="stylesheet" type="text/css" href="styles/animate.css">
     <link rel="stylesheet" type="text/css" href="styles/main_styleseye.css">
     <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+    <link rel="stylesheet" type="text/css" href="styles/jquery.datetimepicker.eyes.css"/>
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/jquery.datetimepicker.js"></script>
 </head>
 <body>
 <div class="header_wrap d-flex flex-row align-items-center justify-content-center">
@@ -58,7 +61,7 @@
                 <!-- Social -->
                 <div class="social header_social">
                     <ul class="d-flex flex-row align-items-center justify-content-start">
-                        <li><a href="nana.php" title="Обычная версия"><i class="fa fa-eye"
+                        <li><a href="nana.html" title="Обычная версия"><i class="fa fa-eye"
                                                                                          aria-hidden="true"></i></a>
                         </li>
                     </ul>
@@ -179,97 +182,65 @@
                         <div class="about_content">
                             <div class="section_title_container">
                                 <form action="send_mail_nanny.php" method="post">
-                                    <div class="form-group" style="width: 475px; float: left">
+                                    <div class="form-group" style="width: 475px; ">
                                         <label for="fio">ФИО родителя(законного представителя):</label>
                                         <input name="fio" id="fio" class="form-control" required type="text"
                                                placeholder="Иванов Иван Иванович" style="width: 400px; height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 225px; float: left">
+                                    <div class="form-group" style="width: 225px;">
                                         <label for="birthdate">Дата рождения:</label>
                                         <input name="birthdate" id="birthdate" class="form-control" required type="text"
                                                placeholder="06.11.1994" style="width: 225px; height: 50px;">
                                     </div>
                                     <label style="font-size: 26px; margin: 35px 0 35px; width: 700px">Данные паспорта</label>
-                                    <div class="form-group" style="width: 150px; float: left">
-                                        <label for="serial">Серия:</label>
-                                        <input name="serial" id="serial" class="form-control" required type="text"
-                                               placeholder="1111" style="width: 100px; height: 50px;">
+                                    <div class="form-group row" style="display: inline-flex;">
+                                    <div class="col-md-5">
+                                        <label for="serial">Серия и номер:</label>
+                                        <input name="serial" id="serial" class="form-control mb-3" required type="text"
+                                               placeholder="1234" style="width: 130px; height: 50px;">
+                                        </div>
+                                     <div class="col-md-5 d-flex">
+                                        <input name="number" id="number" class="form-control mt-auto mb-3" required type="text"
+                                               placeholder="567890" style="width: 260px; height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 325px; float: left">
-                                        <label for="number">Номер:</label>
-                                        <input name="number" id="number" class="form-control" required type="text"
-                                               placeholder="111111" style="width: 260px; height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 225px; float: left">
+                                    <div class="form-group" style="width: 225px;">
                                         <label for="issuedate">Дата выдачи:</label>
                                         <input name="datapas" id="issuedate" class="form-control" required type="text"
                                                placeholder="12.12.2019" style="width: 225px; height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 700px; float: left">
+                                    <div class="form-group" style="width: 700px;">
                                         <label for="issuedby">Кем выдан:</label>
                                         <input name="issuedby" id="issuedby" class="form-control" required type="text"
                                                placeholder="УФМС России по г. Москва" style="height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 700px; float: left">
+                                    <div class="form-group" style="width: 700px;">
                                         <label for="regadress">Адрес регистрации:</label>
                                         <input name="regadress" id="regadress" class="form-control" required type="text"
                                                placeholder="УФМС России по г. Москва" style="height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 700px; float: left">
+                                    <div class="form-group" style="width: 700px;">
                                         <label for="actualadress">Адрес фактического проживания:</label>
                                         <input name="actualadress" id="actualadress" class="form-control" required
                                                type="text" placeholder="УФМС России по г. Москва" style="height: 50px;">
                                     </div>
-                                    <div class="form-group" style="width: 400px; float: left">
+                                    <div class="form-group" style="width: 400px;">
                                         <label for="phone">Телефон:</label>
                                         <input name="phone" id="phone" class="form-control" required type="text"
                                                placeholder="+7 (___) 000-00-00" style="width: 300px; height: 50px;">
                                     </div>
-                                    <input type="hidden" id="record-date" name="date">
-                                    <div class="form-group" style="width: 900px; float: left">
-										<?php
-										$dates = [
-											'Понедельник' => 'Mon this week',
-											'Вторник' => 'Tue this week',
-											'Среда' => 'Wed this week',
-											'Четверг' => 'Thu this week',
-											'Пятница' => 'Fri this week',
-										];
-										?>
-                                        <table class="table">
-                                            <thead>
-												<tr>
-													<th> </th>
-													<?php for($i = 8; $i <= 18; $i++):?>
-														<th><?php echo $i < 10 ? "0{$i}:00" : "{$i}:00";?></th>
-													<?php endfor;?>
-												</tr>
-                                            </thead>
-                                            <tbody>
-											<?php foreach ($dates as $day => $value):?>
+                                    
 
-                                                <tr>
-                                                    <td class="day"><?php echo $day;?></td>
+                                    <div class="form-group row" style="display: inline-flex;">
+                                     <div class="col-md-6">
+                                     <label for="record-date">Выберите дату и время:</label>
+                                        <input type="text" id="record-date-from" class="form-control mb-3" placeholder="С" name="date_from" style="width: 300px; height: 50px;">
+                                     </div>
+                                     <div class="col-md-6 d-flex">
+                                      <input type="text" id="record-date-until" class="form-control mt-auto mb-3" placeholder="До" name="date_until" style="width: 300px; height: 50px;">
+                                     </div>
+                                   </div>
 
-	                                                <?php for($i = 8; $i <= 18; $i++):?>
-
-													<?php
-														$time = $i < 10 ? "0{$i}:00:00" : "{$i}:00:00";
-														$date = date('Y-m-d', strtotime($value));
-														$date = $date.' '.$time;
-														?>
-
-														<td class="cell" data-date="<?php echo $date;?>"></td>
-
-	                                                <?php endfor;?>
-
-                                                </tr>
-
-											<?php endforeach;?>
-                                            </tbody>
-                                        </table>
-
-                                    </div>
                                     <div class="form-group form-check"
                                          style="width:700px;float: left; padding-left: 0; margin-top: 10px">
                                         <input id="checkbox" class="form-check-input  form-input-taxi" type="checkbox"
@@ -362,6 +333,25 @@
         </footer>
     </div>
 </div>
+<script>
+                                       jQuery('#record-date-from').datetimepicker({
+                                           minDate:'0',
+                                           formatDate:'d.m.Y',
+                                           format:'d.m.Y H:00',
+                                        //    inline:true,
+                                           dayOfWeekStart: 1,
+                                           disabledWeekDays: [6,0]
+                                       });
+                                       jQuery('#record-date-until').datetimepicker({
+                                        minDate:'0',
+                                           formatDate:'d.m.Y',
+                                           format:'d.m.Y H:00',
+                                        //    inline:true,
+                                           dayOfWeekStart: 1,
+                                           disabledWeekDays: [6,0]
+                                       });
+
+</script>
 <script>
 	"use strict";
 
