@@ -43,7 +43,7 @@
             <div class="header_wrap d-flex flex-row align-items-center justify-content-around">
 
                 <!-- Logo -->
-                <div class="logo"><a href="index.html"><img src="images/logo2.png" alt=""></a></div>
+                <div class="logo"><a href="index.html"><img src="images/wlogo.png" alt=""></a></div>
 
                 <!-- Main Nav -->
                 <nav class="main_nav">
@@ -80,7 +80,7 @@
             <div class="header_wrap d-flex flex-row align-items-center justify-content-center">
 
                 <!-- Logo -->
-                <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
+                <div class="logo"><a href="index.html"><img src="images/wlogo.png" alt=""></a></div>
 
                 <!-- Main Nav -->
                 <nav class="main_nav">
@@ -297,7 +297,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="footer_logo text-center"><a href="index.html"><img src="images/logo2.png" alt=""></a>
+                    <div class="footer_logo text-center"><a href="index.html"><img src="images/logo.png" alt=""></a>
                     </div>
                 </div>
             </div>
