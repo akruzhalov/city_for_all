@@ -355,14 +355,6 @@ label:hover:before {
     background: #ffffff
 }
 
-.f-taxi:nth-child(4) {
-    width: 10% !important;
-}
-
-.f-taxi:nth-child(5) {
-    width: 10% !important;
-}
-
 section {
     display: block;
     position: relative;
