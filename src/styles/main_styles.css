@@ -42,7 +42,7 @@
 }
 .table-date th {
     background-color: #74bae6;
-    color: #FAFAFA;
+    color: black;
 }
 .table-date tr {
     border-bottom: 4px solid #dee2e6;
@@ -70,11 +70,14 @@
 
 .cta_list .link{
     transition: .4s;
-    text-decoration: underline;
+    text-decoration: none;
+    color: #99CCFF;
+    font-weight: bolder;
 }
 
 .link:hover{
-    color: #05304d;
+    color: white;
+
 }
 
 /* Click */
@@ -188,13 +191,20 @@ a {
     -ms-transition: all 200ms ease;
     -o-transition: all 200ms ease;
     transition: all 200ms ease;
+    color: #66CCFF;
 }
 
-a, a:hover, a:visited, a:active, a:link {
+a,  a:visited, a:active, a:link {
     text-decoration: none;
     -webkit-font-smoothing: antialiased;
-    -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
+a:hover {
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    color: #CCFFFF;
 }
 
 p a:active {
@@ -337,20 +347,12 @@ label{
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
-    line-height: 13px;
+    line-height: 20px;
     margin-bottom: 10px;
 }
 label:hover:before {
     border: 2px solid #013ADF !important;
     background: #ffffff
-}
-
-.f-taxi:nth-child(4) {
-    width: 10% !important;
-}
-
-.f-taxi:nth-child(5) {
-    width: 10% !important;
 }
 
 section {
@@ -475,51 +477,9 @@ section {
 .button {
     width: 186px;
     height: 65px;
-    background: transparent;
+    background: #3366CC;
     text-align: center;
-    border: solid 2px #2E2EFE;
-    overflow: hidden;
-    -webkit-transition: all 200ms ease;
-    -moz-transition: all 200ms ease;
-    -ms-transition: all 200ms ease;
-    -o-transition: all 200ms ease;
-    transition: all 200ms ease;
-}
-
-.button::before {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
-    -moz-transform: translate(-50%, -50%) rotate(-45deg);
-    -ms-transform: translate(-50%, -50%) rotate(-45deg);
-    -o-transform: translate(-50%, -50%) rotate(-45deg);
-    transform: translate(-50%, -50%) rotate(-45deg);
-    -webkit-transform-origin: center center;
-    transform-origin: center center;
-    width: 130%;
-    height: 320%;
-    background: #2E2EFE;
-    content: '';
-    z-index: 0;
-    -webkit-transition: all 600ms ease;
-    -moz-transition: all 600ms ease;
-    -ms-transition: all 600ms ease;
-    -o-transition: all 600ms ease;
-    transition: all 600ms ease;
-}
-
-.button::after {
-    display: block;
-    position: absolute;
-    right: -15px;
-    bottom: -15px;
-    width: 30px;
-    height: 30px;
-    background: #2E2EFE;
-    content: '';
-    transform: rotate(-45deg);
+    border-radius: 15px;
 }
 
 .button a {
@@ -532,11 +492,7 @@ section {
     letter-spacing: 0.075em;
     line-height: 61px;
     text-transform: uppercase;
-    -webkit-transition: all 400ms ease;
-    -moz-transition: all 400ms ease;
-    -ms-transition: all 400ms ease;
-    -o-transition: all 400ms ease;
-    transition: all 400ms ease;
+    border-radius: 15px 15px;
 }
 
 .button:hover::before {
@@ -545,7 +501,7 @@ section {
 }
 
 .button:hover a {
-    color: #2E2EFE;
+    background-color: #6699FF;
 }
 
 .button_2 {
@@ -639,9 +595,9 @@ section {
     top: 30px;
     width: calc(100% - 314px);
     height: 96px;
-    background: rgba(116, 186, 230, 0.6);
+    background: #336699;
     z-index: 100;
-    border-bottom: solid 2px rgba(116, 186, 230, 1);
+    border-radius: 20px 20px;
 }
 
 .header_wrap {
@@ -650,9 +606,19 @@ section {
 }
 
 
+.fixed_header .main_nav{
+    margin: 10px auto;
+}
+.fixed_header .logo{
+    margin-left: 7vw;
+}
+.fixed_header .social {
+    margin-right: 7vw;
+}
 .logo img {
     width: 80%;
     height: auto;
+    padding: 10px;
 }
 
 .main_nav ul li {
@@ -667,7 +633,7 @@ section {
 }
 
 .main_nav ul li a:hover {
-    color: #202020;
+    color: #99CCFF;
 }
 
 .social ul li {
@@ -700,8 +666,7 @@ section {
     left: 0;
     width: 100%;
     height: 70px;
-    background: #74bae6;
-    border-bottom: solid 2px rgba(46, 46, 254, 0.3);
+    background: #336699;
     z-index: 100;
     -webkit-transition: all 400ms ease;
     -moz-transition: all 400ms ease;
@@ -1099,7 +1064,16 @@ section {
 *********************************/
 
 .cta {
-    background: #74bae6;
+    background: #333366;
+    border-bottom: 3px solid white;
+    border-radius: 150px;
+}
+
+.l {
+    margin-right: 30px;
+}
+.r {
+    margin-left: 30px;
 }
 
 .cta_image {
@@ -1247,7 +1221,6 @@ section {
 }
 
 .pr2 {
-    padding-bottom: 10px;
 }
 
 .pricing {
@@ -1414,7 +1387,7 @@ section {
 *********************************/
 
 .footer {
-    background: #74bae6;
+    background: #666699;
 }
 
 .footer_content {
