@@ -12,10 +12,10 @@ $fio = $_POST['fio'];
 $phone = $_POST['phone'];
 $birthday = $_POST['birthday'];
 $address = $_POST['address'];
-$select = $_POST['select'];
+$category = $_POST['category'];
 
-$info=[$fio,$phone,$birthday,$select];
-$info_html=["%fio%","%phone%","%birthday%","%select%"];
+$info=[$fio,$phone,$birthday,$category];
+$info_html=["%fio%","%phone%","%birthday%","%category%"];
 $message = file_get_contents('mail_templates/taxi.html');
 $subject = 'Заказ такси';
 
