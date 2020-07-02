@@ -51,6 +51,49 @@
 		padding-left: 100px;
 		padding-right: 120px;
 	}
+	.cta_list ul li span {
+		padding-left: 19px;
+		font-size: 16px;
+		font-weight: 400;
+		color: #ffffff;
+	}
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	h3 {
+		font-size: 18px;
+	}
+
+	h4 {
+		font-size: 14px;
+	}
+
+	h5 {
+		font-size: 10px;
+	}
+	.social ul li a i {
+		color: #ffffff;
+		font-size: 5px;
+		-webkit-transition: all 200ms ease;
+		-moz-transition: all 200ms ease;
+		-ms-transition: all 200ms ease;
+		-o-transition: all 200ms ease;
+		transition: all 200ms ease;
+	}
+	.button {
+		width: 186px;
+		height: 65px;
+		background: #3366CC;
+		text-align: center;
+		border-radius: 15px;
+		margin-left: 15%;
+	}
+
 }
 
 /************
@@ -69,7 +112,7 @@
 @media only screen and (max-width: 1280px)
 {
 	.main_nav ul li {
-		margin: 0px 5px;
+		margin: 0 5px;
 	}
 	.main_nav ul li a {
 		font-size: 14px;
@@ -95,8 +138,8 @@
 	.cta_content
 	{
 		width: 100%;
-		padding-left: 200px;
-		padding-right: 220px;
+		padding-left: 0;
+		padding-right: 0;
 	}
 	.header {
 		box-sizing: border-box;
@@ -143,10 +186,10 @@
 	}
 	.home_title h1
 	{
-		font-size: 48px;
-		letter-spacing: 0.05em;
+		font-size: 30px;
 	}
-	.fixed_header .header_wrap
+	
+	.header_wrap
 	{
 		padding-right: 25px;
 		padding-left: 25px;
@@ -181,12 +224,23 @@
 	}
 	.cta_content
 	{
-		padding-left: 100px;
-		padding-right: 120px;
+		padding-left: 50px;
+		padding-right: 50px;
 	}
 	.footer_col:not(:last-child)
 	{
 		margin-bottom: 60px;
+	}
+	.cta {
+		background: #333366;
+		border-bottom: 3px solid white;
+		border-radius: 5px;
+	}
+	.l {
+		margin-right: 3px;
+	}
+	.r {
+		margin-left: 3px;
 	}
 }
 
@@ -196,7 +250,7 @@
 
 @media only screen and (max-width: 959px)
 {
-	
+
 }
 
 /************
@@ -253,6 +307,7 @@
 	h1
 	{
 		font-size: 36px;
+		letter-spacing: 0.8px;
 	}
 	.header
 	{
@@ -279,8 +334,7 @@
 	}
 	.home_title h1
 	{
-		font-size: 36px;
-		letter-spacing: normal;
+		font-size: 28px;
 	}
 	.button,
 	.button_2
@@ -318,6 +372,7 @@
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+
 }
 
 /************
