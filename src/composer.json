@@ -1,6 +1,7 @@
 {
   "require": {
     "symfony/yaml": "^5.0",
-    "phpmailer/phpmailer": "^6.1"
+    "phpmailer/phpmailer": "^6.1",
+    "twig/twig": "^3.0"
   }
 }

@@ -21,8 +21,10 @@ $mail->Subject = $subject;                       // Тема письма
 $mail->MsgHTML($message);
 $mail->AltBody = '';
 
+include 'visually_impaired_cookie.php';
+
 if(!$mail->send()) {
-    echo 'Error: ' . $mail->ErrorInfo;
+    echo $twig->render('send_mail_error.html', ['current_url' => 'index.php', 'visually_impaired' => $visually_impaired]);
 } else {
-    header('location: thank-you.html');
+    echo $twig->render('thank_you.html', ['current_url' => 'index.php', 'visually_impaired' => $visually_impaired]);
 }
