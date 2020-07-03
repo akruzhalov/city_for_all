@@ -1,0 +1,10 @@
+smtp:
+  CharSet: 'utf-8'
+  Host: 'smtp.mail.ru'
+  SMTPAuth: true
+  EmailFrom: 'cityforall@mail.ru'
+  #addreply : 'reply@host.com'
+  EmailTo: 'cityforall@mail.ru'
+  Password: 'abumed00'
+  SMTPSecure: 'ssl'
+  Port: 465
