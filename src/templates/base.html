@@ -101,7 +101,7 @@
                 <div class="ml-auto social header_social">
                     <ul class="d-flex flex-row align-items-center justify-content-start">
                         <li>
-                            <a href="{{ current_url }}?for_visually_impaired=true" title="Версия для слабовидящих">
+                            <a href="{{ current_url }}?for_visually_impaired={% if visually_impaired == 1 %}false{% else %}true{% endif %}" title="Версия для слабовидящих">
                                 <i class="fa fa-eye" aria-hidden="true"></i>
                             </a>
                         </li>
@@ -132,7 +132,7 @@
                             <li><a href="index.php#ub">Уборка</a></li>
                             <li><a href="index.php#soc">Обслуживание</a></li>
                             <li class="ml-auto">
-                                <a href="{{ current_url }}?for_visually_impaired=true" title="Версия для слабовидящих">
+                                <a href="{{ current_url }}?for_visually_impaired={% if visually_impaired == 1 %}false{% else %}true{% endif %}" title="Версия для слабовидящих">
                                     <i class="fa fa-eye" aria-hidden="true"></i>
                                 </a>
                             </li>
