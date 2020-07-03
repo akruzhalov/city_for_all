@@ -49,8 +49,8 @@
 	.cta_content
 	{
 		width: 100%;
-		padding-left: 0;
-		padding-right: 0;
+		padding-left: 100px;
+		padding-right: 120px;
 	}
 	.cta_list ul li span {
 		padding-left: 19px;
@@ -79,7 +79,7 @@
 	}
 	.social ul li a i {
 		color: #ffffff;
-		font-size: 5px;
+		font-size: 50px;
 		-webkit-transition: all 200ms ease;
 		-moz-transition: all 200ms ease;
 		-ms-transition: all 200ms ease;
@@ -92,12 +92,10 @@
 		background: #3366CC;
 		text-align: center;
 		border-radius: 15px;
-		margin-left: 15%;
 	}
 	.cta_image
 	{
 		width: 100%;
-		height: 600px;
 	}
 }
 
@@ -143,13 +141,26 @@
 	.cta_content
 	{
 		width: 100%;
-		padding-left: 0;
-		padding-right: 0;
+		padding-left: 200px;
+		padding-right: 220px;
 	}
 	.header {
 		box-sizing: border-box;
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+	.footer_col:not(:last-child)
+	{
+		margin-bottom: 60px;
+	}
+	.border-radius-r {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.border-radius-l {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
 	}
 }
 
@@ -235,17 +246,6 @@
 	.footer_col:not(:last-child)
 	{
 		margin-bottom: 60px;
-	}
-	.cta {
-		background: #333366;
-		border-bottom: 3px solid white;
-		border-radius: 5px;
-	}
-	.l {
-		margin-right: 3px;
-	}
-	.r {
-		margin-left: 3px;
 	}
 }
 
@@ -416,6 +416,10 @@
 	.home_title h1
 	{
 		font-size: 30px;
+	}
+	.cta_buttons .cta_button {
+		margin-left: 5px !important;
+		margin-right: 5px !important;
 	}
 }
 

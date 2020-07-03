@@ -596,7 +596,7 @@ section {
     top: 30px;
     width: calc(100% - 314px);
     height: 96px;
-    background: #336699;
+    background: #33669994;
     z-index: 100;
     border-radius: 20px 20px;
 }
@@ -1066,15 +1066,16 @@ section {
 
 .cta {
     background: #333366;
-    border-bottom: 3px solid white;
-    border-radius: 150px;
 }
 
-.l {
-    margin-right: 30px;
+.border-radius-r {
+    border-top-right-radius: 7rem;
+    border-bottom-right-radius: 7rem;
 }
-.r {
-    margin-left: 30px;
+
+.border-radius-l {
+    border-top-left-radius: 7rem;
+    border-bottom-left-radius: 7rem;
 }
 
 .cta_image {
