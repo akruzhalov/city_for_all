@@ -584,18 +584,7 @@ section
 {
 	color: rgb(255, 255, 255);
 }
-.header_social
-{
-	position: absolute;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
-	right: 53px;
-	padding-top: 12px;
-}
+
 .social ul li
 {
 	position: relative;
@@ -1092,10 +1081,6 @@ section
 .cta_buttons .cta_button
 {
 	margin-bottom: 12px;
-}
-.cta_buttons .cta_button:not(:last-child)
-{
-	margin-right: 18px;
 }
 
 /*********************************
