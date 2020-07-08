@@ -1,0 +1,40 @@
+.blocks-vi {
+    background-color: black;
+}
+
+.blocks-vi .cta {
+    background-color: white;
+}
+
+.blocks-vi .section_title h1 {
+    color: black;
+}
+
+.blocks-vi .cta_list span {
+    color: black; 
+}
+
+.blocks-vi .cta_list .link {
+    color: darkblue; 
+}
+
+.blocks-vi .cta_list .link:hover {
+    color: black; 
+}
+
+.blocks-vi .pat {
+    color: black;
+}
+.blocks-vi p a {
+    border-bottom: solid 1px black;
+}
+
+.blocks-vi p a:hover {
+    color: #FFFFFF;
+    background: black;
+}
+
+
+.blocks-vi .section_subtitle {
+    color: black;
+}
