@@ -8,7 +8,7 @@
 
                 <!-- Slide -->
                 <div class="slide">
-                    <div class="background_image" style="background-image:url(images/tax.jpg)"></div>
+                    <div class="background_image {% if visually_impaired == 1 %}background-vi_image{% endif %}" style="background-image:url(images/tax.jpg)"></div>
                     <div class="home_slider_overlay"></div>
                     <div class="slide_wrap d-flex flex-column align-items-start justify-content-center">
                         <div class="home_container">
@@ -16,7 +16,7 @@
                                 <div class="row">
                                     <div class="col">
                                         <div class="home_content active">
-                                            <div class="home_title">
+                                            <div class="home_title {% if visually_impaired == 1 %}home-vi_title{% endif %}">
                                                 <h1><span>Заказ такси</span></h1>
                                                 <h1>Для инвалидов или пенсионеров</h1>
                                             </div>
@@ -31,8 +31,8 @@
         </div>
     </div>
     <h1 class="hp">Форма заказа</h1>
-    <div class="section_subtitle4">Заявка принимается не позднее 1 дня по телефону:</div>
-    <div class="section_subtitle2"><a href="tel:+7 (34938) 29 2 05">+7 (34938) 29-205</a></div>
+    <div class="section_subtitle4 {% if visually_impaired == 1 %}section_subtitle4-vi{% endif %}">Заявка принимается не позднее 1 дня по телефону:</div>
+    <div class="section_subtitle2 {% if visually_impaired == 1 %}section_subtitle4-vi{% endif %}"><a href="tel:+7 (34938) 29 2 05">+7 (34938) 29-205</a></div>
     <div class="about" id="gh">
         <div class="container">
             <div class="row">
@@ -45,7 +45,7 @@
                                 <div class="form-row">
                                     <div class="form-group col-12">
                                         <label for="fio">ФИО:</label>
-                                        <input name="fio" id="fio" class="form-control" required type="text"
+                                        <input name="fio" id="fio" class="form-control {% if visually_impaired == 1 %}form-control-vi{% endif %}" required type="text"
                                             placeholder="Иванов Иван Иванович" style="height: 50px;">
                                     </div>
                                 </div>

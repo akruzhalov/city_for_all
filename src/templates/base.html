@@ -38,7 +38,7 @@
 
         <!-- Header -->
 
-        <header class="header">
+        <header class="header  {% if visually_impaired == 1 %}header-vi{% endif %}">
 
 
             <div class="header_wrap d-flex flex-row align-items-center px-3">
@@ -47,13 +47,13 @@
                 <div class="logo mr-auto"><a href="index.php"><img src="images/wlogo.png" alt=""></a></div>
 
                 <!-- Main Nav -->
-                <nav class="main_nav">
+                <nav class="main_nav {% if visually_impaired == 1 %}main_nav-vi{% endif %} ">
                     <ul class="d-flex flex-row align-items-center justify-content-center">
                         <li><a href="index.php#vol">Волонтёры</a></li>
                         <li><a href="index.php#mag">Магазины</a></li>
                         <li><a href="index.php#apt">Аптеки</a></li>
                         <li><a href="index.php#tax">Такси</a></li>
-                        <li><a href="index.php#gum">Гуманитар</a></li>
+                        <li><a href="index.php#gum">Гуманитарная помощь</a></li>
                         <li><a href="index.php#ub">Уборка</a></li>
                         <li><a href="index.php#soc">Обслуживание</a></li>
                     </ul>
@@ -79,20 +79,20 @@
 
         <!-- Fixed Header -->
 
-        <header class="fixed_header">
+        <header class="fixed_header {% if visually_impaired == 1 %}fixed_header-vi{% endif %}">
             <div class="header_wrap d-flex flex-row align-items-center">
 
                 <!-- Logo -->
                 <div class="logo"><a href="index.php"><img src="images/wlogo.png" alt=""></a></div>
 
                 <!-- Main Nav -->
-                <nav class="main_nav">
+                <nav class="main_nav {% if visually_impaired == 1 %}main_nav-vi{% endif %}">
                     <ul class="d-flex flex-row align-items-center justify-content-center">
                         <li><a href="index.php#vol">Волонтёры</a></li>
                         <li><a href="index.php#mag">Магазины</a></li>
                         <li><a href="index.php#apt">Аптеки</a></li>
                         <li><a href="index.php#tax">Такси</a></li>
-                        <li><a href="index.php#gum">Гуманитар</a></li>
+                        <li><a href="index.php#gum">Гуманитарная помощь</a></li>
                         <li><a href="index.php#ub">Уборка</a></li>
                         <li><a href="index.php#soc">Обслуживание</a></li>
                     </ul>
@@ -148,7 +148,7 @@
 
         
         <!-- Footer -->
-        <footer class="footer">
+        <footer class="footer {% if visually_impaired == 1 %}footer-vi{% endif %}">
             <div class="footer_content">
                 <div class="container">
                     <div class="row">
@@ -165,8 +165,8 @@
                                     class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
                                     <div><img src="images/phone.png"></div>
                                 </div>
-                                <div class="footer_title">Номер телефона</div>
-                                <div class="footer_list">
+                                <div class="footer_title {% if visually_impaired == 1 %}footer-vi_title{% endif %}">Номер телефона</div>
+                                <div class="footer_list {% if visually_impaired == 1 %}footer-vi_list{% endif %}">
                                     <ul>
                                         <li><a href="tel:+7 (34938) 29 205">+7 (34938) 29-205</a></li>
                                     </ul>
@@ -179,8 +179,8 @@
                                     class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
                                     <div><img src="images/mail.png" alt=""></div>
                                 </div>
-                                <div class="footer_title">e-mail</div>
-                                <div class="footer_list">
+                                <div class="footer_title {% if visually_impaired == 1 %}footer-vi_title{% endif %}">e-mail</div>
+                                <div class="footer_list {% if visually_impaired == 1 %}footer-vi_list{% endif %}">
                                     <ul>
                                         <li><a
                                                 href="mailto:cso.muravlenko@dszn.yanao.ru">cso.muravlenko@dszn.yanao.ru</a>
@@ -195,8 +195,8 @@
                                     class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
                                     <div><img src="images/contact.png" alt=""></div>
                                 </div>
-                                <div class="footer_title">Наш офис</div>
-                                <div class="footer_list">
+                                <div class="footer_title {% if visually_impaired == 1 %}footer-vi_title{% endif %}">Наш офис</div>
+                                <div class="footer_list {% if visually_impaired == 1 %}footer-vi_list{% endif %}">
                                     <ul>
                                         <li>Город Муравленко, ДР. НАРОДОВ 32/2</li>
                                         <li>Вход со двора</li>
@@ -210,8 +210,8 @@
                                     class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
                                     <div><img src="images/time.png" alt=""></div>
                                 </div>
-                                <div class="footer_title">Режим работы</div>
-                                <div class="footer_list">
+                                <div class="footer_title {% if visually_impaired == 1 %}footer-vi_title{% endif %}">Режим работы</div>
+                                <div class="footer_list {% if visually_impaired == 1 %}footer-vi_list{% endif %}">
                                     <ul>
                                         <li>Социального такси: 08:30-17:00</li>
                                         <li>Волонтеров: 14:00-20:00</li>
