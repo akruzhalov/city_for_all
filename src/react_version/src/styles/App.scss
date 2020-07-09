@@ -3,76 +3,43 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .App {
   font-family: 'Montserrat', sans-serif;
-  .Layout {
+  .AppLayout {
     min-height: 100vh;
     background: url("../img/back.png") center (center/cover) no-repeat;
     .navbar {
       min-height: 7vh;
-      background: transparent !important;
-      margin: 0 50px;
-      border-bottom: 1px solid #bdbdbd;
+      background: $thirdVar !important;
+      padding: 0 50px;
+      box-shadow: 0 5px 15px 2px rgba(46,44,47,1);
+      .fa-eye {
+        color: $firstVar;
+        transition-duration: .3s;
+        cursor: pointer;
+        &:hover {
+          color: $fourthVar
+        }
+      }
       a {
         color: $firstVar !important;
         transition-duration: .3s;
         &:hover {
-          color: $thirdVar !important;
+          color: $fourthVar !important;
         }
       }
     }
-    .content {
+    .app-content {
       width: 100%;
       //min-height: 93vh;
       color: #f7f9fb;
 
-
-      // ---Login block ---
-
-
-      .Login {
-        min-height: 93vh;
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &__form {
-          width: 60%;
-          padding: 30px;
-          border-radius: 20px;
-          background-color: #dbdbdb;
-          color: $fifthVar;
-          h1 {
-            padding-bottom: 20px;
-          }
-          .btn {
-            margin-right: 20px;
-            background-color: $thirdVar;
-            border: 2px solid $thirdVar;
-            color: $firstVar;
-            &:hover, {
-              background-color: $fourthVar;
-              border: 2px solid $fourthVar;
-            }
-            &:active, &:focus {
-              box-shadow: none;
-            }
-          }
-
-        }
-      }
-
-
-      // --- Registration block ---
-
-
-      // --- Main block ---
-
-
       .Main {
+        background: url("../img/back_home.JPG") center (center/cover) no-repeat;
         .row {
           min-height: 93vh;
           width: 80%;
@@ -93,6 +60,31 @@
             background-color: #bdbdbd;
           }
         }
+      }
+
+      .Volunteers {
+        background: url("../img/back_save.jpg") center (center/cover) no-repeat;
+      }
+      .Shops {
+        background: url("../img/back_shops.jpg") center (center/cover) no-repeat;
+      }
+      .Pharmacies {
+        background: url("../img/back_book.jpg") center (center/cover) no-repeat;
+      }
+      .Taxi {
+        background: url("../img/back.png") center (center/cover) no-repeat;
+      }
+      .Humane {
+        background: url("../img/back_child.jpg") center (center/cover) no-repeat;
+      }
+      .Cleaning {
+        background: url("../img/back_massage.JPG") center (center/cover) no-repeat;
+      }
+      .Services {
+        background: url("../img/back_forest.jpg") center (center/cover) no-repeat;
+      }
+      .Contacts {
+        background: url("../img/back_girl.jpg") center (center/cover) no-repeat;
       }
 
 
@@ -173,6 +165,113 @@
     }
   }
 
+  .PanelLayout {
+    .Login, .Registration {
+      min-height: 100vh;
+      background: linear-gradient(180deg, #207CBD 0%, #00B5CA 62.5%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__content {
+        background-color: #fff;
+        width: 70%;
+        height: 75vh;
+        display: flex;
+        .block1 {
+          height: 75vh;
+          width: 50%;
+          background-color: #fff;
+          color: #000;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          text-align: center;
+          .preview-info {
+            h3 {
+              font-size: 44px;
+              font-weight: 700;
+              margin-bottom: 1rem;
+              background-color: red;
+              background-image: linear-gradient(45deg, #01B5CA, #1E81BE);
+              background-size: 100%;
+              background-repeat: repeat;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+            h5 {
+              font-size: 18px;
+              color: #9D9D9D;
+              font-weight: 500;
+            }
+          }
+          .enter-form {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            input {
+              border: none;
+              border-bottom: 1px solid #9D9D9D;
+              transition-duration: .2s;
+              margin: 0.7rem 0;
+              &::-webkit-input-placeholder {
+                font-size: 12px;
+              }
+              &:focus {
+                outline: none;
+                border-bottom: 1px solid #207CBD;
+              }
+            }
+            button {
+              background-color: #00B5CA;
+              border: none;
+              color: #fff;
+              margin: 1.5rem 0;
+              padding: 0.7rem 1.5rem;
+              transition-duration: .4s;
+              border-radius: 5px;
+              &:hover {
+                background-color: #207CBD;
+              }
+              &:disabled {
+                border: 1px solid #999999;
+                background-color: #cccccc;
+                color: #666666;
+              }
+            }
+          }
+          .links {
+            p {
+              color: #9D9D9D;
+              font-size: 12px;
+              margin-bottom: 0.3rem;
+              a {
+                text-decoration: underline;
+                color: #207CBD;
+              }
+            }
+          }
+        }
+        .block2 {
+          background: url("../img/back 1.png") center (center/cover) no-repeat;
+          height: 75vh;
+          width: 50%;
+        }
+        .alert-text {
+          color: #999999;
+          font-size: 10px;
+          text-align: left;
+          margin-top: 1rem;
+        }
+        .error {
+          color: #cc0000;
+          font-size: 10px;
+          text-align: left;
+        }
+      }
+    }
+  }
+
 
   // --- Contacts block ---
 
@@ -206,61 +305,285 @@
       }
     }
   }
-}
 
-
-// --- NannyQuery styles ---
-
-
-.NannyQuery {
-  padding: 50px 0;
-  .content {
-    width: 60% !important;
-    margin: 0 auto;
-    padding: 0 0 50px 0;
-    h1 {
-      color: $firstVar;
-      font-size: 60px;
+  .UserLayout {
+    min-height: 100vh;
+    width: 100%;
+    .col-lg-2, .col-lg-10 {
+      padding: 0;
     }
-    h3 {
-      font-size: 35px;
-      color: $firstVar;
-    }
-    a {
-      font-weight: bold;
-      font-size: 20px;
-      color: $firstVar
-    }
-  }
-  form {
-    h3 {
-      padding: 20px 0;
-    }
-    margin: 0 auto;
-    width: 60%;
-    background-color: $fourthVar;
-    border-radius: 20px;
-    padding: 30px;
-    border: 2px solid $firstVar;
-    .btn {
-      margin-right: 20px;
-      background-color: $thirdVar;
-      border: 2px solid $thirdVar;
-      color: $firstVar;
-      &:hover, {
-        background-color: $fourthVar;
-        border: 2px solid $firstVar;
+    &__navigation {
+      background-color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      a {
+        text-decoration: none;
       }
-      &:active, &:focus {
-        box-shadow: none;
+      h1 {
+        background-image: linear-gradient(45deg, #01B5CA, #1E81BE);
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+      }
+      &_links {
+        text-align: center;
+        a {
+          color: #000;
+          transition-duration: .3s;
+          margin: 0.5rem 0;
+          &:hover {
+            color: #207CBD;
+          }
+        }
+      }
+      &_supportLinks {
+        text-align: center;
       }
     }
+    &__content {
+      min-height: 100vh;
+      background: linear-gradient(180deg, #207CBD 0%, #00B5CA 62.5%);
+      .UserDashboard {
+        padding: 2rem 5rem;
+        &__header {
+          width: 100%;
+          padding: 2rem;
+          background-color: #fff;
+          &_buttons {
+            margin-bottom: 1rem;
+            button {
+              margin-right: 2rem;
+            }
+          }
+          p {
+            margin-bottom: 0.5rem;
+          }
+        }
+        &__content {
+          .row {
+            margin-top: 2rem;
+          }
+          .col-lg-6 {
+            padding: 0;
+          }
+          &_info {
+            padding: 2rem;
+            background-color: #fff;
+            margin-right: 1rem;
+            p {
+              span {
+                font-weight: bold;
+                margin-right: 0.5rem;
+              }
+            }
+            h3 {
+              margin-bottom: 2rem;
+            }
+            .contact-info {
+              margin-bottom: 2rem;
+            }
+            .passport-data {
+              margin-top: 2rem;
+            }
+          }
+          &_orders {
+            padding: 2rem;
+            background-color: #fff;
+            margin-left: 1rem;
+            .order {
+              border: 1px solid #bdbdbd;
+              border-radius: 5px;
+              margin-top: 2rem;
+              margin-bottom: 2rem;
+              padding: 1rem;
+              p {
+                margin-bottom: 0;
+              }
+              h3 {
+                font-weight: 600;
+              }
+              p {
+                span {
+                  font-weight: 600;
+                }
+              }
+            }
+            h3 {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      .UserChange {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        form {
+          background-color: #fff;
+          padding: 2rem;
+          width: 80%;
+          button {
+            margin-right: 2rem;
+          }
+          &__contact {
+            margin-bottom: 2rem;
+          }
+          h3 {
+            margin-bottom: 2rem;
+          }
+        }
+      }
+      .UserOrder {
+        padding: 5rem 0;
+        .row {
+          width: 80%;
+          margin: 0 auto;
+          .nav-link {
+            color: #fff;
+          }
+          .active {
+            background-color: #fff !important;
+            color: #1E81BE;
+            border-radius: 5px;
+          }
+          .taxi-content, .nanny-content {
+            padding: 1rem;
+            p {
+              margin-bottom: 0;
+            }
+          }
+          .nanny-content {
+            p {
+              margin-bottom: 1rem;
+            }
+          }
+          .taxi-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            h3 {
+              margin-bottom: 1.5rem;
+            }
+            button {
+              margin-top: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .AdminLayout {
+    .AdminEnter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      &__header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      &__content {
+        width: 30%;
+      }
+    }
+    .AdminDashboard {
+      min-height: 100vh;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &__users {
+        width: 80%;
+        margin-top: 2rem;
+        .UserList {
+          &:not(:last-child) {
+            margin-bottom: 1rem;
+          }
+          .card-body {
+            transition-duration: .5s;
+            cursor: pointer;
+            p {
+              margin-bottom: 0;
+              margin-left: 1rem;
+              color: #666666;
+            }
+            &:hover {
+              background-color: #F5F5F5;
+              p {
+                color: #2E2C2F;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
-
-
-// --- Media Queries ---
-
+.CurrentUser {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .orders {
+    .card {
+      width: 100%;
+      .card-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h5 {
+          margin-bottom: 0;
+        }
+        .order-info {
+          p {
+            margin-bottom: 0;
+          }
+          h5 {
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .card {
+    width: 80%;
+    margin-bottom: 2rem;
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        margin-bottom: 0;
+      }
+    }
+    .card-body {
+      h3 {
+        margin-bottom: 1.5rem;
+      }
+      p {
+        span {
+          font-weight: 600;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+}
 
 @media (max-width: 990px) {
   .navbar-toggler {
@@ -352,6 +675,77 @@
     }
     a {
       font-size: 15px !important;
+    }
+  }
+  .Login, .Registration {
+    &__content {
+      flex-direction: column;
+      width: 90% !important;
+      .block1 {
+        width: 100% !important;
+        .enter-form {
+          width: 80% !important;
+        }
+        .alert-text {
+          text-align: center !important;
+        }
+      }
+      .block2 {
+        display: none;
+      }
+    }
+  }
+  .UserDashboard {
+    padding: 2rem !important;
+    &__header {
+      &_info {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+      &_buttons {
+        margin-bottom: 0 !important;
+        button {
+          margin-right: 0 !important;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    &__content {
+      &_info {
+        margin-right: 0 !important;
+        margin-bottom: 2rem;
+      }
+      &_orders {
+        margin-left: 0 !important;
+      }
+    }
+  }
+  .UserLayout {
+    &__content {
+      .UserChange {
+        small {
+          display: none;
+        }
+        button {
+          margin: 1rem 0.5rem !important;
+        }
+        &__contact {
+          .form-row {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+        &__passport {
+          .form-row {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+        form {
+          margin: 2rem 0;
+        }
+      }
     }
   }
 }
