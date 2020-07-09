@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="home">
+    <div class="home ">
 
         <!-- Slider -->
-        <div class="home_slider_container">
+        <div class="home_slider_container ">
             <div class="owl-carousel owl-theme home_slider">
 
                 <!-- Slide -->
                 <div class="slide">
-                    <div class="background_image" style="background-image:url(images/inv.jpg)"></div>
+                    <div class="background_image {% if visually_impaired == 1 %}background-vi_image{% endif %}" style="background-image:url(images/inv.jpg)"></div>
                     <div class="home_slider_overlay"></div>
                     <div class="slide_wrap d-flex flex-column align-items-start justify-content-center">
                         <div class="home_container">
@@ -17,11 +17,11 @@
                                 <div class="row">
                                     <div class="col">
                                         <div class="home_content active">
-                                            <div class="home_subtitle">Волонтёрская помощь!</div>
-                                            <div class="home_title">
+                                            <div class="home_subtitle {% if visually_impaired == 1 %}home-vi_subtitle{% endif %}">Волонтёрская помощь!</div>
+                                            <div class="home_title {% if visually_impaired == 1 %}home-vi_title{% endif %}">
                                                 <h1><span>Относитесь к малоподвижной</span></h1>
                                                 <h1>категории граждан?</h1>
-                                                <div class="home_subtitle">Мы поможем вам!</div>
+                                                <div class="home_subtitle {% if visually_impaired == 1 %}home-vi_subtitle{% endif %}">Мы поможем вам!</div>
                                             </div>
 
                                         </div>
@@ -34,7 +34,7 @@
 
                 <!-- Slide -->
                 <div class="slide">
-                    <div class="background_image" style="background-image:url(images/inv2.jpg)"></div>
+                    <div class="background_image {% if visually_impaired == 1 %}background-vi_image{% endif %}" style="background-image:url(images/inv2.jpg )"></div>
                     <div class="home_slider_overlay"></div>
                     <div class="slide_wrap d-flex flex-column align-items-start justify-content-center">
                         <div class="home_container">
@@ -42,11 +42,11 @@
                                 <div class="row">
                                     <div class="col">
                                         <div class="home_content">
-                                            <div class="home_subtitle">Волонтёрская помощь!</div>
-                                            <div class="home_title">
+                                            <div class="home_subtitle {% if visually_impaired == 1 %}home-vi_subtitle{% endif %}">Волонтёрская помощь!</div>
+                                            <div class="home_title {% if visually_impaired == 1 %}home-vi_title{% endif %}">
                                                 <h1><span>Попали в трудную</span></h1>
                                                 <h1>жизненную ситуацию?</h1>
-                                                <div class="home_subtitle">Мы поможем вам!</div>
+                                                <div class="home_subtitle {% if visually_impaired == 1 %}home-vi_subtitle{% endif %}">Мы поможем вам!</div>
                                             </div>
 
                                         </div>
@@ -59,7 +59,7 @@
 
                 <!-- Slide -->
                 <div class="slide">
-                    <div class="background_image" style="background-image:url(images/inv3.jpg)"></div>
+                    <div class="background_image {% if visually_impaired == 1 %}background-vi_image{% endif %}" style="background-image:url(images/inv3.jpg)"></div>
                     <div class="home_slider_overlay"></div>
                     <div class="slide_wrap d-flex flex-column align-items-start justify-content-center">
                         <div class="home_container">
@@ -67,11 +67,11 @@
                                 <div class="row">
                                     <div class="col">
                                         <div class="home_content">
-                                            <div class="home_subtitle">Волонтерская помощь!</div>
-                                            <div class="home_title">
+                                            <div class="home_subtitle {% if visually_impaired == 1 %}home-vi_subtitle{% endif %}">Волонтерская помощь!</div>
+                                            <div class="home_title {% if visually_impaired == 1 %}home-vi_title{% endif %}">
                                                 <h1><span>Трудности во взаимодействии</span></h1>
                                                 <h1>с окружающим миром?</h1>
-                                                <div class="home_subtitle">Мы поможем вам!</div>
+                                                <div class="home_subtitle {% if visually_impaired == 1 %}home-vi_subtitle{% endif %}">Мы поможем вам!</div>
                                             </div>
 
                                         </div>
@@ -91,10 +91,10 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="quote_content text-center">
+                    <div class="quote_content text-center {% if visually_impaired == 1 %}quote-vi_content{% endif %}">
                         <p>“Утратить физическую независимость не означает расстаться с жизнью..”</p>
                     </div>
-                    <div class="quote_author text-center">– Филипп Поццо ди Борго</div>
+                    <div class="quote_author text-center {% if visually_impaired == 1 %}quote-vi_author {% endif %}">– Филипп Поццо ди Борго</div>
                 </div>
             </div>
         </div>
@@ -108,15 +108,15 @@
                     <div class="background_image" style="background-image:url(images/IMG_3906.jpg)"></div>
                 </div>
         
-                <div class="cta_content">
+                <div class="cta_content ">
                     <div class="section_title_container">
         
                         <div class="section_title">
                             <h1>Волонтёры</h1>
                         </div>
-                        <div class="section_subtitle">Помощь оказывается бесплатно</div>
+                        <div class="section_subtitle {% if visually_impaired == 1 %}section-vi_subtitle{% endif %}">Помощь оказывается бесплатно</div>
                     </div>
-                    <div class="cta_list">
+                    <div class="cta_list {% if visually_impaired == 1 %}cta-vi_list{% endif %}">
                         <ul>
                             <li class="d-flex flex-row align-items-center justify-content-start">
                                 <a
@@ -151,7 +151,7 @@
                         </ul>
                     </div>
                     <div class="about_text">
-                        <p class="pat">Волонтёры - это обычные люди, которые готовы вложить частичку себя в доброе дело.
+                        <p class="pat {% if visually_impaired == 1 %}pat-vi{% endif %}">Волонтёры - это обычные люди, которые готовы вложить частичку себя в доброе дело.
         
                             Если вы ограничены в передвижении, не можете обеспечить себя даже самым необходимым, вам может
                             потребоваться помощь волонтёра.
@@ -160,7 +160,7 @@
                     </div>
                     <div
                         class="cta_buttons d-flex flex-row justify-content-center justify-content-md-start align-items-start flex-wrap">
-                        <div class="button cta_button">
+                        <div class="button cta_button ">
                             <a
                                 href="http://xn----8sbgmveffhgdjtj8a5b.xn--80aze9d.xn--p1ai/index.php?option=com_content&view=featured&Itemid=479">Подробнее</a>
                         </div>
@@ -178,9 +178,9 @@
                         <div class="section_title">
                             <h1>Магазины</h1>
                         </div>
-                        <div class="section_subtitle">Заказ продуктов первой необходимости</div>
+                        <div class="section_subtitle {% if visually_impaired == 1 %}section-vi_subtitle{% endif %}">Заказ продуктов первой необходимости</div>
                     </div>
-                    <div class="cta_list">
+                    <div class="cta_list {% if visually_impaired == 1 %}cta-vi_list{% endif %}">
                         <ul>
                             <li class="d-flex flex-row align-items-center justify-content-start">
                                 <img src="images/check.png">
@@ -205,7 +205,7 @@
                         </ul>
                     </div>
                     <div class="about_text">
-                        <p class="pat">Магазины "Карина" и "Горячий хлеб" предоставляют возможность заказа продуктов
+                        <p class="pat {% if visually_impaired == 1 %}pat-vi{% endif %}">Магазины "Карина" и "Горячий хлеб" предоставляют возможность заказа продуктов
                             питания на дом с возможностью оплаты при получении.</p>
                     </div>
                 </div>
@@ -228,9 +228,9 @@
                         <div class="section_title">
                             <h1>Аптеки</h1>
                         </div>
-                        <div class="section_subtitle">Доставка лекарств</div>
+                        <div class="section_subtitle {% if visually_impaired == 1 %}section-vi_subtitle{% endif %}">Доставка лекарств</div>
                     </div>
-                    <div class="cta_list">
+                    <div class="cta_list {% if visually_impaired == 1 %}cta-vi_list{% endif %}">
                         <ul>
                             <li class="d-flex flex-row align-items-center justify-content-start">
                                 <img src="images/check.png">
@@ -247,7 +247,7 @@
                         </ul>
                     </div>
                     <div class="about_text">
-                        <p class="pat">Заказ лекарственных препаратов, медицинских изделий и технических средств
+                        <p class="pat {% if visually_impaired == 1 %}pat-vi{% endif %}">Заказ лекарственных препаратов, медицинских изделий и технических средств
                             реабилитации с доставкой на дом.</p>
                     </div>
                 </div>
@@ -262,10 +262,10 @@
                         <div class="section_title">
                             <h1>Социальное такси</h1>
                         </div>
-                        <div class="section_subtitle">Перемещение по городу</div>
-                        <div class="section_subtitle"><a href="tel:+7 (34938) 29 205">+7 (34938) 29-205</a></div>
+                        <div class="section_subtitle {% if visually_impaired == 1 %}section-vi_subtitle{% endif %}">Перемещение по городу</div>
+                        <div class="section_subtitle {% if visually_impaired == 1 %}section-vi_subtitle1{% endif %}"><a href="tel:+7 (34938) 29 205">+7 (34938) 29-205</a></div>
                     </div>
-                    <div class="cta_list">
+                    <div class="cta_list {% if visually_impaired == 1 %}cta-vi_list{% endif %}">
                         <ul>
                             <li class="d-flex flex-row align-items-center justify-content-start">
                                 <a
@@ -289,7 +289,7 @@
                         </ul>
                     </div>
                     <div class="about_text">
-                        <p class="pat">Служба "Социальное такси" может оказать услуги по перевозке и сопровождению
+                        <p class="pat {% if visually_impaired == 1 %}pat-vi{% endif %}">Служба "Социальное такси" может оказать услуги по перевозке и сопровождению
                             маломобильных граждан по городу,
                             а так же осуществить перевозку в г. Ноябрьск (платно).</p>
                     </div>
@@ -323,9 +323,9 @@
                         <div class="section_title">
                             <h1>Гуманитарные комнаты</h1>
                         </div>
-                        <div class="section_subtitle">Помощь нуждающимся семьям</div>
+                        <div class="section_subtitle {% if visually_impaired == 1 %}section-vi_subtitle{% endif %}">Помощь нуждающимся семьям</div>
                     </div>
-                    <div class="cta_list">
+                    <div class="cta_list {% if visually_impaired == 1 %}cta-vi_list{% endif %}">
                         <ul>
                             <li class="d-flex flex-row align-items-center justify-content-start">
                                 <img src="images/check.png">
@@ -343,7 +343,7 @@
                         </ul>
                     </div>
                     <div class="about_text">
-                        <p class="pat">Активисты общественной организации «Семья Муравленко» приглашают жителей,
+                        <p class="pat {% if visually_impaired == 1 %}pat-vi{% endif %}">Активисты общественной организации «Семья Муравленко» приглашают жителей,
                             которые оказались в трудной жизненной ситуации, в гуманитарную комнату. Общественники
                             помогут подобрать необходимые вещи и обувь, которые собрали неравнодушные жители
                             города.</p>
@@ -361,9 +361,9 @@
                         <div class="section_title">
                             <h1>Уборка помещений</h1>
                         </div>
-                        <div class="section_subtitle">Уборка</div>
+                        <div class="section_subtitle {% if visually_impaired == 1 %}section-vi_subtitle{% endif %}">Уборка</div>
                     </div>
-                    <div class="cta_list">
+                    <div class="cta_list {% if visually_impaired == 1 %}cta-vi_list{% endif %}">
                         <ul>
                             <li class="d-flex flex-row align-items-center justify-content-start">
                                 <img src="images/check.png">
@@ -376,7 +376,7 @@
                         </ul>
                     </div>
                     <div class="about_text">
-                        <p class="pat">Наши волонтеры предлагают услуги по уборке и отчиске помещений. Льготной категории
+                        <p class="pat {% if visually_impaired == 1 %}pat-vi{% endif %}">Наши волонтеры предлагают услуги по уборке и отчиске помещений. Льготной категории
                             граждан услуги предоставляются бесплатно.</p>
                     </div>
                     <div
@@ -410,7 +410,7 @@
                             <h1>Центр социального обслуживания</h1>
                         </div>
                     </div>
-                    <div class="cta_list">
+                    <div class="cta_list {% if visually_impaired == 1 %}cta-vi_list{% endif %}">
                         <ul>
                             <li class="d-flex flex-row align-items-center justify-content-start">
                                 <a
@@ -448,7 +448,7 @@
                         </ul>
                     </div>
                     <div class="about_text">
-                        <p class="pat">Сотрудники Центра социального обслуживания могут оказать профессиональную поддержку
+                        <p class="pat {% if visually_impaired == 1 %}pat-vi{% endif %}">Сотрудники Центра социального обслуживания могут оказать профессиональную поддержку
                             людям, оказавшимся в трудной жизненной ситуации.</p>
                     </div>
                     <div

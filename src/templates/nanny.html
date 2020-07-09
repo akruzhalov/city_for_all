@@ -9,7 +9,7 @@
     
                 <!-- Slide -->
                 <div class="slide">
-                    <div class="background_image" style="background-image:url(images/IMG_4238.JPG.jpg)"></div>
+                    <div class="background_image {% if visually_impaired == 1 %}background-vi_image{% endif %}" style="background-image:url(images/IMG_4238.JPG.jpg)"></div>
                     <div class="home_slider_overlay"></div>
                     <div class="slide_wrap d-flex flex-column align-items-start justify-content-center">
                         <div class="home_container">
@@ -17,7 +17,7 @@
                                 <div class="row">
                                     <div class="col">
                                         <div class="home_content active">
-                                            <div class="home_title">
+                                            <div class="home_title {% if visually_impaired == 1 %}home-vi_title{% endif %}">
                                                 <h1><span>Заказ услуг няни</span></h1>
                                             </div>
                                         </div>
@@ -32,8 +32,8 @@
     </div>
     
     <h1 class="hp">Заказ няни</h1>
-    <div class="section_subtitle4">Заявка принимается не позднее 1 дня по телефону:</div>
-    <div class="section_subtitle2"><a href="tel:+7 (34938) 29 2 05">+7 (34938) 29-205</a></div>
+    <div class="section_subtitle4 {% if visually_impaired == 1 %}section_subtitle4-vi{% endif %}">Заявка принимается не позднее 1 дня по телефону:</div>
+    <div class="section_subtitle2 {% if visually_impaired == 1 %}section_subtitle4-vi{% endif %}"><a href="tel:+7 (34938) 29 2 05">+7 (34938) 29-205</a></div>
     
     <div class="about" id="gh">
         <div class="container">
