@@ -265,7 +265,12 @@ img {
 button:active {
     outline: none;
 }
+.form_button{
 
+    width: 300px; height: 60px; 
+    font-size: 25px;
+    background: #020202;
+}
 .form-control {
     color: black;
 }

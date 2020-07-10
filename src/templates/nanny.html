@@ -10,7 +10,7 @@
                 <!-- Slide -->
                 <div class="slide">
                     <div class="background_image {% if visually_impaired == 1 %}background-vi_image{% endif %}" style="background-image:url(images/IMG_4238.JPG.jpg)"></div>
-                    <div class="home_slider_overlay"></div>
+                    <div class="home_slider_overlay {% if visually_impaired == 1 %}home_slider_overlay-vi{% endif %}"></div>
                     <div class="slide_wrap d-flex flex-column align-items-start justify-content-center">
                         <div class="home_container">
                             <div class="container">
@@ -43,14 +43,14 @@
                     <div class="about_content">
                         <div class="section_title_container">
                             <form action="send_mail_nanny.php" method="post">
-                                <div class="form-row">
-                                    <div class="form-group col-12 ">
+                                <div class="form-row {% if visually_impaired == 1 %}form-row-vi{% endif %}">
+                                    <div class="form-group col-12  ">
                                         <label for="fio">ФИО родителя(законного представителя):</label>
                                         <input name="fio" id="fio" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" required type="text"
                                             placeholder="Иванов Иван Иванович" style="height: 50px;">
                                     </div>
                                 </div>
-                                <div class="form-row">
+                                <div class="form-row {% if visually_impaired == 1 %}form-row-vi{% endif %}">
                                     <div class="form-group col-md-4 col-xs-12">
                                         <label for="birthday">Дата рождения:</label>
                                         <input name="birthday" id="birthday" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" required type="text"
@@ -63,8 +63,8 @@
                                     </div>
                                 </div>
                                 <h3 class="mb-3">Данные паспорта</h3>
-                                <div class="form-row">
-                                    <div class="form-group col-md-4 col-sm-12">
+                                <div class="form-row  {% if visually_impaired == 1 %}form-row-vi{% endif %}">
+                                    <div class="form-group col-md-4 col-sm-12 ">
                                         <label for="serial">Серия:</label>
                                         <input name="serial" id="serial" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" required type="text"
                                             placeholder="1234" style="height: 50px;">
@@ -80,14 +80,14 @@
                                             placeholder="12.12.2012" style="height: 50px;">
                                     </div>
                                 </div>
-                                <div class="form-row">
+                                <div class="form-row {% if visually_impaired == 1 %}form-row-vi{% endif %}">
                                     <div class="form-group col-12">
                                         <label for="issuedby">Кем выдан:</label>
                                         <input name="issuedby" id="issuedby" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" required type="text"
                                             placeholder="Отделом УФМС России по ЯНАО в г. Муравленко" style="height: 50px;">
                                     </div>
                                 </div>
-                                <div class="form-row">
+                                <div class="form-row {% if visually_impaired == 1 %}form-row-vi{% endif %}">
                                     <div class="form-group col-12">
                                         <label for="regadress">Адрес регистрации:</label>
                                         <input name="regadress" id="regadress" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" required type="text"
@@ -95,7 +95,7 @@
                                             style="height: 50px;">
                                     </div>
                                 </div>
-                                <div class="form-row">
+                                <div class="form-row {% if visually_impaired == 1 %}form-row-vi{% endif %}">
                                     <div class="form-group col-12">
                                         <label for="actualadress">Адрес фактического проживания:</label>
                                         <input name="actualadress" id="actualadress" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" required
@@ -104,7 +104,7 @@
                                     </div>
                                 </div>
                                 <h3 class="mb-3">Время заказа няни</h3>
-                                <div class="form-row">
+                                <div class="form-row {% if visually_impaired == 1 %}form-row-vi{% endif %}">
                                     <div class="form-group col-md-6 ">
                                         <input autocomplete="off" type="text" id="record-date-from" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}s" placeholder="C"
                                             name="date_from" style="height: 50px;">
@@ -114,7 +114,7 @@
                                             placeholder="До" name="date_until" style="height: 50px;">
                                     </div>
                                 </div>
-                                <div class="form-row">
+                                <div class="form-row {% if visually_impaired == 1 %}form-row-vi1{% endif %}">
                                     <div class="form-group form-check mt-3 col-12">
                                         <input id="checkbox" class="form-check-input  form-input-taxi" type="checkbox"
                                             onclick="check()">
@@ -124,9 +124,10 @@
                                             согласие на обработку персональных данных</label>
                                     </div>
                                 </div>
-                                <div class="form-row d-flex justify-content-center">
-                                    <input type='submit' id="delButton" class="btn btn-dark btn-lg contact submit2" disabled
-                                        value='Отправить' style="width: 300px; height: 60px;">
+                                <div class="form-row d-flex justify-content-center ">
+                                    <input type='submit' id="delButton" class="btn btn-dark btn-lg contact submit2 {% if visually_impaired == 1 %}button-vi{% endif %}" disabled
+                                        value='Отправить' style="width: 300px; height: 60px; 
+                                        font-size: 25px; ">>
                                 </div>
                             </form>
                         </div>

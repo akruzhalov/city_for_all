@@ -9,7 +9,7 @@
                 <!-- Slide -->
                 <div class="slide">
                     <div class="background_image {% if visually_impaired == 1 %}background-vi_image{% endif %}" style="background-image:url(images/tax.jpg)"></div>
-                    <div class="home_slider_overlay"></div>
+                    <div class="home_slider_overlay {% if visually_impaired == 1 %}home_slider_overlay-vi{% endif %}"></div>
                     <div class="slide_wrap d-flex flex-column align-items-start justify-content-center">
                         <div class="home_container">
                             <div class="container">
@@ -42,14 +42,14 @@
                         <div class="section_title_container">
 
                             <form action="send_mail_taxi.php" method="POST">
-                                <div class="form-row ">
-                                    <div class="form-group col-12 ">
+                                <div class="form-row {% if visually_impaired == 1 %}form-row-vi{% endif %}">
+                                    <div class="form-group col-12  {% if visually_impaired == 1 %}form-row-vi{% endif %} ">
                                         <label for="fio">ФИО:</label>
                                         <input name="fio" id="fio" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" required type="text"
                                             placeholder="Иванов Иван Иванович" style="height: 50px;">
                                     </div>
                                 </div>
-                                <div class="form-row">
+                                <div class="form-row {% if visually_impaired == 1 %}form-row-vi{% endif %}">
                                     <div class="form-group col-md-4 col-xs-12">
                                         <label for="birthday">Дата рождения:</label>
                                         <input name="birthday" id="birthday" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" required type="text"
@@ -61,7 +61,7 @@
                                             placeholder="+7 (999) 777-66-55" style="height: 50px;">
                                     </div>
                                 </div>
-                                <div class="form-row">
+                                <div class="form-row {% if visually_impaired == 1 %}form-row-vi{% endif %}">
                                     <div class="form-group ">
                                         <label for="category">Категория:</label>
                                         <select id="category" name="category" class="form-control {% if visually_impaired == 1 %}form-row-vi1{% endif %}">
@@ -70,7 +70,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="form-row">
+                                <div class="form-row {% if visually_impaired == 1 %}form-row-vi{% endif %}">
                                     <div class="form-group col-12 form-check">
                                         <input id="checkbox" class="form-check-input {% if visually_impaired == 1 %}form-row-vi{% endif %}" type="checkbox" onclick="check()">
                                         <label style="font-size: 20px; font-weight: normal; line-height: 20px"
@@ -79,10 +79,11 @@
                                             согласие на обработку персональных данных</label>
                                     </div>
                                 </div>
-                                <div class="form-row">
+                                <div class="form-row {% if visually_impaired == 1 %}form-row-vi{% endif %}">
                                     <div class="form-group col-12 d-flex justify-content-center">
-                                        <input type='submit' id="delButton" class="btn btn-dark btn-lg contact submit2"
-                                            disabled value='Отправить' style="width: 300px; height: 60px;">
+                                        <input type='submit' id="delButton" class="btn btn-dark btn-lg contact submit2 {% if visually_impaired == 1 %}button-vi{% endif %}"
+                                            disabled value='Отправить' style="width: 300px; height: 60px; 
+                                            font-size: 25px;">
                                     </div>
                                 </div>
                             </form>
