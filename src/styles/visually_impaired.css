@@ -61,6 +61,14 @@
     font-size: 40px;
    
 }
+.section-vi_subtitle1 a {
+    color: #0056eb;
+ 
+}
+.section-vi_subtitle1 a:hover {
+    color: #000000;
+ 
+}
 
 .cta-vi_list .link{
    
@@ -86,13 +94,20 @@
 
    
     
-    .button {
+    .button-vi {
+        width: 210px;
+        height: 65px;
+        background: #000000;
         
-        background: #3366CC;
-        
-        border-radius: 15px;
     }
     
+    .button-vi a {
+        
+        font-size: 25px;
+       
+    }
+    
+
     .footer-vi {
         background: #ffffff;
     }   
@@ -111,6 +126,16 @@
         color: #000000;
      
     }
+
+    .footer-vi_list a {
+        color: #0056eb;
+     
+    }
+    .footer-vi_list a:hover {
+        color: #000000;
+     
+    }
+    
     .background-vi_image {
         
         width: 0%;
@@ -132,34 +157,37 @@
         
     }
 
-    .home-vi_slider_overlay {
-     
-        background: #ffffff;
+    .home_slider_overlay-vi {
+        
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.74), rgb(255, 255, 255));
     }
-
 
     .fixed_header-vi {
     
         background: #020202;
-      
+        white-space: nowrap;
     }
 
     .header-vi {
-       
+        white-space: nowrap;
         background: #000000;
         
     }
     
 
     .main_nav-vi ul li a {
-        font-size:1.5vw;
+        font-size:1.25vw;
         
         color: #ffffff;
       
     
     }
 
-
+    .home_slider-vi .owl-dots .owl-dot span::after {
+        font-size: 30px;
+        color: #000000;
+    }
+    
 
     
     .section_subtitle4-vi {
@@ -167,7 +195,18 @@
         color: #000000;
  
     }
-
+    .section_subtitle4-vi a {
+        color: #0056eb;
+     
+    }
+    .section_subtitle4-vi a:hover {
+        color: #000000;
+     
+    }
+.home_slider-vi .owl-dots .owl-dot.active {
+    background: #e9ffbc;
+   
+}
 
     .form-row-vi
     {
@@ -179,5 +218,26 @@
     {
 
         font-size: 20px;
+
+    }
+    
+    .form-row-vi1 title
+    {
+
+        font-size: 30px;
+
+    }
+
+    .form-row-vi label
+    
+    {
+        font-size: 24px;
+
+    }
+
+    .form-row-vi2 label
+    
+    {
+        font-size: 234px;
 
     }

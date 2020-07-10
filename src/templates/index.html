@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="home ">
+    <div class="home {% if visually_impaired == 1 %}home_slider-vi{% endif %} ">
 
         <!-- Slider -->
         <div class="home_slider_container ">
@@ -10,7 +10,7 @@
                 <!-- Slide -->
                 <div class="slide">
                     <div class="background_image {% if visually_impaired == 1 %}background-vi_image{% endif %}" style="background-image:url(images/inv.jpg)"></div>
-                    <div class="home_slider_overlay"></div>
+                    <div class="home_slider_overlay {% if visually_impaired == 1 %}home_slider_overlay-vi{% endif %}"></div>
                     <div class="slide_wrap d-flex flex-column align-items-start justify-content-center">
                         <div class="home_container">
                             <div class="container">
@@ -35,7 +35,7 @@
                 <!-- Slide -->
                 <div class="slide">
                     <div class="background_image {% if visually_impaired == 1 %}background-vi_image{% endif %}" style="background-image:url(images/inv2.jpg )"></div>
-                    <div class="home_slider_overlay"></div>
+                    <div class="home_slider_overlay {% if visually_impaired == 1 %}home_slider_overlay-vi{% endif %}"></div>
                     <div class="slide_wrap d-flex flex-column align-items-start justify-content-center">
                         <div class="home_container">
                             <div class="container">
@@ -60,7 +60,7 @@
                 <!-- Slide -->
                 <div class="slide">
                     <div class="background_image {% if visually_impaired == 1 %}background-vi_image{% endif %}" style="background-image:url(images/inv3.jpg)"></div>
-                    <div class="home_slider_overlay"></div>
+                    <div class="home_slider_overlay {% if visually_impaired == 1 %}home_slider_overlay-vi{% endif %}"></div>
                     <div class="slide_wrap d-flex flex-column align-items-start justify-content-center">
                         <div class="home_container">
                             <div class="container">
@@ -160,7 +160,7 @@
                     </div>
                     <div
                         class="cta_buttons d-flex flex-row justify-content-center justify-content-md-start align-items-start flex-wrap">
-                        <div class="button cta_button ">
+                        <div class="button cta_button {% if visually_impaired == 1 %}button-vi{% endif %}">
                             <a
                                 href="http://xn----8sbgmveffhgdjtj8a5b.xn--80aze9d.xn--p1ai/index.php?option=com_content&view=featured&Itemid=479">Подробнее</a>
                         </div>
@@ -295,11 +295,11 @@
                     </div>
                     <div
                         class="cta_buttons d-flex flex-row justify-content-center justify-content-md-start align-items-start flex-wrap">
-                        <div class="button cta_button">
+                        <div class="button cta_button {% if visually_impaired == 1 %}button-vi{% endif %}">
                             <a
                                 href="http://xn----8sbgmveffhgdjtj8a5b.xn--80aze9d.xn--p1ai/index.php?option=com_content&view=featured&Itemid=479">Подробнее</a>
                         </div>
-                        <div class="button cta_button">
+                        <div class="button cta_button {% if visually_impaired == 1 %}button-vi{% endif %}">
                             <a href="taxi.php">Заказать</a>
                         </div>
                     </div>
@@ -381,7 +381,7 @@
                     </div>
                     <div
                         class="cta_buttons d-flex flex-row justify-content-center justify-content-md-start align-items-start flex-wrap">
-                        <div class="button cta_button">
+                        <div class="button cta_button {% if visually_impaired == 1 %}button-vi{% endif %}">
                             <a
                                 href="http://xn----8sbgmveffhgdjtj8a5b.xn--80aze9d.xn--p1ai/index.php?option=com_content&view=featured&Itemid=479">Подробнее</a>
                         </div>
@@ -453,11 +453,11 @@
                     </div>
                     <div
                         class="cta_buttons d-flex flex-row justify-content-center justify-content-md-start align-items-start flex-wrap">
-                        <div class="button cta_button">
+                        <div class="button cta_button {% if visually_impaired == 1 %}button-vi{% endif %}">
                             <a
                                 href="http://xn----8sbgmveffhgdjtj8a5b.xn--80aze9d.xn--p1ai/index.php?option=com_content&view=featured&Itemid=479">Подробнее</a>
                         </div>
-                        <div class="button cta_button">
+                        <div class="button cta_button {% if visually_impaired == 1 %}button-vi{% endif %}">
                             <a href="nanny.php">Заказать няню</a>
                         </div>
                     </div>
