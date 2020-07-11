@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******************************
+
+[Table of Contents]
+
+1. 1600px
+2. 1440px
+3. 1280px
+4. 1199px
+5. 1024px
+6. 991px
+7. 959px
+8. 880px
+9. 768px
+10. 767px
+11. 539px
+12. 479px
+13. 400px
+
+******************************/
+
+/************
+1. 1600px
+************/
+
+@media only screen and (max-width: 1600px)
+{
+}
+
+/************
+2. 1440px
+************/
+
+@media only screen and (max-width: 1440px)
+{
+}
+
+/************
+3. 1380px
+************/
+
+@media only screen and (max-width: 1380px)
+{
+}
+
+/************
+3. 1280px
+************/
+
+@media only screen and (max-width: 1280px)
+{
+}
+
+/************
+4. 1199px
+************/
+
+@media only screen and (max-width: 1199px)
+{
+}
+
+/************
+4. 1100px
+************/
+
+@media only screen and (max-width: 1100px)
+{
+}
+
+/************
+5. 1024px
+************/
+
+@media only screen and (max-width: 1024px)
+{
+}
+
+/************
+6. 991px
+************/
+
+@media only screen and (max-width: 991px)
+{
+}
+/************
+7. 959px
+************/
+
+@media only screen and (max-width: 959px)
+{
+}
+
+/************
+8. 880px
+************/
+
+@media only screen and (max-width: 880px)
+{
+}
+
+/************
+9. 768px
+************/
+
+@media only screen and (max-width: 768px)
+{
+    .home-vi .home_title h1 {
+        font-size: 2rem;
+    }
+    .home-vi .home_subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+/************
+10. 767px
+************/
+
+@media only screen and (max-width: 767px)
+{
+
+/************
+11. 575px
+************/
+
+@media only screen and (max-width: 575px)
+{
+
+}
+
+/************
+11. 539px
+************/
+
+@media only screen and (max-width: 539px)
+{
+}
+
+/************
+12. 480px
+************/
+
+@media only screen and (max-width: 480px)
+{
+}
+
+/************
+13. 479px
+************/
+
+@media only screen and (max-width: 479px)
+{
+    .home-vi .home_title h1 {
+        font-size: 1.2rem;
+    }
+    .home-vi .home_subtitle {
+        font-size: 1rem;
+    }
+    .blocks-vi .cta_list .link {
+        font-size: 27px;
+    }
+    .blocks-vi .cta_list span {
+        font-size: 27px;
+    }
+    .blocks-vi .pat {
+        font-size: 24px;
+    }
+    .blocks-vi .cta_buttons .cta_button:not(:last-child) {
+        margin-right: 0;
+    }
+}
+
+/************
+14. 400px
+************/
+
+@media only screen and (max-width: 400px)
+{
+}
+
+/************
+14. 325px
+************/
+
+@media only screen and (max-width: 325px)
+{
+    .home-vi .home_title h1 {
+        font-size: 1rem;
+    }
+    .home-vi .home_subtitle {
+        font-size: 0.9rem;
+    }
+    .blocks-vi .cta_list .link {
+        font-size: 24px;
+    }
+    .blocks-vi .cta_list span {
+        font-size: 24px;
+    }
+    .blocks-vi .pat {
+        font-size: 20px;
+    }
+    .blocks-vi .section_title h1 { 
+        font-size: 30px;
+    }
+    .blocks-vi .section_subtitle {
+        font-size: 22px;
+    }
+}
