@@ -42,9 +42,9 @@
                 <div class="col-lg-8" style="margin: 0 auto">
                     <div class="about_content">
                         <div class="section_title_container">
-                            <form action="send_mail_nanny.php" method="post">
+                            <form action="/send_mail/nanny" method="post">
                                 <div class="form-row {% if visually_impaired == 1 %}form-row-vi{% endif %}">
-                                    <div class="form-group col-12  ">
+                                    <div class="form-group col-12 ">
                                         <label for="fio">ФИО родителя(законного представителя):</label>
                                         <input name="fio" id="fio" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" required type="text"
                                             placeholder="Иванов Иван Иванович" style="height: 50px;">
@@ -66,31 +66,31 @@
                                 <div class="form-row  {% if visually_impaired == 1 %}form-row-vi{% endif %}">
                                     <div class="form-group col-md-4 col-sm-12 ">
                                         <label for="serial">Серия:</label>
-                                        <input name="serial" id="serial" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" required type="text"
+                                        <input name="serial" id="serial" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" type="text"
                                             placeholder="1234" style="height: 50px;">
                                     </div>
                                     <div class="form-group col-md-4 col-sm-12">
                                         <label for="number">Номер:</label>
-                                        <input name="number" id="number" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" required type="text"
+                                        <input name="number" id="number" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" type="text"
                                             placeholder="567890" style="height: 50px;">
                                     </div>
                                     <div class="form-group col-md-4 col-xs-8">
                                         <label for="issuedate">Дата выдачи:</label>
-                                        <input name="datapas" id="issuedate" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" required type="text"
+                                        <input name="datapas" id="issuedate" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" type="text"
                                             placeholder="12.12.2012" style="height: 50px;">
                                     </div>
                                 </div>
                                 <div class="form-row {% if visually_impaired == 1 %}form-row-vi{% endif %}">
                                     <div class="form-group col-12">
                                         <label for="issuedby">Кем выдан:</label>
-                                        <input name="issuedby" id="issuedby" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" required type="text"
+                                        <input name="issuedby" id="issuedby" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" type="text"
                                             placeholder="Отделом УФМС России по ЯНАО в г. Муравленко" style="height: 50px;">
                                     </div>
                                 </div>
                                 <div class="form-row {% if visually_impaired == 1 %}form-row-vi{% endif %}">
                                     <div class="form-group col-12">
                                         <label for="regadress">Адрес регистрации:</label>
-                                        <input name="regadress" id="regadress" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" required type="text"
+                                        <input name="regadress" id="regadress" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" type="text"
                                             placeholder="г. Муравленко, ул. Дружбы народов, д. 52, кв. 62"
                                             style="height: 50px;">
                                     </div>
@@ -98,7 +98,7 @@
                                 <div class="form-row {% if visually_impaired == 1 %}form-row-vi{% endif %}">
                                     <div class="form-group col-12">
                                         <label for="actualadress">Адрес фактического проживания:</label>
-                                        <input name="actualadress" id="actualadress" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" required
+                                        <input name="actualadress" id="actualadress" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}"
                                             type="text" placeholder="г. Муравленко, ул. Дружбы народов, д. 52, кв. 62"
                                             style="height: 50px;">
                                     </div>
@@ -107,11 +107,11 @@
                                 <div class="form-row {% if visually_impaired == 1 %}form-row-vi{% endif %}">
                                     <div class="form-group col-md-6 ">
                                         <input autocomplete="off" type="text" id="record-date-from" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}s" placeholder="C"
-                                            name="date_from" style="height: 50px;">
+                                            name="date_from" style="height: 50px;" required>
                                     </div>
                                     <div class="form-group col-md-6 d-flex">
                                         <input autocomplete="off" type="text" id="record-date-until" class="form-control mt-auto {% if visually_impaired == 1 %}form-row-vi{% endif %}"
-                                            placeholder="До" name="date_until" style="height: 50px;">
+                                            placeholder="До" name="date_until" style="height: 50px;" required>
                                     </div>
                                 </div>
                                 <div class="form-row {% if visually_impaired == 1 %}form-row-vi1{% endif %}">

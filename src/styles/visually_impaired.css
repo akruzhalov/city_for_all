@@ -41,25 +41,19 @@
 
 .quote-vi_content p {
     font-size: 40px;
-  
     color: #2c2c2c;
-    
 }
 
 .quote-vi_author {
     font-size: 25px;
-   
     color: #2c2c2c;
-   
 }
 
 .section-vi_subtitle {
     font-size: 25px;
-   
 }
 .section-vi_subtitle1 {
     font-size: 40px;
-   
 }
 .section-vi_subtitle1 a {
     color: #0056eb;
@@ -71,173 +65,127 @@
 }
 
 .cta-vi_list .link{
-   
     color: #000000;
-   
     font-size: 35px;
 }
 
 .cta-vi_list ul li span {
-   
     font-size: 40px;
-    
     color: #ffffff;
 }
 
 .pat-vi {
-    
     font-size: 28px;
-    
     color: #FAFAFA;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
     
-    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;}
-
-   
-    
-    .button-vi {
-        width: 210px;
-        height: 65px;
-        background: #000000;
-        
-    }
-    
-    .button-vi a {
-        
-        font-size: 25px;
-       
-    }
-    
-
-    .footer-vi {
-        background: #ffffff;
-    }   
-
-    .footer-vi_title {
-        
-        font-size: 26px;
-        
-        color: #000000;
-       
-    }
-
-    .footer-vi_list ul li {
-        font-size: 16px;
-       
-        color: #000000;
-     
-    }
-
-    .footer-vi_list a {
-        color: #0056eb;
-     
-    }
-    .footer-vi_list a:hover {
-        color: #000000;
-     
-    }
-    
-    .background-vi_image {
-        
-        width: 0%;
-        height: 0%;
-       
-    }
-
-    .home-vi_subtitle {
-        font-size:3vw;
-    
-        color: #000000;
-       
-    }
-
-    .home-vi_title h1 {
-        font-size:4vw;
-   
-        color: #000000;
-        
-    }
-
-    .home_slider_overlay-vi {
-        
-        background: linear-gradient(to right, rgba(255, 255, 255, 0.74), rgb(255, 255, 255));
-    }
-
-    .fixed_header-vi {
-    
-        background: #020202;
-        white-space: nowrap;
-    }
-
-    .header-vi {
-        white-space: nowrap;
-        background: #000000;
-        
-    }
-    
-
-    .main_nav-vi ul li a {
-        font-size:1.25vw;
-        
-        color: #ffffff;
-      
-    
-    }
-
-    .home_slider-vi .owl-dots .owl-dot span::after {
-        font-size: 30px;
-        color: #000000;
-    }
-    
-
-    
-    .section_subtitle4-vi {
-        font-size: 25px;
-        color: #000000;
- 
-    }
-    .section_subtitle4-vi a {
-        color: #0056eb;
-     
-    }
-    .section_subtitle4-vi a:hover {
-        color: #000000;
-     
-    }
-.home_slider-vi .owl-dots .owl-dot.active {
-    background: #e9ffbc;
-   
+.button-vi {
+    width: 210px;
+    height: 65px;
+    background: #000000;
 }
 
-    .form-row-vi
-    {
+.button-vi a {
+    font-size: 25px;
+}
 
-        font-size: 30px;
 
-    }
-    .form-row-vi1
-    {
+.footer-vi {
+    background: #ffffff;
+}   
 
-        font-size: 20px;
+.footer-vi_title {
+    font-size: 26px;
+    color: #000000;
+}
 
-    }
+.footer-vi_list ul li {
+    font-size: 16px;
+    color: #000000;
+}
+
+.footer-vi_list a {
+    color: #0056eb;
     
-    .form-row-vi1 title
-    {
+}
+.footer-vi_list a:hover {
+    color: #000000;
+}
 
-        font-size: 30px;
+.background-vi_image {
+    width: 0%;
+    height: 0%;
+}
 
-    }
+.home-vi_subtitle {
+    font-size:3vw;
+    color: #000000;
+}
 
-    .form-row-vi label
-    
-    {
-        font-size: 24px;
+.home-vi_title h1 {
+    font-size:4vw;
+    color: #000000;
+}
 
-    }
+.home_slider_overlay-vi {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.74), rgb(255, 255, 255));
+}
 
-    .form-row-vi2 label
-    
-    {
-        font-size: 234px;
+.fixed_header-vi {
+    background: #020202;
+    white-space: nowrap;
+}
 
-    }
+.header-vi {
+    white-space: nowrap;
+    background: #000000;
+}
+
+
+.main_nav-vi ul li a {
+    font-size:1.25vw;
+    color: #ffffff;
+}
+
+.home_slider-vi .owl-dots .owl-dot span::after {
+    font-size: 30px;
+    color: #000000;
+}
+
+.section_subtitle4-vi {
+    font-size: 25px;
+    color: #000000;
+}
+
+.section_subtitle4-vi a {
+    color: #0056eb;
+}
+
+.section_subtitle4-vi a:hover {
+    color: #000000;
+}
+
+.home_slider-vi .owl-dots .owl-dot.active {
+    background: #e9ffbc;
+}
+
+.form-row-vi {
+    font-size: 30px;
+}
+
+.form-row-vi1 {
+    font-size: 20px;
+}
+
+.form-row-vi1 title {
+    font-size: 30px;
+}
+
+.form-row-vi label {
+    font-size: 24px;
+}
+
+.form-row-vi2 label {
+    font-size: 234px;
+}

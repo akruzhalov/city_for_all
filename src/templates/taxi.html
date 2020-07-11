@@ -40,25 +40,24 @@
                 <div class="col-lg-8" style="margin: 0 auto">
                     <div class="about_content">
                         <div class="section_title_container">
-
-                            <form action="send_mail_taxi.php" method="POST">
+                            <form action="/send_mail/taxi" method="POST">
                                 <div class="form-row {% if visually_impaired == 1 %}form-row-vi{% endif %}">
-                                    <div class="form-group col-12  {% if visually_impaired == 1 %}form-row-vi{% endif %} ">
+                                    <div class="form-group col-12 {% if visually_impaired == 1 %}form-row-vi{% endif %}">
                                         <label for="fio">ФИО:</label>
                                         <input name="fio" id="fio" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" required type="text"
-                                            placeholder="Иванов Иван Иванович" style="height: 50px;">
+                                            placeholder="Иванов Иван Иванович" style="height: 50px;" required>
                                     </div>
                                 </div>
                                 <div class="form-row {% if visually_impaired == 1 %}form-row-vi{% endif %}">
                                     <div class="form-group col-md-4 col-xs-12">
                                         <label for="birthday">Дата рождения:</label>
                                         <input name="birthday" id="birthday" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" required type="text"
-                                            placeholder="06.11.1994" style="height: 50px;">
+                                            placeholder="06.11.1994" style="height: 50px;" required>
                                     </div>
                                     <div class="form-group col-md-8 col-sm-12">
                                         <label for="phone">Телефон:</label>
                                         <input name="phone" id="phone" class="form-control {% if visually_impaired == 1 %}form-row-vi{% endif %}" required type="text"
-                                            placeholder="+7 (999) 777-66-55" style="height: 50px;">
+                                            placeholder="+7 (999) 777-66-55" style="height: 50px;" required>
                                     </div>
                                 </div>
                                 <div class="form-row {% if visually_impaired == 1 %}form-row-vi{% endif %}">
