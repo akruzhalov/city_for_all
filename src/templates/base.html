@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="keywords" content="Город, для, всех, волонтеры, ограниченные, люди, возможности, такси, социальный, магазин, аптека, гуманитраная, помощь,
+				уборка, обслуживание, инвалид, бесплатно, оказание, покупка, продуктов,  ">
+
+    <meta name="description" content="Данный сайт предназначен для маломобильных граждан – жителей города:
+				-пожилого возраста;
+				- инвалидов;
+				-имеющих малолетних детей;
+				- временно ограниченных в передвижении в связи с болезнью,
+				оказавшихся в трудной жизненной ситуации (невозможность выйти самостоятельно из дома, одиночество и др.) для  получения помощи в :
+				 - приобретении и доставки на дом продуктов питания, лекарств; 
+				-  уборке квартиры и приготовлении пищи;
+				- сопровождении в медицинские учреждения;
+				- предоставлении социального такси;
+				- услуги сиделки, няни.
+				">
+    <title>Город для всех</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Gorod dlya vseh">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/styles/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="/styles/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="/styles/animate.css">
+    <link rel="stylesheet" type="text/css" href="/styles/main_styles.css">
+    <link rel="stylesheet" type="text/css" href="/styles/responsive.css">
+    <link rel="stylesheet" type="text/css" href="/styles/jquery.datetimepicker.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/visually_impaired.css" />
+</head>
+
+<body>
+    <div class="super_container">
+
+        <!-- Header -->
+
+        <header class="header  {% if visually_impaired == 1 %}header-vi{% endif %}">
+
+
+            <div class="header_wrap d-flex flex-row align-items-center px-3">
+
+                <!-- Logo -->
+                <div class="logo mr-auto"><a href="/"><img src="/images/wlogo.png" alt=""></a></div>
+
+                <!-- Main Nav -->
+                <nav class="main_nav {% if visually_impaired == 1 %}main_nav-vi{% endif %} ">
+                    <ul class="d-flex flex-row align-items-center justify-content-center">
+                        <li><a href="/#vol">Волонтёры</a></li>
+                        <li><a href="/#mag">Магазины</a></li>
+                        <li><a href="/#apt">Аптеки</a></li>
+                        <li><a href="/#tax">Такси</a></li>
+                        <li><a class="text-nowrap" href="/#gum">Гуманитарная помощь</a></li>
+                        <li><a href="/#ub">Уборка</a></li>
+                        <li><a href="/#soc">Обслуживание</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Social -->
+                <div class="ml-auto social header_social">
+                    <!-- <div class="ml-auto"> -->
+                    <ul class="d-flex flex-row align-items-center justify-content-start">
+                        <li>
+                            <a href="{{ current_url }}?for_visually_impaired={% if visually_impaired == 1 %}false{% else %}true{% endif %}" title="{% if visually_impaired == 1 %}Обычная версия{% else %}Версия для слабовидящих{% endif %}">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Hamburger -->
+                <div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
+            </div>
+        </header>
+
+        <!-- Fixed Header -->
+
+        <header class="fixed_header {% if visually_impaired == 1 %}fixed_header-vi{% endif %}">
+            <div class="header_wrap d-flex flex-row align-items-center">
+
+                <!-- Logo -->
+                <div class="logo"><a href="/"><img src="/images/wlogo.png" alt=""></a></div>
+
+                <!-- Main Nav -->
+                <nav class="main_nav {% if visually_impaired == 1 %}main_nav-vi{% endif %}">
+                    <ul class="d-flex flex-row align-items-center justify-content-center">
+                        <li><a href="/#vol">Волонтёры</a></li>
+                        <li><a href="/#mag">Магазины</a></li>
+                        <li><a href="/#apt">Аптеки</a></li>
+                        <li><a href="/#tax">Такси</a></li>
+                        <li><a class="text-nowrap" href="/#gum">Гуманитарная помощь</a></li>
+                        <li><a href="/#ub">Уборка</a></li>
+                        <li><a href="/#soc">Обслуживание</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Social -->
+                <div class="ml-auto social header_social">
+                    <ul class="d-flex flex-row align-items-center justify-content-start">
+                        <li>
+                            <a href="{{ current_url }}?for_visually_impaired={% if visually_impaired == 1 %}false{% else %}true{% endif %}" title="{% if visually_impaired == 1 %}Обычная версия{% else %}Версия для слабовидящих{% endif %}">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Hamburger -->
+                <div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
+            </div>
+        </header>
+
+        <!-- Menu -->
+
+        <div class="menu">
+            <div class="menu_door door_left"></div>
+            <div class="menu_door door_right"></div>
+            <div class="menu_content d-flex flex-column align-items-center justify-content-center">
+                <div class="menu_close">Закрыть</div>
+                <div class="menu_nav_container">
+                    <nav class="menu_nav text-center">
+                        <ul>
+                            <li><a href="/#vol">Волонтёры</a></li>
+                            <li><a href="/#mag">Магазины</a></li>
+                            <li><a href="/#apt">Аптеки</a></li>
+                            <li><a href="/#tax">Такси</a></li>
+                            <li><a href="/#gum">Гуманитарная помощь</a></li>
+                            <li><a href="/#ub">Уборка</a></li>
+                            <li><a href="/#soc">Обслуживание</a></li>
+                            <li class="ml-auto">
+                                <a href="{{ current_url }}?for_visually_impaired={% if visually_impaired == 1 %}false{% else %}true{% endif %}" title="{% if visually_impaired == 1 %}Обычная версия{% else %}Версия для слабовидящих{% endif %}">
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        {% block content %}
+        {% endblock %}
+
+        
+        <!-- Footer -->
+        <footer class="footer {% if visually_impaired == 1 %}footer-vi{% endif %}">
+            <div class="footer_content">
+                <div class="{% if visually_impaired == 1 %}container-fluid{% else %}container{% endif %}">
+                    <div class="row">
+                        <div class="col">
+                            <div class="footer_logo text-center">
+                                <a href="/"><img src="/images/logo2.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row footer_row">
+                        <div class="col-md-6 col-xl-3 footer_col">
+                            <div class="footer_item text-center">
+                                <div
+                                    class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
+                                    <div><img src="/images/phone.png"></div>
+                                </div>
+                                <div class="footer_title">Номер телефона</div>
+                                <div class="footer_list">
+                                    <ul>
+                                        <li><a href="tel:+7 (34938) 29 205">+7 (34938) 29-205</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 footer_col">
+                            <div class="footer_item text-center">
+                                <div
+                                    class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
+                                    <div><img src="/images/mail.png" alt=""></div>
+                                </div>
+                                <div class="footer_title">e-mail</div>
+                                <div class="footer_list">
+                                    <ul>
+                                        <li><a
+                                                href="mailto:cso.muravlenko@dszn.yanao.ru">cso.muravlenko@dszn.yanao.ru</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 footer_col">
+                            <div class="footer_item text-center">
+                                <div
+                                    class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
+                                    <div><img src="/images/contact.png" alt=""></div>
+                                </div>
+                                <div class="footer_title">Наш офис</div>
+                                <div class="footer_list">
+                                    <ul>
+                                        <li>Город Муравленко, ДР. НАРОДОВ 32/2</li>
+                                        <li>Вход со двора</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 footer_col">
+                            <div class="footer_item text-center">
+                                <div
+                                    class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
+                                    <div><img src="/images/time.png" alt=""></div>
+                                </div>
+                                <div class="footer_title">Режим работы</div>
+                                <div class="footer_list">
+                                    <ul>
+                                        <li>Социального такси: 08:30-17:00</li>
+                                        <li>Волонтеров: 14:00-20:00</li>
+                                        <li>Няни: 08:00-18:00</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function check() {
+            var cb = document.getElementsByTagName('input'),
+                L = cb.length - 1,
+                f = true;
+            for (; L >= 0; L--) {
+                if (cb[L]['type'] == 'checkbox' && cb[L]['checked'] == true) {
+                    f = !f;
+                    break;
+                }
+            }
+            document.getElementById('delButton').disabled = f;
+        }
+    </script>
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/bootstrap-4.1.2/popper.js"></script>
+    <script src="/js/bootstrap-4.1.2/bootstrap.min.js"></script>
+    <script src="/js/greensock/TweenMax.min.js"></script>
+    <script src="/js/greensock/TimelineMax.min.js"></script>
+    <!-- <script src="/js/greensock/animation.gsap.min.js"></script> -->
+    <script src="/js/greensock/ScrollToPlugin.min.js"></script>
+    <script src="/js/OwlCarousel2-2.3.4/owl.carousel.js"></script>
+    <script src="/js/easing/easing.js"></script>
+    <script src="/js/progressbar/progressbar.min.js"></script>
+    <script src="/js/parallax-js-master/parallax.min.js"></script>
+    <script src="/js/custom.js"></script>
+    <!-- <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script> -->
+    <script src="/js/jquery.datetimepicker.js"></script>
+    <script>
+        jQuery('#record-date-from').datetimepicker({
+            minDate: '0',
+            formatDate: 'd.m.Y',
+            format: 'd.m.Y H:00',
+            //    inline:true,
+            dayOfWeekStart: 1,
+            disabledWeekDays: [6, 0],
+            minTime: '8:00',
+            maxTime: '19:00'
+        });
+        jQuery('#record-date-until').datetimepicker({
+            minDate: '0',
+            formatDate: 'd.m.Y',
+            format: 'd.m.Y H:00',
+            //    inline:true,
+            dayOfWeekStart: 1,
+            disabledWeekDays: [6, 0],
+            minTime: '8:00',
+            maxTime: '19:00'
+        });
+
+    </script>
+</body>
+</html>

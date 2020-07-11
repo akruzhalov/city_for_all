@@ -2,6 +2,8 @@
 require_once __DIR__ . '/vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use Symfony\Component\Yaml\Parser;
+$loader = new \Twig\Loader\FilesystemLoader(__DIR__.'/templates');
+$twig = new \Twig\Environment($loader);
 
 $mail = new PHPMailer;
 $yaml = new Parser();

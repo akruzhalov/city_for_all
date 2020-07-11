@@ -12,9 +12,9 @@
     - предоставлении социального такси;
     - услуги сиделки, няни.
 
-Текущая версия сайта доступна по [ссылке](https://cityforall.000webhostapp.com/), 
+Текущая версия сайта доступна по [ссылке](https://city-for-all.herokuapp.com/) ([обновлённая версия](https://cfa-spa.web.app/)), 
 информация о команде представлена на 
-[landing page](http://pd-2020-1.std-821.ist.mospolytech.ru/).
+[landing page](http://landing-cfa-pd.std-1026.ist.mospolytech.ru/).
 
 
 [Критерии выставления оценок от куратора](https://docs.google.com/spreadsheets/d/1N0M0Mqp96JURBt9jojspKhzYx0ZfLEyf7GmsQJ5eB3k/edit#gid=1796042566)

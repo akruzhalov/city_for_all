@@ -116,8 +116,7 @@ $(document).ready(function()
 				},0.08)
 			});
 
-			close.on('click', function()
-			{
+			let closeCallback = function() {
 				// menu.toggleClass('active');
 				TweenMax.to(menuContent, 0.4,
 				{
@@ -135,7 +134,10 @@ $(document).ready(function()
 					opacity:0,
 					delay:1.5
 				});
-			});
+			}
+			
+			close.on('click', closeCallback);
+			items.on('click', closeCallback);
 		}
 	}
 
