@@ -19,6 +19,8 @@
 
 [Критерии выставления оценок от куратора](https://docs.google.com/spreadsheets/d/1N0M0Mqp96JURBt9jojspKhzYx0ZfLEyf7GmsQJ5eB3k/edit#gid=1796042566)
 
+[Индивидуальные планы](https://docs.google.com/spreadsheets/d/1YrW61N9GrMDLYFTE_CLDXZeZbGR6OJpD5PZK4f6vaUA/edit#gid=0)
+
 
 ## Участники 
 
