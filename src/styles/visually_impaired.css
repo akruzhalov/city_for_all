@@ -41,55 +41,38 @@
 
 .quote-vi_content p {
     font-size: 40px;
-  
     color: #2c2c2c;
-    
 }
 
 .quote-vi_author {
     font-size: 25px;
-   
     color: #2c2c2c;
-   
 }
 
 .section-vi_subtitle {
     font-size: 25px;
-   
 }
 .section-vi_subtitle1 {
     font-size: 40px;
-   
 }
 
 .cta-vi_list .link{
-   
     color: #000000;
-   
     font-size: 35px;
 }
 
 .cta-vi_list ul li span {
-   
     font-size: 40px;
-    
     color: #ffffff;
 }
 
 .pat-vi {
-    
     font-size: 28px;
-    
     color: #FAFAFA;
-    
     text-shadow: rgba(0, 0, 0, .01) 0 0 1px;}
-
-   
     
     .button {
-        
         background: #3366CC;
-        
         border-radius: 15px;
     }
     
@@ -98,65 +81,47 @@
     }   
 
     .footer-vi_title {
-        
         font-size: 26px;
-        
         color: #000000;
-       
     }
 
     .footer-vi_list ul li {
         font-size: 16px;
-       
         color: #000000;
-     
     }
+
     .background-vi_image {
-        
         width: 0%;
         height: 0%;
-       
     }
 
     .home-vi_subtitle {
         font-size:3vw;
-    
         color: #000000;
-       
     }
 
     .home-vi_title h1 {
         font-size:4vw;
-   
         color: #000000;
-        
     }
 
     .home-vi_slider_overlay {
-     
         background: #ffffff;
     }
 
 
     .fixed_header-vi {
-    
         background: #020202;
-      
     }
 
     .header-vi {
-       
         background: #000000;
-        
     }
     
 
     .main_nav-vi ul li a {
         font-size:1.5vw;
-        
         color: #ffffff;
-      
-    
     }
 
 
@@ -171,13 +136,11 @@
 
     .form-row-vi
     {
-
         font-size: 30px;
 
     }
+
     .form-row-vi1
     {
-
         font-size: 20px;
-
     }

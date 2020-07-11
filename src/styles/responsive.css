@@ -202,7 +202,7 @@
 	}
 	.home_title h1
 	{
-		font-size: 30px;
+		font-size: 40px;
 	}
 	
 	.header_wrap
@@ -273,7 +273,6 @@
 
 @media only screen and (max-width: 768px)
 {
-	
 }
 
 /************
@@ -291,6 +290,10 @@
 	.home_slider .owl-dots
 	{
 		left: calc((100% - 500px) / 2);
+	}
+	.home_title h1
+	{
+		font-size: 40px;
 	}
 	.quote_content p
 	{
@@ -415,7 +418,7 @@
 {
 	.home_title h1
 	{
-		font-size: 30px;
+		font-size: 25px;
 	}
 	.cta_buttons .cta_button {
 		margin-left: 5px !important;
@@ -431,6 +434,6 @@
 {
 	.home_title h1
 	{
-		font-size: 28px;
+		font-size: 20px;
 	}
 }

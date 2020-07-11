@@ -739,7 +739,6 @@ section {
     position: absolute;
     top: 30px;
     right: 30px;
-    font-size: 12px;
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
@@ -825,7 +824,6 @@ section {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     line-height: 1.2;
-    padding-left: 6px;
 }
 
 .home_title {
