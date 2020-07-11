@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="home {% if visually_impaired == 1 %}home_slider-vi{% endif %} ">
+    <div class="home {% if visually_impaired == 1 %}home-vi{% endif %} ">
 
         <!-- Slider -->
         <div class="home_slider_container ">
@@ -9,19 +9,21 @@
 
                 <!-- Slide -->
                 <div class="slide">
-                    <div class="background_image {% if visually_impaired == 1 %}background-vi_image{% endif %}" style="background-image:url(images/inv.jpg)"></div>
-                    <div class="home_slider_overlay {% if visually_impaired == 1 %}home_slider_overlay-vi{% endif %}"></div>
+                    {% if visually_impaired == 0 %}
+                    <div class="background_image" style="background-image:url(images/inv.jpg)"></div>
+                    {% endif %}
+                    <div class="home_slider_overlay"></div>
                     <div class="slide_wrap d-flex flex-column align-items-start justify-content-center">
                         <div class="home_container">
                             <div class="container">
                                 <div class="row">
                                     <div class="col">
                                         <div class="home_content active">
-                                            <div class="mb-3 home_subtitle {% if visually_impaired == 1 %}home-vi_subtitle{% endif %}">Волонтёрская помощь!</div>
-                                            <div class="home_title {% if visually_impaired == 1 %}home-vi_title{% endif %}">
+                                            <div class="mb-3 home_subtitle">Волонтёрская помощь!</div>
+                                            <div class="home_title">
                                                 <h1><span>Относитесь к малоподвижной</span></h1>
                                                 <h1>категории граждан?</h1>
-                                                <div class="mt-3 home_subtitle {% if visually_impaired == 1 %}home-vi_subtitle{% endif %}">Мы поможем вам!</div>
+                                                <div class="mt-3 home_subtitle">Мы поможем вам!</div>
                                             </div>
 
                                         </div>
@@ -34,19 +36,21 @@
 
                 <!-- Slide -->
                 <div class="slide">
-                    <div class="background_image {% if visually_impaired == 1 %}background-vi_image{% endif %}" style="background-image:url(images/inv2.jpg )"></div>
-                    <div class="home_slider_overlay {% if visually_impaired == 1 %}home_slider_overlay-vi{% endif %}"></div>
+                    {% if visually_impaired == 0 %}
+                    <div class="background_image" style="background-image:url(images/inv2.jpg )"></div>
+                    {% endif %}
+                    <div class="home_slider_overlay"></div>
                     <div class="slide_wrap d-flex flex-column align-items-start justify-content-center">
                         <div class="home_container">
                             <div class="container">
                                 <div class="row">
                                     <div class="col">
                                         <div class="home_content">
-                                            <div class="mb-3 home_subtitle {% if visually_impaired == 1 %}home-vi_subtitle{% endif %}">Волонтёрская помощь!</div>
-                                            <div class="home_title {% if visually_impaired == 1 %}home-vi_title{% endif %}">
+                                            <div class="mb-3 home_subtitle">Волонтёрская помощь!</div>
+                                            <div class="home_title">
                                                 <h1><span>Попали в трудную</span></h1>
                                                 <h1>жизненную ситуацию?</h1>
-                                                <div class="mt-3 home_subtitle {% if visually_impaired == 1 %}home-vi_subtitle{% endif %}">Мы поможем вам!</div>
+                                                <div class="mt-3 home_subtitle">Мы поможем вам!</div>
                                             </div>
 
                                         </div>
@@ -59,19 +63,21 @@
 
                 <!-- Slide -->
                 <div class="slide">
-                    <div class="background_image {% if visually_impaired == 1 %}background-vi_image{% endif %}" style="background-image:url(images/inv3.jpg)"></div>
-                    <div class="home_slider_overlay {% if visually_impaired == 1 %}home_slider_overlay-vi{% endif %}"></div>
+                    {% if visually_impaired == 0 %}
+                    <div class="background_image" style="background-image:url(images/inv3.jpg)"></div>
+                    {% endif %}
+                    <div class="home_slider_overlay"></div>
                     <div class="slide_wrap d-flex flex-column align-items-start justify-content-center">
                         <div class="home_container">
                             <div class="container">
                                 <div class="row">
                                     <div class="col">
                                         <div class="home_content">
-                                            <div class="mb-3 home_subtitle {% if visually_impaired == 1 %}home-vi_subtitle{% endif %}">Волонтерская помощь!</div>
-                                            <div class="home_title {% if visually_impaired == 1 %}home-vi_title{% endif %}">
+                                            <div class="mb-3 home_subtitle">Волонтерская помощь!</div>
+                                            <div class="home_title">
                                                 <h1><span>Трудности во взаимодействии</span></h1>
                                                 <h1>с окружающим миром?</h1>
-                                                <div class="mt-3 home_subtitle {% if visually_impaired == 1 %}home-vi_subtitle{% endif %}">Мы поможем вам!</div>
+                                                <div class="mt-3 home_subtitle">Мы поможем вам!</div>
                                             </div>
 
                                         </div>
@@ -87,14 +93,14 @@
 
     </div>
 
-    <div class="quote">
+    <div class="quote {% if visually_impaired == 1 %}quote-vi{% endif %}">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="quote_content text-center {% if visually_impaired == 1 %}quote-vi_content{% endif %}">
+                    <div class="quote_content text-center">
                         <p>“Утратить физическую независимость не означает расстаться с жизнью..”</p>
                     </div>
-                    <div class="quote_author text-center {% if visually_impaired == 1 %}quote-vi_author {% endif %}">– Филипп Поццо ди Борго</div>
+                    <div class="quote_author text-center">– Филипп Поццо ди Борго</div>
                 </div>
             </div>
         </div>
@@ -103,10 +109,12 @@
     <div class="blocks py-3 {% if visually_impaired == 1 %}blocks-vi{% endif %}">
         <div class="cta mr-xl-5 border-radius-r mb-3" id="vol">
             <div class="d-flex flex-xl-row flex-column align-items-start justify-content-start">
-        
+                
+                {% if visually_impaired == 0 %}
                 <div class="cta_image align-self-stretch order-2 order-xl-1">
                     <div class="background_image" style="background-image:url(images/IMG_3906.jpg)"></div>
                 </div>
+                {% endif %}
         
                 <div class="cta_content order-1 order-xl-2">
                     <div class="section_title_container">
@@ -114,44 +122,44 @@
                         <div class="section_title">
                             <h1>Волонтёры</h1>
                         </div>
-                        <div class="section_subtitle {% if visually_impaired == 1 %}section-vi_subtitle{% endif %}">Помощь оказывается бесплатно</div>
+                        <div class="section_subtitle">Помощь оказывается бесплатно</div>
                     </div>
-                    <div class="cta_list {% if visually_impaired == 1 %}cta-vi_list{% endif %}">
+                    <div class="cta_list">
                         <ul>
                             <li class="d-flex flex-row align-items-center justify-content-start">
-                                <a
-                                    href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&view=article&id=333&Itemid=1014"><img
-                                        src="/images/check.png">
-                                    <span class="link">Уборка жилого помещения мытье посуды, вынос мусора.</span></a>
+                                <a class="d-flex" href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&view=article&id=333&Itemid=1014">
+                                    <img class="m-auto" src="/images/check.png">
+                                    <span class="m-auto link">Уборка жилого помещения мытье посуды, вынос мусора.</span>
+                                </a>
                             </li>
                             <li class="d-flex flex-row align-items-center justify-content-start">
-                                <a
-                                    href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&view=article&id=333&Itemid=1014"><img
-                                        src="/images/check.png">
-                                    <span class="link">Покупка продуктов первой необходимости.</span></a>
+                                <a class="d-flex" href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&view=article&id=333&Itemid=1014">
+                                    <img class="m-auto" src="/images/check.png">
+                                    <span class="m-auto link">Покупка продуктов первой необходимости.</span>
+                                </a>
                             </li>
                             <li class="d-flex flex-row align-items-center justify-content-start">
-                                <a
-                                    href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&view=article&id=333&Itemid=1014"><img
-                                        src="/images/check.png">
-                                    <span class="link">Сопровождение, выгул домашних животных.</span></a>
+                                <a class="d-flex" href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&view=article&id=333&Itemid=1014">
+                                    <img class="m-auto" src="/images/check.png">
+                                    <span class="m-auto link">Сопровождение, выгул домашних животных.</span>
+                                </a>
                             </li>
                             <li class="d-flex flex-row align-items-center justify-content-start">
-                                <a
-                                    href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&view=article&id=333&Itemid=1014"><img
-                                        src="/images/check.png">
-                                    <span class="link"> Приготовление пищи.</span></a>
+                                <a class="d-flex" href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&view=article&id=333&Itemid=1014">
+                                    <img class="m-auto" src="/images/check.png">
+                                    <span class="m-auto link"> Приготовление пищи.</span>
+                                </a>
                             </li>
                             <li class="d-flex flex-row align-items-center justify-content-start">
-                                <a
-                                    href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&view=article&id=333&Itemid=1014"><img
-                                        src="/images/check.png">
-                                    <span class="link"> Помощь в использовании онлайн-услуг.</span></a>
+                                <a class="d-flex" href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&view=article&id=333&Itemid=1014">
+                                    <img class="m-auto" src="/images/check.png">
+                                    <span class="m-auto link"> Помощь в использовании онлайн-услуг.</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
                     <div class="about_text">
-                        <p class="pat {% if visually_impaired == 1 %}pat-vi{% endif %}">Волонтёры - это обычные люди, которые готовы вложить частичку себя в доброе дело.
+                        <p class="pat">Волонтёры - это обычные люди, которые готовы вложить частичку себя в доброе дело.
         
                             Если вы ограничены в передвижении, не можете обеспечить себя даже самым необходимым, вам может
                             потребоваться помощь волонтёра.
@@ -160,7 +168,7 @@
                     </div>
                     <div
                         class="cta_buttons d-flex flex-row justify-content-center justify-content-md-start align-items-start flex-wrap">
-                        <div class="button cta_button {% if visually_impaired == 1 %}button-vi{% endif %}">
+                        <div class="button cta_button">
                             <a
                                 href="http://xn----8sbgmveffhgdjtj8a5b.xn--80aze9d.xn--p1ai/index.php?option=com_content&view=featured&Itemid=479">Подробнее</a>
                         </div>
@@ -178,9 +186,9 @@
                         <div class="section_title">
                             <h1>Магазины</h1>
                         </div>
-                        <div class="section_subtitle {% if visually_impaired == 1 %}section-vi_subtitle{% endif %}">Заказ продуктов первой необходимости</div>
+                        <div class="section_subtitle">Заказ продуктов первой необходимости</div>
                     </div>
-                    <div class="cta_list {% if visually_impaired == 1 %}cta-vi_list{% endif %}">
+                    <div class="cta_list">
                         <ul>
                             <li class="d-flex flex-row align-items-center justify-content-start">
                                 <img src="/images/check.png">
@@ -205,32 +213,35 @@
                         </ul>
                     </div>
                     <div class="about_text">
-                        <p class="pat {% if visually_impaired == 1 %}pat-vi{% endif %}">Магазины "Карина" и "Горячий хлеб" предоставляют возможность заказа продуктов
+                        <p class="pat">Магазины "Карина" и "Горячий хлеб" предоставляют возможность заказа продуктов
                             питания на дом с возможностью оплаты при получении.</p>
                     </div>
                 </div>
-        
+                {% if visually_impaired == 0 %}
                 <div class="cta_image align-self-stretch order-2 order-xl-2">
                     <div class="background_image" style="background-image:url(images/IMG_4321.jpg)"></div>
                 </div>
+                {% endif %}
             </div>
         </div>
         
         <div class="cta mr-xl-5 border-radius-r mb-3" id="apt">
             <div class="d-flex flex-xl-row flex-column align-items-start justify-content-start">
         
+                {% if visually_impaired == 0 %}
                 <div class="cta_image align-self-stretch order-2 order-xl-1">
                     <div class="background_image" style="background-image:url(images/cta4.jpg)"></div>
                 </div>
+                {% endif %}
         
                 <div class="cta_content order-1 order-xl-2">
                     <div class="section_title_container">
                         <div class="section_title">
                             <h1>Аптеки</h1>
                         </div>
-                        <div class="section_subtitle {% if visually_impaired == 1 %}section-vi_subtitle{% endif %}">Доставка лекарств</div>
+                        <div class="section_subtitle">Доставка лекарств</div>
                     </div>
-                    <div class="cta_list {% if visually_impaired == 1 %}cta-vi_list{% endif %}">
+                    <div class="cta_list">
                         <ul>
                             <li class="d-flex flex-row align-items-center justify-content-start">
                                 <img src="/images/check.png">
@@ -247,7 +258,7 @@
                         </ul>
                     </div>
                     <div class="about_text">
-                        <p class="pat {% if visually_impaired == 1 %}pat-vi{% endif %}">Заказ лекарственных препаратов, медицинских изделий и технических средств
+                        <p class="pat">Заказ лекарственных препаратов, медицинских изделий и технических средств
                             реабилитации с доставкой на дом.</p>
                     </div>
                 </div>
@@ -262,70 +273,73 @@
                         <div class="section_title">
                             <h1>Социальное такси</h1>
                         </div>
-                        <div class="section_subtitle {% if visually_impaired == 1 %}section-vi_subtitle{% endif %}">Перемещение по городу</div>
-                        <div class="section_subtitle {% if visually_impaired == 1 %}section-vi_subtitle1{% endif %}"><a href="tel:+7 (34938) 29 205">+7 (34938) 29-205</a></div>
+                        <div class="section_subtitle">Перемещение по городу</div>
+                        <div class="section_subtitle"><a href="tel:+7 (34938) 29 205">+7 (34938) 29-205</a></div>
                     </div>
-                    <div class="cta_list {% if visually_impaired == 1 %}cta-vi_list{% endif %}">
+                    <div class="cta_list">
                         <ul>
                             <li class="d-flex flex-row align-items-center justify-content-start">
-                                <a
-                                    href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&view=article&id=159&Itemid=749"><img
-                                        src="/images/check.png">
-                                    <span class="link">Подача транспорта по указанному времени к пункту
-                                        назначения.</span></a>
+                                <a class="d-flex" href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&view=article&id=159&Itemid=749">
+                                    <img class="m-auto" src="/images/check.png">
+                                    <span class="m-auto link">Подача транспорта по указанному времени к пункту назначения.</span>
+                                </a>
                             </li>
                             <li class="d-flex flex-row align-items-center justify-content-start">
-                                <a
-                                    href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&view=article&id=159&Itemid=749"><img
-                                        src="/images/check.png">
-                                    <span class="link">Помощь при посадке и высадке.</span></a>
+                                <a class="d-flex" href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&view=article&id=159&Itemid=749">
+                                    <img class="m-auto" src="/images/check.png">
+                                    <span class="m-auto link">Помощь при посадке и высадке.</span>
+                                </a>
                             </li>
                             <li class="d-flex flex-row align-items-center justify-content-start">
-                                <a
-                                    href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&view=article&id=159&Itemid=749"><img
-                                        src="/images/check.png">
-                                    <span class="link">Сопровождение.</span></a>
+                                <a class="d-flex" href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&view=article&id=159&Itemid=749">
+                                    <img class="m-auto" src="/images/check.png">
+                                    <span class="m-auto link">Сопровождение.</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
                     <div class="about_text">
-                        <p class="pat {% if visually_impaired == 1 %}pat-vi{% endif %}">Служба "Социальное такси" может оказать услуги по перевозке и сопровождению
+                        <p class="pat">Служба "Социальное такси" может оказать услуги по перевозке и сопровождению
                             маломобильных граждан по городу,
                             а так же осуществить перевозку в г. Ноябрьск (платно).</p>
                     </div>
                     <div
                         class="cta_buttons d-flex flex-row justify-content-center justify-content-md-start align-items-start flex-wrap">
-                        <div class="button cta_button {% if visually_impaired == 1 %}button-vi{% endif %}">
+                        <div class="button cta_button">
                             <a
                                 href="http://xn----8sbgmveffhgdjtj8a5b.xn--80aze9d.xn--p1ai/index.php?option=com_content&view=featured&Itemid=479">Подробнее</a>
                         </div>
-                        <div class="button cta_button {% if visually_impaired == 1 %}button-vi{% endif %}">
+                        <div class="button cta_button">
                             <a href="/taxi">Заказать</a>
                         </div>
                     </div>
                 </div>
         
+                {% if visually_impaired == 0 %}
                 <div class="cta_image align-self-stretch order-2 order-xl-2">
                     <div class="background_image" style="background-image:url(images/cta5.jpg)"></div>
                 </div>
+                {% endif %}
             </div>
         </div>
         
         <div class="cta mr-xl-5 border-radius-r mb-3" id="gum">
             <div class="d-flex flex-xl-row flex-column align-items-start justify-content-start">
         
+                {% if visually_impaired == 0 %}
                 <div class="cta_image align-self-stretch order-2 order-xl-1">
                     <div class="background_image" style="background-image:url(images/cta6.jpg)"></div>
                 </div>
+                {% endif %}
         
                 <div class="cta_content order-1 order-xl-2">
                     <div class="section_title_container">
                         <div class="section_title">
                             <h1>Гуманитарные комнаты</h1>
                         </div>
-                        <div class="section_subtitle {% if visually_impaired == 1 %}section-vi_subtitle{% endif %}">Помощь нуждающимся семьям</div>
+                        <div class="section_subtitle">Помощь нуждающимся семьям</div>
                     </div>
-                    <div class="cta_list {% if visually_impaired == 1 %}cta-vi_list{% endif %}">
+                    <div class="cta_list">
                         <ul>
                             <li class="d-flex flex-row align-items-center justify-content-start">
                                 <img src="/images/check.png">
@@ -343,7 +357,7 @@
                         </ul>
                     </div>
                     <div class="about_text">
-                        <p class="pat {% if visually_impaired == 1 %}pat-vi{% endif %}">Активисты общественной организации «Семья Муравленко» приглашают жителей,
+                        <p class="pat">Активисты общественной организации «Семья Муравленко» приглашают жителей,
                             которые оказались в трудной жизненной ситуации, в гуманитарную комнату. Общественники
                             помогут подобрать необходимые вещи и обувь, которые собрали неравнодушные жители
                             города.</p>
@@ -361,9 +375,9 @@
                         <div class="section_title">
                             <h1>Уборка помещений</h1>
                         </div>
-                        <div class="section_subtitle {% if visually_impaired == 1 %}section-vi_subtitle{% endif %}">Уборка</div>
+                        <div class="section_subtitle">Уборка</div>
                     </div>
-                    <div class="cta_list {% if visually_impaired == 1 %}cta-vi_list{% endif %}">
+                    <div class="cta_list">
                         <ul>
                             <li class="d-flex flex-row align-items-center justify-content-start">
                                 <img src="/images/check.png">
@@ -376,31 +390,34 @@
                         </ul>
                     </div>
                     <div class="about_text">
-                        <p class="pat {% if visually_impaired == 1 %}pat-vi{% endif %}">Наши волонтеры предлагают услуги по уборке и отчиске помещений. Льготной категории
+                        <p class="pat">Наши волонтеры предлагают услуги по уборке и отчиске помещений. Льготной категории
                             граждан услуги предоставляются бесплатно.</p>
                     </div>
                     <div
                         class="cta_buttons d-flex flex-row justify-content-center justify-content-md-start align-items-start flex-wrap">
-                        <div class="button cta_button {% if visually_impaired == 1 %}button-vi{% endif %}">
+                        <div class="button cta_button">
                             <a
                                 href="http://xn----8sbgmveffhgdjtj8a5b.xn--80aze9d.xn--p1ai/index.php?option=com_content&view=featured&Itemid=479">Подробнее</a>
                         </div>
                     </div>
                 </div>
         
+                {% if visually_impaired == 0 %}
                 <div class="cta_image align-self-stretch order-2 order-xl-2">
                     <div class="background_image" style="background-image:url(images/cta7.jpg)"></div>
                 </div>
+                {% endif %}
             </div>
         </div>
         
         <div class="cta mr-xl-5 border-radius-r mb-3" id="soc">
             <div class="d-flex flex-xl-row flex-column align-items-start justify-content-start">
         
-        
+                {% if visually_impaired == 0 %}
                 <div class="cta_image align-self-stretch order-2 order-xl-1">
                     <div class="background_image" style="background-image:url(images/cta8.jpg)"></div>
                 </div>
+                {% endif %}
         
         
                 <div class="cta_content order-1 order-xl-2">
@@ -410,54 +427,51 @@
                             <h1>Центр социального обслуживания</h1>
                         </div>
                     </div>
-                    <div class="cta_list {% if visually_impaired == 1 %}cta-vi_list{% endif %}">
+                    <div class="cta_list">
                         <ul>
                             <li class="d-flex flex-row align-items-center justify-content-start">
-                                <a
-                                    href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&amp;view=article&amp;id=245"><img
-                                        src="/images/check.png">
-                                    <span class="link">Психологическое консультирование, снятие депрессивного и стрессового
-                                        состояния.</span></a>
+                                <a class="d-flex" href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&amp;view=article&amp;id=245">
+                                    <img class="m-auto" src="/images/check.png">
+                                    <span class="m-auto link">Психологическое консультирование, снятие депрессивного и стрессового состояния.</span>
+                                </a>
                             </li>
                             <li class="d-flex flex-row align-items-center justify-content-start">
-                                <a
-                                    href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&amp;view=article&amp;id=329&amp;Itemid=1009"><img
-                                        src="/images/check.png">
-                                    <span class="link">Услуги няни.</span></a>
-                            </li>
-                            </a>
-                            <li class="d-flex flex-row align-items-center justify-content-start">
-                                <a
-                                    href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&amp;view=article&amp;id=158&amp;Itemid=748"><img
-                                        src="/images/check.png">
-                                    <span class="link">Предоставление технических средств реабилитации.</span></a>
+                                <a class="d-flex" href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&amp;view=article&amp;id=329&amp;Itemid=1009">
+                                    <img class="m-auto" src="/images/check.png">
+                                    <span class="m-auto link">Услуги няни.</span>
+                                </a>
                             </li>
                             <li class="d-flex flex-row align-items-center justify-content-start">
-                                <a
-                                    href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&amp;view=article&amp;id=332&amp;Itemid=1013"><img
-                                        src="/images/check.png">
-                                    <span class="link">Услуги сиделки.</span></a>
+                                <a class="d-flex" href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&amp;view=article&amp;id=158&amp;Itemid=748">
+                                    <img class="m-auto" src="/images/check.png">
+                                    <span class="m-auto link">Предоставление технических средств реабилитации.</span>
+                                </a>
                             </li>
                             <li class="d-flex flex-row align-items-center justify-content-start">
-                                <a
-                                    href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&amp;view=article&amp;id=331&amp;Itemid=1011"><img
-                                        src="/images/check.png">
-                                    <span class="link">Сопровождение ребенка в школу, детский сад или место дополнительного
-                                        образования.</span></a>
+                                <a class="d-flex" href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&amp;view=article&amp;id=332&amp;Itemid=1013">
+                                    <img class="m-auto" src="/images/check.png">
+                                    <span class="m-auto link">Услуги сиделки.</span>
+                                </a>
+                            </li>
+                            <li class="d-flex flex-row align-items-center justify-content-start">
+                                <a class="d-flex" href="http://кцсон-муравленко.янао.рф/index.php?option=com_content&amp;view=article&amp;id=331&amp;Itemid=1011">
+                                    <img class="m-auto" src="/images/check.png">
+                                    <span class="m-auto link">Сопровождение ребенка в школу, детский сад или место дополнительного образования.</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
                     <div class="about_text">
-                        <p class="pat {% if visually_impaired == 1 %}pat-vi{% endif %}">Сотрудники Центра социального обслуживания могут оказать профессиональную поддержку
+                        <p class="pat">Сотрудники Центра социального обслуживания могут оказать профессиональную поддержку
                             людям, оказавшимся в трудной жизненной ситуации.</p>
                     </div>
                     <div
                         class="cta_buttons d-flex flex-row justify-content-center justify-content-md-start align-items-start flex-wrap">
-                        <div class="button cta_button {% if visually_impaired == 1 %}button-vi{% endif %}">
+                        <div class="button cta_button">
                             <a
                                 href="http://xn----8sbgmveffhgdjtj8a5b.xn--80aze9d.xn--p1ai/index.php?option=com_content&view=featured&Itemid=479">Подробнее</a>
                         </div>
-                        <div class="button cta_button {% if visually_impaired == 1 %}button-vi{% endif %}">
+                        <div class="button cta_button">
                             <a href="/nanny">Заказать няню</a>
                         </div>
                     </div>
