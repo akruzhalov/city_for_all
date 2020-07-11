@@ -1,14 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="home">
+    <div class="home {% if visually_impaired == 1 %}home-vi{% endif %}">
         <!-- Slider -->
         <div class="home_slider_container">
             <div class="owl-carousel owl-theme home_slider">
 
                 <!-- Slide -->
                 <div class="slide">
-                    <div class="background_image" style="background-image:url(images/tax.jpg)"></div>
+                    {% if visually_impaired == 0 %}
+                    <div class="background_image {% if visually_impaired == 1 %}background-vi_image{% endif %}" style="background-image:url(images/tax.jpg)"></div>
+                    {% endif %}
                     <div class="home_slider_overlay"></div>
                     <div class="slide_wrap d-flex flex-column align-items-start justify-content-center">
                         <div class="home_container">
@@ -30,64 +32,73 @@
             </div>
         </div>
     </div>
-    <h1 class="hp">Форма заказа</h1>
-    <div class="section_subtitle4">Заявка принимается не позднее 1 дня по телефону:</div>
-    <div class="section_subtitle2"><a href="tel:+7 (34938) 29 2 05">+7 (34938) 29-205</a></div>
-    <div class="about" id="gh">
-        <div class="container">
-            <div class="row">
-                <!-- About Content -->
-                <div class="col-lg-8" style="margin: 0 auto">
-                    <div class="about_content">
-                        <div class="section_title_container">
 
-                            <form action="send_mail_taxi.php" method="POST">
-                                <div class="form-row">
-                                    <div class="form-group col-12">
-                                        <label for="fio">ФИО:</label>
-                                        <input name="fio" id="fio" class="form-control" required type="text"
-                                            placeholder="Иванов Иван Иванович" style="height: 50px;">
+    <div class="order {% if visually_impaired == 1 %}order-vi{% endif %}">
+        <h1 class="hp">Форма заказа</h1>
+        <div class="section_subtitle4">Заявка принимается не позднее 1 дня по телефону:</div>
+        <div class="section_subtitle2">
+            <a href="tel:+7 (34938) 29 2 05">+7 (34938) 29-205</a>
+        </div>
+        <div class="about" id="gh">
+            <div class="container">
+                <div class="row">
+                    <!-- About Content -->
+                    <div class="col-lg-8" style="margin: 0 auto">
+                        <div class="about_content">
+                            <div class="section_title_container">
+                                <form action="/send_mail/taxi" method="POST">
+                                    <div class="form-row">
+                                        <div class="form-group col-12">
+                                            <label for="fio">ФИО:</label>
+                                            <input name="fio" id="fio"
+                                                class="form-control"
+                                                required type="text" placeholder="Иванов Иван Иванович" style="height: 50px;"
+                                                required>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-4 col-xs-12">
-                                        <label for="birthday">Дата рождения:</label>
-                                        <input name="birthday" id="birthday" class="form-control" required type="text"
-                                            placeholder="06.11.1994" style="height: 50px;">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-4 col-xs-12">
+                                            <label for="birthday">Дата рождения:</label>
+                                            <input name="birthday" id="birthday"
+                                                class="form-control"
+                                                required type="text" placeholder="06.11.1994" style="height: 50px;" required>
+                                        </div>
+                                        <div class="form-group col-md-8 col-sm-12">
+                                            <label for="phone">Телефон:</label>
+                                            <input name="phone" id="phone"
+                                                class="form-control"
+                                                required type="text" placeholder="+7 (999) 777-66-55" style="height: 50px;"
+                                                required>
+                                        </div>
                                     </div>
-                                    <div class="form-group col-md-8 col-sm-12">
-                                        <label for="phone">Телефон:</label>
-                                        <input name="phone" id="phone" class="form-control" required type="text"
-                                            placeholder="+7 (999) 777-66-55" style="height: 50px;">
+                                    <div class="form-row">
+                                        <div class="form-group ">
+                                            <label for="category">Категория:</label>
+                                            <select id="category" name="category"
+                                                class="form-control">
+                                                <option>Инвалид</option>
+                                                <option>Гражданин пожилого возраста</option>
+                                            </select>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <label for="category">Категория:</label>
-                                        <select id="category" name="category" class="form-control">
-                                            <option>Инвалид</option>
-                                            <option>Гражданин пожилого возраста</option>
-                                        </select>
+                                    <div class="form-row">
+                                        <div class="form-group col-12 form-check">
+                                            <input id="checkbox"
+                                                class="form-check-input"
+                                                type="checkbox" onclick="check()">
+                                            <label style="{% if visually_impaired == 0 %}font-size: 20px;{% endif %} font-weight: normal; line-height: 20px"
+                                                class="form-check-label " for="checkbox"
+                                                title="Достоверность и полноту настоящих сведений подтверждаю. Даю согласие на обработку персональных данных о себе в соответствии со статьей 9 Федерального закона от 27 июля 2006г. № 152 - ФЗ «О персональных данных для включенияв регистр получателей социальных услуг».">Даю
+                                                согласие на обработку персональных данных</label>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-12 form-check">
-                                        <input id="checkbox" class="form-check-input" type="checkbox" onclick="check()">
-                                        <label style="font-size: 14px; font-weight: normal; line-height: 20px"
-                                            class="form-check-label" for="checkbox"
-                                            title="Достоверность и полноту настоящих сведений подтверждаю. Даю согласие на обработку персональных данных о себе в соответствии со статьей 9 Федерального закона от 27 июля 2006г. № 152 - ФЗ «О персональных данных для включенияв регистр получателей социальных услуг».">Даю
-                                            согласие на обработку персональных данных</label>
+                                    <div class="form-row">
+                                        <div class="form-group col-12 d-flex justify-content-center">
+                                            <input type='submit' id="delButton" class="btn btn-dark btn-lg contact submit2" disabled value='Отправить' style="width: 300px; height: 60px; font-size: 25px;">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-12 d-flex justify-content-center">
-                                        <input type='submit' id="delButton" class="btn btn-dark btn-lg contact submit2"
-                                            disabled value='Отправить' style="width: 300px; height: 60px;">
-                                    </div>
-                                </div>
-                            </form>
-
-
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>

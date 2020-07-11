@@ -77,7 +77,6 @@
 
 .link:hover{
     color: white;
-
 }
 
 /* Click */
@@ -106,7 +105,6 @@ body {
     font-size: 14px;
     font-weight: 400;
     background: #FFFFFF;
-    color: #a5a5a5;
 }
 
 div {
@@ -266,7 +264,12 @@ img {
 button:active {
     outline: none;
 }
+.form_button{
 
+    width: 300px; height: 60px; 
+    font-size: 25px;
+    background: #020202;
+}
 .form-control {
     color: black;
 }
@@ -658,7 +661,7 @@ section {
 }
 
 .social ul li a:hover i {
-    color: #202020;
+    color: #99CCFF;
 }
 
 .fixed_header {
@@ -741,7 +744,6 @@ section {
     position: absolute;
     top: 30px;
     right: 30px;
-    font-size: 12px;
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
@@ -827,7 +829,6 @@ section {
     text-transform: uppercase;
     letter-spacing: 0.2em;
     line-height: 1.2;
-    padding-left: 6px;
 }
 
 .home_title {
@@ -1220,9 +1221,6 @@ section {
 .pr {
     padding-top: 100px;
     padding-bottom: 100px;
-}
-
-.pr2 {
 }
 
 .pricing {

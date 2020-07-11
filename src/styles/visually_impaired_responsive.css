@@ -27,7 +27,6 @@
 
 @media only screen and (max-width: 1600px)
 {
-	
 }
 
 /************
@@ -36,15 +35,6 @@
 
 @media only screen and (max-width: 1440px)
 {
-	.header
-	{
-		left: 60px;
-		width: calc(100% - 120px);
-	}
-	.main_nav ul li:not(:last-of-type)
-	{
-		margin-right: 48px;
-	}
 }
 
 /************
@@ -53,7 +43,6 @@
 
 @media only screen and (max-width: 1380px)
 {
-	
 }
 
 /************
@@ -62,7 +51,6 @@
 
 @media only screen and (max-width: 1280px)
 {
-	
 }
 
 /************
@@ -71,34 +59,6 @@
 
 @media only screen and (max-width: 1199px)
 {
-	.logo
-	{
-		left: 30px;
-	}
-	.header_social
-	{
-		right: 30px;
-	}
-	.main_nav ul li:not(:last-of-type)
-	{
-		margin-right: 32px;
-	}
-	.header_social ul li:not(:last-of-type)
-	{
-		margin-right: 18px;
-	}
-	.blog_post
-	{
-		width: 100%;
-	}
-	.promo_box > span > span:first-of-type
-	{
-		font-size: 56px;
-	}
-	.promo_box > span > span:last-of-type > span
-	{
-		font-size: 12px;
-	}
 }
 
 /************
@@ -107,7 +67,6 @@
 
 @media only screen and (max-width: 1100px)
 {
-	
 }
 
 /************
@@ -116,7 +75,6 @@
 
 @media only screen and (max-width: 1024px)
 {
-	
 }
 
 /************
@@ -125,51 +83,13 @@
 
 @media only screen and (max-width: 991px)
 {
-	.main_nav
-	{
-		display: none;
-	}
-	.header_social
-	{
-		display: none;
-	}
-	.home_title h1
-	{
-		font-size: 56px;
-	}
-	.header_wrap
-	{
-		padding-right: 25px;
-	}
-	.hamburger
-	{
-		display: block;
-	}
-	.sidebar
-	{
-		margin-top: 97px;
-	}
-	.promo_box > span > span:first-of-type
-	{
-		font-size: 72px;
-	}
-	.promo_box > span > span:last-of-type > span
-	{
-		font-size: 16px;
-	}
-	.footer_col:not(:last-child)
-	{
-		margin-bottom: 60px;
-	}
 }
-
 /************
 7. 959px
 ************/
 
 @media only screen and (max-width: 959px)
 {
-	
 }
 
 /************
@@ -178,7 +98,6 @@
 
 @media only screen and (max-width: 880px)
 {
-	
 }
 
 /************
@@ -187,7 +106,12 @@
 
 @media only screen and (max-width: 768px)
 {
-	
+    .home-vi .home_title h1 {
+        font-size: 2rem;
+    }
+    .home-vi .home_subtitle {
+        font-size: 1.5rem;
+    }
 }
 
 /************
@@ -196,13 +120,6 @@
 
 @media only screen and (max-width: 767px)
 {
-	.header
-	{
-		top: 30px;
-		left: 30px;
-		width: calc(100% - 60px);
-	}
-}
 
 /************
 11. 575px
@@ -210,40 +127,7 @@
 
 @media only screen and (max-width: 575px)
 {
-	h1
-	{
-		font-size: 36px;
-	}
-	.header
-	{
-		top: 15px;
-		left: 15px;
-		width: calc(100% - 30px);
-	}
-	.home
-	{
-		
-	}
-	.header_wrap
-	{
-		padding-right: 15px;
-	}
-	.home_title h1
-	{
-		font-size: 48px;
-	}
-	.button,
-	.button_2
-	{
-		width: 157px;
-		height: 56px;
-	}
-	.button a,
-	.button_2 a
-	{
-		font-size: 12px;
-		line-height: 52px;
-	}
+
 }
 
 /************
@@ -252,7 +136,6 @@
 
 @media only screen and (max-width: 539px)
 {
-	
 }
 
 /************
@@ -261,7 +144,6 @@
 
 @media only screen and (max-width: 480px)
 {
-	
 }
 
 /************
@@ -270,7 +152,24 @@
 
 @media only screen and (max-width: 479px)
 {
-	
+    .home-vi .home_title h1 {
+        font-size: 1.2rem;
+    }
+    .home-vi .home_subtitle {
+        font-size: 1rem;
+    }
+    .blocks-vi .cta_list .link {
+        font-size: 27px;
+    }
+    .blocks-vi .cta_list span {
+        font-size: 27px;
+    }
+    .blocks-vi .pat {
+        font-size: 24px;
+    }
+    .blocks-vi .cta_buttons .cta_button:not(:last-child) {
+        margin-right: 0;
+    }
 }
 
 /************
@@ -279,5 +178,33 @@
 
 @media only screen and (max-width: 400px)
 {
-	
+}
+
+/************
+14. 325px
+************/
+
+@media only screen and (max-width: 325px)
+{
+    .home-vi .home_title h1 {
+        font-size: 1rem;
+    }
+    .home-vi .home_subtitle {
+        font-size: 0.9rem;
+    }
+    .blocks-vi .cta_list .link {
+        font-size: 24px;
+    }
+    .blocks-vi .cta_list span {
+        font-size: 24px;
+    }
+    .blocks-vi .pat {
+        font-size: 20px;
+    }
+    .blocks-vi .section_title h1 { 
+        font-size: 30px;
+    }
+    .blocks-vi .section_subtitle {
+        font-size: 22px;
+    }
 }
