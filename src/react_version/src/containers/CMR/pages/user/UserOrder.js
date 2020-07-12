@@ -17,7 +17,7 @@ class UserOrder extends Component {
     taxiOrder = async () => {
         const orderDate = new Date();
         try {
-            await axios.post(`https://cfa-spa.firebaseio.com/users/${localStorage.userId}/${this.props.userId}/orders.json`, {
+            await axios.post(`https://city-for-all-9f11c.firebaseio.com/users/${localStorage.userId}/${this.props.userId}/orders.json`, {
                 orderDate: orderDate,
                 orderCategory: 'Заказ Такси'
             });
@@ -29,7 +29,7 @@ class UserOrder extends Component {
     nannyOrder = async () => {
         const orderDate = new Date();
         try {
-            await axios.post(`https://cfa-spa.firebaseio.com/users/${localStorage.userId}/${this.props.userId}/orders.json`, {
+            await axios.post(`https://city-for-all-9f11c.firebaseio.com/users/${localStorage.userId}/${this.props.userId}/orders.json`, {
                 orderDate: orderDate,
                 orderCategory: 'Заказ Няни',
                 orderDay: this.state.nannyDay,
@@ -67,7 +67,6 @@ class UserOrder extends Component {
                                     <div className="taxi-content">
                                         <h3>Заказ такси</h3>
                                         <p>Заказать такси с текущими данными профиля</p>
-                                        <small>*Такси прибудет через 30 минут после одобрения заказа</small>
                                         <Button variant={'primary'} onClick={this.taxiOrder}>Заказать такси</Button>
                                     </div>
                                 </Tab.Pane>

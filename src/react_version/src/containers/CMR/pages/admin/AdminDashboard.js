@@ -9,7 +9,7 @@ class AdminDashboard extends Component {
 
     async componentDidMount() {
         try {
-            const response = await axios.get('https://cfa-spa.firebaseio.com/users.json');
+            const response = await axios.get('https://city-for-all-9f11c.firebaseio.com/users.json');
             const users = Object.entries(response.data).map((userListId) => {
                 return (
                     Object.entries(userListId[1]).map((user) => {
