@@ -18,10 +18,10 @@ export function userAuth(email, password, isLogin, firstName, secondName, lastNa
             displayName
         };
 
-        let url = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyBNKNuNrqrKkkgb8oXgwzfswroSVuc_Zg0';
+        let url = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyAVwl10SdWoKXOGKwrjcWwq6_AbAy3_R9M ';
 
         if(isLogin) {
-            url = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyBNKNuNrqrKkkgb8oXgwzfswroSVuc_Zg0';
+            url = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAVwl10SdWoKXOGKwrjcWwq6_AbAy3_R9M ';
             try {
                 const response = await axios.post(url, authData);
                 const data = response.data;
@@ -44,7 +44,7 @@ export function userAuth(email, password, isLogin, firstName, secondName, lastNa
                 const response = await axios.post(url, authData);
                 const data = response.data;
                 //Добавим пользователя в БД юзеров с его новыми данными
-                await axios.post(`https://cfa-spa.firebaseio.com/users/${data.localId}.json`, {
+                await axios.post(`https://city-for-all-9f11c.firebaseio.com/users/${data.localId}.json`, {
                     firstName,
                     secondName,
                     lastName,
@@ -63,7 +63,7 @@ export function userAuth(email, password, isLogin, firstName, secondName, lastNa
 export function renderData() {
     return async dispatch => {
         try {
-            const response = await axios.get(`https://cfa-spa.firebaseio.com/users/${localStorage.userId}.json`);
+            const response = await axios.get(`https://city-for-all-9f11c.firebaseio.com/users/${localStorage.userId}.json`);
             Object.entries(response.data).map((userData) => {
                 return dispatch(renderDataSuccess(userData[0], userData[1]))
             });

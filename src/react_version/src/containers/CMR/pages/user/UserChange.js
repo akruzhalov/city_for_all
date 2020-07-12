@@ -58,7 +58,7 @@ class UserChange extends Component {
     changeDataHandler = async event => {
         event.preventDefault();
         try {
-            await axios.put(`https://cfa-spa.firebaseio.com/users/${localStorage.userId}/${this.props.userId}.json`, {
+            await axios.put(`https://city-for-all-9f11c.firebaseio.com/users/${localStorage.userId}/${this.props.userId}.json`, {
                 bornDate: this.state.born,
                 email: this.props.userData.email,
                 factAdress: this.state.factAdress,
@@ -82,17 +82,17 @@ class UserChange extends Component {
     };
 
     render() {
-        const validate =
-            ((this.state.born === '')
-            || (this.state.phone === '')
-            || (this.state.sex === '')
-            || (this.state.factAdress === '')
-            || (this.state.privilege === '')
-            || (this.state.serie === '')
-            || (this.state.number === '')
-            || (this.state.passportDate === '')
-            || (this.state.passportLocation === '')
-            || (this.state.regAdress === ''));
+        // const validate =
+        //     ((this.state.born === '')
+        //     || (this.state.phone === '')
+        //     || (this.state.sex === '')
+        //     || (this.state.factAdress === '')
+        //     || (this.state.privilege === '')
+        //     || (this.state.serie === '')
+        //     || (this.state.number === '')
+        //     || (this.state.passportDate === '')
+        //     || (this.state.passportLocation === '')
+        //     || (this.state.regAdress === ''));
         return (
             <div className={'UserChange'}>
                 <Form>
@@ -164,10 +164,10 @@ class UserChange extends Component {
 
                         </Form.Row>
                     </div>
-                    {validate ?
-                        <Button variant="primary" type="submit" disabled>Редактировать</Button> :
-                        <Button variant="primary" type="submit" onClick={this.changeDataHandler}>Редактировать</Button>
-                    }
+                    {/* {validate ? */}
+                        {/* <Button variant="primary" type="submit" disabled>Редактировать</Button> : */}
+                        <Button variant="primary" type="submit" onClick={this.changeDataHandler}>Сохранить</Button>
+                    {/* } */}
                     <NavLink to={'/user'}>
                         <Button variant="secondary" type="submit">Назад</Button>
                     </NavLink>
