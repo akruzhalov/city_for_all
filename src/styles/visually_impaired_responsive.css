@@ -106,20 +106,27 @@
 
 @media only screen and (max-width: 768px)
 {
-    .home-vi .home_title h1 {
-        font-size: 2rem;
-    }
-    .home-vi .home_subtitle {
-        font-size: 1.5rem;
-    }
 }
 
 /************
 10. 767px
 ************/
 
-@media only screen and (max-width: 767px)
-{
+@media only screen and (max-width: 767px) {
+    .blocks-vi .cta_list .link {
+        font-size: 24px;
+    }
+    .blocks-vi .cta_list span {
+        font-size: 24px;
+    }
+    .blocks-vi .pat {
+        font-size: 24px;
+    }
+    .blocks-vi .cta_buttons .cta_button:not(:last-child) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
 
 /************
 11. 575px
@@ -127,7 +134,19 @@
 
 @media only screen and (max-width: 575px)
 {
-
+    .blocks-vi .cta_list .link {
+        font-size: 24px;
+    }
+    .blocks-vi .cta_list span {
+        font-size: 24px;
+    }
+    .blocks-vi .pat {
+        font-size: 24px;
+    }
+    .blocks-vi .cta_buttons .cta_button:not(:last-child) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /************
@@ -136,6 +155,19 @@
 
 @media only screen and (max-width: 539px)
 {
+    .blocks-vi .cta_list .link {
+        font-size: 24px;
+    }
+    .blocks-vi .cta_list span {
+        font-size: 24px;
+    }
+    .blocks-vi .pat {
+        font-size: 24px;
+    }
+    .blocks-vi .cta_buttons .cta_button:not(:last-child) {
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 /************
@@ -144,6 +176,19 @@
 
 @media only screen and (max-width: 480px)
 {
+    .blocks-vi .cta_list .link {
+        font-size: 24px;
+    }
+    .blocks-vi .cta_list span {
+        font-size: 24px;
+    }
+    .blocks-vi .pat {
+        font-size: 24px;
+    }
+    .blocks-vi .cta_buttons .cta_button:not(:last-child) {
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 /************
@@ -152,23 +197,24 @@
 
 @media only screen and (max-width: 479px)
 {
-    .home-vi .home_title h1 {
-        font-size: 1.2rem;
-    }
-    .home-vi .home_subtitle {
-        font-size: 1rem;
-    }
     .blocks-vi .cta_list .link {
-        font-size: 27px;
+        font-size: 24px;
     }
     .blocks-vi .cta_list span {
-        font-size: 27px;
+        font-size: 24px;
     }
     .blocks-vi .pat {
         font-size: 24px;
     }
     .blocks-vi .cta_buttons .cta_button:not(:last-child) {
-        margin-right: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .footer-vi .footer_title {
+        font-size: 18px;
+    }
+    .footer-vi .footer_list ul li {
+        font-size: 15px;
     }
 }
 
@@ -178,20 +224,6 @@
 
 @media only screen and (max-width: 400px)
 {
-}
-
-/************
-14. 325px
-************/
-
-@media only screen and (max-width: 325px)
-{
-    .home-vi .home_title h1 {
-        font-size: 1rem;
-    }
-    .home-vi .home_subtitle {
-        font-size: 0.9rem;
-    }
     .blocks-vi .cta_list .link {
         font-size: 24px;
     }
@@ -206,5 +238,48 @@
     }
     .blocks-vi .section_subtitle {
         font-size: 22px;
+    }
+    .blocks-vi .cta_buttons .cta_button:not(:last-child) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .footer-vi .footer_title {
+        font-size: 18px;
+    }
+    .footer-vi .footer_list ul li {
+        font-size: 15px;
+    }
+}
+
+/************
+14. 325px
+************/
+
+@media only screen and (max-width: 325px)
+{
+    .blocks-vi .cta_list .link {
+        font-size: 24px;
+    }
+    .blocks-vi .cta_list span {
+        font-size: 24px;
+    }
+    .blocks-vi .pat {
+        font-size: 20px;
+    }
+    .blocks-vi .section_title h1 { 
+        font-size: 30px;
+    }
+    .blocks-vi .section_subtitle {
+        font-size: 22px;
+    }
+    .footer-vi .footer_title {
+        font-size: 18px;
+    }
+    .footer-vi .footer_list ul li {
+        font-size: 15px;
+    }
+    .blocks-vi .cta_buttons .cta_button:not(:last-child) {
+        margin-right: auto;
+        margin-left: auto;
     }
 }

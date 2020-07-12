@@ -31,6 +31,7 @@
     <link rel="stylesheet" type="text/css" href="/styles/responsive.css">
     <link rel="stylesheet" type="text/css" href="/styles/jquery.datetimepicker.css" />
     <link rel="stylesheet" type="text/css" href="/styles/visually_impaired.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/visually_impaired_responsive.css" />
 </head>
 
 <body>
@@ -150,7 +151,7 @@
         <!-- Footer -->
         <footer class="footer {% if visually_impaired == 1 %}footer-vi{% endif %}">
             <div class="footer_content">
-                <div class="{% if visually_impaired == 1 %}container-fluid{% else %}container{% endif %}">
+                <div class="container-fluid">
                     <div class="row">
                         <div class="col">
                             <div class="footer_logo text-center">
@@ -159,7 +160,7 @@
                         </div>
                     </div>
                     <div class="row footer_row">
-                        <div class="col-md-6 col-xl-3 footer_col">
+                        <div class="col-lg-6 col-xl-3 footer_col">
                             <div class="footer_item text-center">
                                 <div
                                     class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
@@ -173,7 +174,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-xl-3 footer_col">
+                        <div class="col-lg-6 col-xl-3 footer_col">
                             <div class="footer_item text-center">
                                 <div
                                     class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
@@ -189,7 +190,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-xl-3 footer_col">
+                        <div class="col-lg-6 col-xl-3 footer_col">
                             <div class="footer_item text-center">
                                 <div
                                     class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
@@ -204,7 +205,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-xl-3 footer_col">
+                        <div class="col-lg-6 col-xl-3 footer_col">
                             <div class="footer_item text-center">
                                 <div
                                     class="footer_icon d-flex flex-column align-items-center justify-content-center ml-auto mr-auto">
@@ -216,7 +217,6 @@
                                         <li>Социального такси: 08:30-17:00</li>
                                         <li>Волонтеров: 14:00-20:00</li>
                                         <li>Няни: 08:00-18:00</li>
-
                                     </ul>
                                 </div>
                             </div>
@@ -227,20 +227,6 @@
             </div>
         </footer>
     </div>
-    <script>
-        function check() {
-            var cb = document.getElementsByTagName('input'),
-                L = cb.length - 1,
-                f = true;
-            for (; L >= 0; L--) {
-                if (cb[L]['type'] == 'checkbox' && cb[L]['checked'] == true) {
-                    f = !f;
-                    break;
-                }
-            }
-            document.getElementById('delButton').disabled = f;
-        }
-    </script>
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/bootstrap-4.1.2/popper.js"></script>
     <script src="/js/bootstrap-4.1.2/bootstrap.min.js"></script>
@@ -252,31 +238,8 @@
     <script src="/js/easing/easing.js"></script>
     <script src="/js/progressbar/progressbar.min.js"></script>
     <script src="/js/parallax-js-master/parallax.min.js"></script>
-    <script src="/js/custom.js"></script>
+    <script src="/js/custom.js" defer></script>
     <!-- <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script> -->
     <script src="/js/jquery.datetimepicker.js"></script>
-    <script>
-        jQuery('#record-date-from').datetimepicker({
-            minDate: '0',
-            formatDate: 'd.m.Y',
-            format: 'd.m.Y H:00',
-            //    inline:true,
-            dayOfWeekStart: 1,
-            disabledWeekDays: [6, 0],
-            minTime: '8:00',
-            maxTime: '19:00'
-        });
-        jQuery('#record-date-until').datetimepicker({
-            minDate: '0',
-            formatDate: 'd.m.Y',
-            format: 'd.m.Y H:00',
-            //    inline:true,
-            dayOfWeekStart: 1,
-            disabledWeekDays: [6, 0],
-            minTime: '8:00',
-            maxTime: '19:00'
-        });
-
-    </script>
 </body>
 </html>

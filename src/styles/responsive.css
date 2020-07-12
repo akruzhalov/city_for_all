@@ -54,7 +54,7 @@
 	}
 	.cta_list ul li span {
 		padding-left: 19px;
-		font-size: 16px;
+		font-size: 18px;
 		font-weight: 400;
 		color: #ffffff;
 	}
@@ -372,7 +372,7 @@
 	}
 	.quote_author
 	{
-		font-size: 14px;
+		font-size: 18px;
 		font-weight: 400;
 	}
 	.cta_content
@@ -407,7 +407,12 @@
 
 @media only screen and (max-width: 479px)
 {
-	
+	.footer_title {
+        font-size: 18px;
+    }
+    .footer_list ul li {
+        font-size: 15px;
+    }
 }
 
 /************
@@ -420,10 +425,19 @@
 	{
 		font-size: 25px;
 	}
+	.section_title h1 { 
+        font-size: 30px;
+    }
 	.cta_buttons .cta_button {
 		margin-left: 5px !important;
 		margin-right: 5px !important;
 	}
+	.footer_title {
+        font-size: 18px;
+    }
+    .footer_list ul li {
+        font-size: 15px;
+    }
 }
 
 /************
@@ -436,4 +450,13 @@
 	{
 		font-size: 20px;
 	}
+	.section_title h1 { 
+        font-size: 30px;
+    }
+	.footer_title {
+        font-size: 18px;
+    }
+    .footer_list ul li {
+        font-size: 15px;
+    }
 }

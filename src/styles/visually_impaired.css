@@ -15,12 +15,10 @@
 }
 
 .home-vi .home_subtitle {
-    font-size:3vw;
     color: #000000;
 }
 
 .home-vi .home_title h1 {
-    font-size: 4vw;
     color: #000000;
 }
 
@@ -69,12 +67,12 @@
 
 .blocks-vi .cta_list span {
     color: black; 
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .blocks-vi .cta_list .link {
     color: darkblue; 
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .blocks-vi .cta_list .link:hover {
@@ -83,7 +81,7 @@
 
 .blocks-vi .pat {
     color: black;
-    font-size: 28px;
+    font-size: 30px;
 }
 .blocks-vi p a {
     border-bottom: solid 1px black;
@@ -186,12 +184,12 @@
 }   
 
 .footer-vi .footer_title {
-    font-size: 26px;
+    font-size: 24px;
     color: #000000;
 }
 
 .footer-vi .footer_list ul li {
-    font-size: 16px;
+    font-size: 22px;
     color: #000000;
 }
 

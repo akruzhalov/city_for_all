@@ -1434,7 +1434,7 @@ section {
 
 .footer_title {
     margin-top: 33px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
@@ -1451,7 +1451,7 @@ section {
 }
 
 .footer_list ul li {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;

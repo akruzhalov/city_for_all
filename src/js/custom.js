@@ -251,4 +251,33 @@ $(document).ready(function()
 		}
 	}
 
+	// Calendar for nanny form
+
+	$('#record-date-from').datetimepicker({
+		minDate: '0',
+		formatDate: 'd.m.Y',
+		format: 'd.m.Y H:00',
+		dayOfWeekStart: 1,
+		disabledWeekDays: [6, 0],
+		minTime: '8:00',
+		maxTime: '19:00'
+	});
+
+	$('#record-date-until').datetimepicker({
+		minDate: '0',
+		formatDate: 'd.m.Y',
+		format: 'd.m.Y H:00',
+		dayOfWeekStart: 1,
+		disabledWeekDays: [6, 0],
+		minTime: '8:00',
+		maxTime: '19:00'
+	});
+
+	// Personal data processing agreement checkbox for taxi and nanny form
+
+	$('.personal-data-processing-agreement-js').on('change', function (event) {
+		let submitBtn = document.getElementById('delButton');
+		submitBtn.disabled = !(event.target.checked);
+	});
+
 });
