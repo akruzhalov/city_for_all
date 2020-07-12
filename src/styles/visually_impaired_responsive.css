@@ -120,10 +120,10 @@
 
 @media only screen and (max-width: 767px) {
     .home-vi .home_title h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     .home-vi .home_subtitle {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .blocks-vi .cta_list .link {
         font-size: 24px;
@@ -147,10 +147,10 @@
 @media only screen and (max-width: 575px)
 {
     .home-vi .home_title h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     .home-vi .home_subtitle {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .blocks-vi .cta_list .link {
         font-size: 24px;
@@ -174,10 +174,10 @@
 @media only screen and (max-width: 539px)
 {
     .home-vi .home_title h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     .home-vi .home_subtitle {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .blocks-vi .cta_list .link {
         font-size: 24px;
@@ -201,10 +201,10 @@
 @media only screen and (max-width: 480px)
 {
     .home-vi .home_title h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     .home-vi .home_subtitle {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .blocks-vi .cta_list .link {
         font-size: 24px;

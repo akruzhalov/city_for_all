@@ -275,7 +275,7 @@ $(document).ready(function()
 
 	// Personal data processing agreement checkbox for taxi and nanny form
 
-	$('.personal-data-processing-agreement-js').on('click', function (event) {
+	$('.personal-data-processing-agreement-js').on('change', function (event) {
 		let submitBtn = document.getElementById('delButton');
 		submitBtn.disabled = !(event.target.checked);
 	});
